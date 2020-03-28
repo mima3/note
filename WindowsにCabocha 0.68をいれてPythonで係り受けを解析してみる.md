@@ -86,6 +86,7 @@ IndexError: list index out of range
   
 4.setup.pyを変更する。  
   
+**:変更前**  
 ```py:変更前
 # !/usr/bin/env python
 
@@ -114,6 +115,7 @@ setup(name = "cabocha-python",
   
 version と、ext_modulesの内容をインストールした情報に書き換える。  
   
+**:変更後**  
 ```py:変更後
 # !/usr/bin/env python
 

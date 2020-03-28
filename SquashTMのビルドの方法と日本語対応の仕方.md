@@ -66,6 +66,7 @@ Non-resolvable parent POM for org.squashtest.tm:squash-tm-provision:[unknown-ver
 これはprovisionフォルダのpom.xml中のparentと親フォルダのpom.xmlの整合性が取れていない場合に発生する。  
 2019/7/6時点では以下のような修正が必要だった  
   
+**:parent/pom.xml**  
 ```xml:parent/pom.xml
   <parent>
     <groupId>org.squashtest.tm</groupId>
@@ -164,6 +165,7 @@ Spring IDEの設定で実行構成を設定しているので、そこで実行�
 原因はjspにcontentTypeが設定していないため。  
 以下のように修正する。  
   
+**:tm\tm.web\src\main\webapp\WEB-INF\jsp\page\campaign-workspace\show-test-suite-test-plan-manager.jsp**  
 ```jsp:tm\tm.web\src\main\webapp\WEB-INF\jsp\page\campaign-workspace\show-test-suite-test-plan-manager.jsp
 <%@ taglib prefix="authz" tagdir="/WEB-INF/tags/authz"%>
 

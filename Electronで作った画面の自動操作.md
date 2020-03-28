@@ -7,6 +7,7 @@ Electronを使用することでnode.jsを使用してマルチプラットフ�
 ![image.png](/image/652a91b7-15ee-7f8b-8f4d-1a92cb32f046.png)  
   
   
+**:package.json**  
 ```json:package.json
 {
   "name": "test-app",
@@ -23,6 +24,7 @@ Electronを使用することでnode.jsを使用してマルチプラットフ�
 }
 ```  
   
+**:app.js**  
 ```javascript:app.js
 const electron = require('electron');
 const app = electron.app;
@@ -48,6 +50,7 @@ app.on('ready', () => {
 });
 ```  
   
+**:index.html**  
 ```html:index.html
 <!DOCTYPE html>
 <html>
@@ -66,6 +69,7 @@ Hello Electron
 </html>
 ```  
   
+**:index.js**  
 ```javascript:index.js
 const btnCtrl = document.getElementById('btn');
 btnCtrl.onclick = function(element) {

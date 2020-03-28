@@ -64,6 +64,7 @@ C:\Users\ユーザ名\.ssh
   
 また以下のようなconfigファイルを作成する  
   
+**:config**  
 ```text:config
 Host debian
 	User git
@@ -175,6 +176,7 @@ To ssh://debian/testing
   
 ３．admin側でgitolite-admin/conf/gitolite.confを編集する  
   
+**:gitolite.conf**  
 ```text:gitolite.conf
 repo gitolite-admin
     RW+     =   admin

@@ -42,6 +42,7 @@ PHPでテンプレートを使用する際に下記のデータを指定して�
   
 ## ページネーション用のテンプレート  
   
+**:pagination.php**  
 ```twig:pagination.php
 <nav class="pagination is-centered" role="navigation" aria-label="pagination">
     {% if currentPage != 1 %}

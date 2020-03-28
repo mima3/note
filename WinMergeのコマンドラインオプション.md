@@ -121,6 +121,7 @@ https://github.com/WinMerge/winmerge/blob/30a5674030a8318a9239893a3cc0a4e8798a62
   
 どうしても自動化したかったら以下のPowerShellを使います。  
   
+**:automerge.ps1**  
 ```powershell:automerge.ps1
 Add-Type -AssemblyName UIAutomationClient
 Add-Type -AssemblyName UIAutomationTypes

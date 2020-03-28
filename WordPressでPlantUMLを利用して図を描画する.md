@@ -92,6 +92,7 @@ http://plantuml.com/en/demo-javascript-synchronous
 このページでは日本語が化けることはありません。  
 どんな実装をしているか見てみましょう。  
   
+**:demo-javascript-synchronous**  
 ```javascript:demo-javascript-synchronous
 function compress(a){
   a=unescape(encodeURIComponent(a));
@@ -116,6 +117,7 @@ unescapeはASCII以外対応していないので日本語は文字化けしま�
   
 utf8_encodeを除去します  
   
+**:class-plantuml-renderer-public.php**  
 ```php:class-plantuml-renderer-public.php
 	/**
 	 * Encode our plantuml syntax - See PlantUML PHP Doc for details - where this was lifted from.
@@ -134,6 +136,7 @@ utf8_encodeを除去します
   
 また、「"」が混ざった場合、imgタグのaltが上手く表示できなくなるのでそれもあわせてなおします。ここでは全角に変換してます。  
   
+**:class-plantuml-renderer-public.php**  
 ```php:class-plantuml-renderer-public.php
 	/**
 	 * Our lovely shortcode.

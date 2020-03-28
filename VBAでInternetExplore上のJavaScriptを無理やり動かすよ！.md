@@ -16,6 +16,7 @@ Office16 Excel 32bit
   
 ## サンプル  
   
+**:IEAuto.bas**  
 ```vb:IEAuto.bas
  Option Explicit
 
@@ -146,6 +147,7 @@ End Function
 
 ```  
   
+**:サンプル**  
 ```vb:サンプル
 Public Sub test()
     Dim b As MSHTML.IHTMLDocument3

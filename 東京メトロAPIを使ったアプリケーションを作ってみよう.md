@@ -40,6 +40,7 @@ https://developer.tokyometroapp.jp/info
  ***発行するURL***   
 >https://api.tokyometroapp.jp/api/v2/datapoints?rdf:type=odpt:TrainInformation&acl:consumerKey=アクセストークン  
   
+**:取得結果**  
 ```json:取得結果
 [{
   "@context":"http://vocab.tokyometroapp.jp/context_odpt_TrainInformation.json",

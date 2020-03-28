@@ -244,6 +244,7 @@ templates関数にテンプレート名とテンプレートを指定するこ�
   
 たとえば次のような、テキストファイルが存在する。  
   
+**:test.txt**  
 ```text:test.txt
 <label> Name:</label> {{:name}}
 ```  

@@ -101,6 +101,7 @@ CScript Hello.js //x
   
 以下の例では外部に記述したVBScriptを使用する方法について記述します。  
   
+**:.\lib\ADOCtrl.vbs**  
 ```vb:.\lib\ADOCtrl.vbs
 Option Explicit
 

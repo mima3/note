@@ -54,6 +54,7 @@ http://msdn.microsoft.com/ja-jp/library/c9676k6h%28v=vs.80%29.aspx
   
 まず、VC++でDLL側のコードを記述します。  
   
+**:DLL側のコード**  
 ```cpp:DLL側のコード
 # include <windows.h>
 # include <float.h>

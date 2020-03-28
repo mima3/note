@@ -105,6 +105,7 @@ winscp> exit
   
 まずスクリプトファイルをBOM付きのUTF8かUTF16で作成します。  
   
+**:script.txt**  
 ```text:script.txt
 # 接続
 open %1%:%2%@192.168.80.131

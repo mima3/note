@@ -15,6 +15,7 @@ http://needtec.sakura.ne.jp/yukkuri_translator/
   
 ## ソースコード  
   
+**:yukkuri_translator.py**  
 ```py:yukkuri_translator.py
 # !/usr/bin/env python
 # -*- coding: utf-8 -*-

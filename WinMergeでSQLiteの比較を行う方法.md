@@ -11,6 +11,7 @@ sqliteodbc_w64.exe
   
 ２．次のようなファイルを作成する  
   
+**:SqliteToText.sct**  
 ```vbnet:SqliteToText.sct
 <scriptlet>
 

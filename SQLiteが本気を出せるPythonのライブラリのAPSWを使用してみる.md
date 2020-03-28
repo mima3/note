@@ -338,6 +338,7 @@ http://rogerbinns.github.io/apsw/backup.html
 connectionやcursorをスレッドをまたいで共有できます。  
 pysqliteの場合、Connectionやcursorsは同じスレッドで使用しなければいけません。  
   
+**:pysqliteの例**  
 ```py:pysqliteの例
 # -*- coding: utf-8 -*- 
 import threading
@@ -381,6 +382,7 @@ me thread.The object was created in thread id 19540 and this is thread id 4652
   
 APSWの場合、同様のスレッドをまたいでも例外は発生しません。  
   
+**:APSWでスレッドをまたぐ**  
 ```py:APSWでスレッドをまたぐ
 # -*- coding: utf-8 -*- 
 import threading
@@ -502,6 +504,7 @@ http://stackoverflow.com/questions/14142554/sqlite3-python-executemany-select
   
 以下にユーザ定義関数内で例外を発生させた場合の違いを確認してみます。  
   
+**:pysqliteの例外**  
 ```py:pysqliteの例外
 import sqlite3
 def badfunc(t):
@@ -540,6 +543,7 @@ enable_callback_tracebacksがFalseの場合は、ユーザー定義関数内の�
   
 一方、APSWの例外を見てみます。  
   
+**:APSWでの例外**  
 ```py:APSWでの例外
 def badfunc(t):
     return 1/0

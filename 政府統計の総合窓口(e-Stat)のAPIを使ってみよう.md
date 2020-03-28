@@ -75,6 +75,7 @@ API_KEYと検索データ種別、検索キーワードを指定して実行し�
   
 サンプルコード：  
   
+**:getStatsListSample.py**  
 ```py:getStatsListSample.py
 # !/usr/bin/python
 # -*- coding: utf-8 -*-
@@ -183,6 +184,7 @@ python getStatsListSample.py API_KEY 1 雇用
   
 サンプルコード：  
   
+**:getMetaSample.py**  
 ```py:getMetaSample.py
 # !/usr/bin/python
 # -*- coding: utf-8 -*-
@@ -285,6 +287,7 @@ level: 1
   
 サンプルコード：  
   
+**:export_csv.py**  
 ```py:export_csv.py
 # !/usr/bin/python
 # -*- coding: utf-8 -*-

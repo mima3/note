@@ -89,6 +89,7 @@ PowerShellでいきなり実装するのは辛いので、まずC#で実装し�
 ## PowerShellでの実装  
 続いてPowerShellで実装します。  
   
+**:voiceroid.ps1**  
 ```PowerShell:voiceroid.ps1
 $message = $Args[0]
 $target = Get-Process | Where-Object {$_.MainWindowTitle.StartsWith("VOICEROID2") -eq $True} | Select-Object 

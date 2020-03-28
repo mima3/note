@@ -51,6 +51,7 @@ https://wiki.jenkins.io/display/JENKINS/Violations
   
 (2)ジョブを追加してビルドに以下のようなスクリプトを追加する。  
   
+**:Windowsのバッチの例**  
 ```text:Windowsのバッチの例
  del %WORKSPACE%\test.out
  for %%f in (%WORKSPACE%\*.py) do (
@@ -152,6 +153,7 @@ https://numpydoc.readthedocs.io/en/latest/format.html#docstring-standard
   
 **サンプル**  
   
+**:test.py**  
 ```python:test.py
 """testパッケージでござる、一行目の最後はピリオドである必要があります.
 
@@ -353,6 +355,7 @@ C:\DEV\PYTHON3\DOCTEST
 (2)conf.pyを修正します。  
 docsフォルダに作成された「conf.py」を以下のように修正します。  
   
+**:conf.py**  
 ```python:conf.py
 
 # If extensions (or modules to document with autodoc) are in another directory,
@@ -429,6 +432,7 @@ https://docs.python.org/ja/3/library/unittest.html
   
 ### テストケースの例  
   
+**:unittest_example.py**  
 ```python:unittest_example.py
 import unittest
 import test
@@ -539,6 +543,7 @@ https://docs.python.org/ja/3/library/unittest.mock.html
   
 例えばテスト対象の以下の関数が存在したとします。  
   
+**:main.py**  
 ```python:main.py
 import test
 

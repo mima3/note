@@ -215,6 +215,7 @@ https://github.com/asutherland/d3-threeD
   
 この関数は内部関数のため、d3-threeD.jsを以下のように変更して外部から利用できるようにします。  
   
+**:d3-threeD.js**  
 ```js:d3-threeD.js
 /* This Source Code Form is subject to the terms of the Mozilla Public
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,

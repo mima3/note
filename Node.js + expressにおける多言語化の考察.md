@@ -12,6 +12,7 @@ http://needtec.sakura.ne.jp/release/node_globalization_sample.zip
   
 今回はroutes/message.jsonがメッセージ情報を格納するファイルとなる。  
   
+**:routes/message.json**  
 ```json:routes/message.json
 {
   "message": {
@@ -153,6 +154,7 @@ strRet = str1 + " " + str2;
 この場合、直接、文字をプログラムに記述していない。common.getMessageにコードを指定し、エラーメッセージを作成している。  
   
   
+**:router/login.js**  
 ```js:router/login.js
     var data = {};
     if (result) {
@@ -176,6 +178,7 @@ strRet = str1 + " " + str2;
   
 common.getMessageでおこなっていることはmessage.jsonから指定のキーのデータを取得して引数で指定された文字と併せて文字列として返している。  
   
+**:routes/common.js**  
 ```js:routes/common.js
 var util = require('util');
 var message = require('./message.json');
@@ -204,6 +207,7 @@ function _getMessage(category, id, args) {
 以下の例ではユーザの新規登録画面における例を示している。  
 以下のように、message.jsonから必要なメッセージを common.getViewMessageを用いてすべて取得して、テンプレートエンジンに渡している。  
   
+**:routes/login.js**  
 ```js:routes/login.js
 exports.register = function(req, res){
   res.render('register',
@@ -275,6 +279,7 @@ $('#message').find('#' + id).text();
   
 もし、%sや%dなどを使用したい場合はutil.formatのコードで必要な部分をクライアントサイドのJavaに移植してやればよい。  
   
+**:public/javascripts/src/ui_util.js**  
 ```js:public/javascripts/src/ui_util.js
 var formatRegExp = /%[sdj%]/g;
 function _format(f) {
