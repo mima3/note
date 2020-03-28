@@ -78,24 +78,24 @@ SIerではよく、サクラエディタ、WinScp、TeraTerm、WinMergeといっ
   
 **サクラエディタ**  
 コマンドラインからGrepやマクロの実行が可能です。  
-https://qiita.com/mima_ita/items/1ca8b41e29329bb980d0  
+https://github.com/mima3/note/blob/master/サクラエディタの便利そうな機能.md  
   
 **WinSCP**  
 コマンドラインからファイルのアップロード、ダウンロードが自動で可能です。また、提供されているdllを使用することでPowerShellを含めた.NETFrameworkでのプログラミングが可能です  
-https://qiita.com/mima_ita/items/35261ec39c3c587210d8  
+https://github.com/mima3/note/blob/master/WinSCPを自動化しても別にかまわんのだろ.md  
   
 **TeraTerm**  
 コマンドラインからマクロを実行することでリモートコンピュータに接続後に任意のコマンドを実行することも可能です。  
-https://qiita.com/mima_ita/items/60c30a28ea64972008f2  
+https://github.com/mima3/note/blob/master/TeraTermのマクロをためしてみる.md  
   
 **WinMerge**  
 コマンドラインから比較レポートの作成やマージの実行ができます。  
-https://qiita.com/mima_ita/items/ac21c0588080e73fc458  
+https://github.com/mima3/note/blob/master/WinMergeのコマンドラインオプション.md  
   
   
 また、これらのアプリケーションをインストールするためのインストーラ自体、コマンドプロンプトで起動ができます。  
 **Windowsのアプリケーションのインストールは自動でやりたい**  
-https://qiita.com/mima_ita/items/414451b78062151e1595  
+https://github.com/mima3/note/blob/master/Windowsのアプリケーションのインストールは自動でやりたい.md  
   
   
 このように、コマンドラインからパラメータを与えるだけで多くの自動操作を行うことが可能になっています。  
@@ -117,7 +117,7 @@ COMや.NETのライブラリを使用した難しいことはできませんが�
 ただ、複雑な処理を記述するには向いていないので、その場合、WSHかPowerShellを使用しましょう。  
   
 **汝、コマンドプロンプトを愛せよ**  
-https://qiita.com/mima_ita/items/90f709cad32ca4e7413d  
+https://github.com/mima3/note/blob/master/汝、コマンドプロンプトを愛せよ.md  
   
 #### WSH  
 WSHとはWindows Script Hostの略で、Windows2000やWindowsXP環境下ですら使用可能です。  
@@ -148,7 +148,7 @@ Microsoft Visual Basic Scripting Edition (以下 VBScript) と, Microsoft JScrip
   
   
 **レガシー環境のためのWindows Script Host(WSH)の解説**  
-https://qiita.com/mima_ita/items/127e171db67aaee6ef30  
+https://github.com/mima3/note/blob/master/レガシー環境のためのWindows Script Host(WSH)の解説.md  
   
 #### PowerShell  
 Windows7から使用可能です。WSHの上位互換といえるでしょう。  
@@ -156,16 +156,16 @@ Windows7から使用可能です。WSHの上位互換といえるでしょう。
 具体的な使用例は以下を参照ください。  
   
 **Powershellによるファイル操作のまとめ**  
-https://qiita.com/mima_ita/items/ae31f3a19389e69b307f  
+https://github.com/mima3/note/blob/master/Powershellによるファイル操作のまとめ.md  
   
 **PowerShellによるレジストリの操作例**  
-https://qiita.com/mima_ita/items/1e6c74c7fb641852edff  
+https://github.com/mima3/note/blob/master/PowerShellによるレジストリの操作例.md  
   
   
 ただ、COMの操作だけは.NETを使用する都合上、WSHより解放処理が面倒になっています。  
   
 **.NETを使ったOfficeの自動化が面倒なはずがない―そう考えていた時期が俺にもありました。**  
-https://qiita.com/mima_ita/items/aa811423d8c4410eca71  
+https://github.com/mima3/note/blob/master/.NETを使ったOfficeの自動化が面倒なはずがない―そう考えていた時期が俺にもありました。.md  
   
   
 ## Officeアプリケーションの自動化をしよう  
@@ -200,25 +200,25 @@ Excelなどが有名ですが、基本的にOfficeアプリケーションの多
 https://www.nicovideo.jp/mylist/36464404  
   
 **Excel VBAコーディング ガイドライン案**  
-https://qiita.com/mima_ita/items/8b0eec3b5a81f168822d  
+https://github.com/mima3/note/blob/master/Excel VBAコーディング ガイドライン案.md  
   
   
 ### OfficeアプリケーションのCOM経由での操作  
 先ほどいったとおり、Officeアプリケーションの自動化はCOM経由で別のプログラミング言語から操作が可能です。  
   
 **RedmineをあきらめたオレたちのPowerShellでのOutlookの自動操作**  
-https://qiita.com/mima_ita/items/37ab711a571f29346830  
+https://github.com/mima3/note/blob/master/RedmineをあきらめたオレたちのPowerShellでのOutlookの自動操作.md  
   
 **PowerPointで茜ちゃんに喋ってもらう**  
-https://qiita.com/mima_ita/items/e5b982796fd4c14553a6  
+https://github.com/mima3/note/blob/master/PowerPointで茜ちゃんに喋ってもらう.md  
   
 **MSProjectをVBScriptまたはVBAで操作する**  
-https://qiita.com/mima_ita/items/3020a025d5cb5858c4bc  
+https://github.com/mima3/note/blob/master/MSProjectをVBScriptまたはVBAで操作する.md  
   
 ただし、PowerShellやC#などの.NET経由でのCOM操作を行う場合、解放処理が重要になります。  
   
 **.NETを使ったOfficeの自動化が面倒なはずがない―そう考えていた時期が俺にもありました。**  
-https://qiita.com/mima_ita/items/aa811423d8c4410eca71  
+https://github.com/mima3/note/blob/master/.NETを使ったOfficeの自動化が面倒なはずがない―そう考えていた時期が俺にもありました。.md  
   
 上記の記事でも触れていますが、.NETでの解放処理が面倒な場合、NetOfficeというMIT Licenseのライブラリについての採用を検討してください。OfficeのCOMオブジェクトをラッパーしています。  
 https://github.com/NetOfficeFw/NetOffice  
@@ -237,17 +237,17 @@ https://docs.microsoft.com/ja-jp/visualstudio/vsto/threading-support-in-office?r
 ホームページにアクセスにてなんや、かんや自動化したいという話ですが、最近以下にまとめましたので参照してください。  
   
 **Webアプリケーションを自動で操作してみよう**  
-https://qiita.com/mima_ita/items/4149a4cdb9a33084258b  
+https://github.com/mima3/note/blob/master/Webアプリケーションを自動で操作してみよう.md  
   
 ## Windowsの画面操作を自動化しよう  
-画面操作を自動化する前にコマンドラインでやりたいことが実現できないか、あるいはアプリケーションがプログラム可能なライブラリを提供していないか確認してください。たとえばWinSCPは[WinSCPnet.dllを利用することでC#やPowerShellからWinSCPの操作が可能になっています。](https://qiita.com/mima_ita/items/35261ec39c3c587210d8#powershell%E3%81%8B%E3%82%89%E3%81%AEwinscp%E3%81%AE%E5%AE%9F%E8%A1%8C)  
+画面操作を自動化する前にコマンドラインでやりたいことが実現できないか、あるいはアプリケーションがプログラム可能なライブラリを提供していないか確認してください。たとえばWinSCPは[WinSCPnet.dllを利用することでC#やPowerShellからWinSCPの操作が可能になっています。](https://github.com/mima3/note/blob/master/WinSCPを自動化しても別にかまわんのだろ.md#powershell%E3%81%8B%E3%82%89%E3%81%AEwinscp%E3%81%AE%E5%AE%9F%E8%A1%8C)  
   
 これらを確認した上で初めて画面の自動操作のスクリプトについて考えましょう。  
   
 多くの場合、以下で紹介したいずれかのケースで上手くいきます。  
   
 **RPA九人衆による「ｱｶﾈﾁｬﾝｶﾜｲｲﾔｯﾀ」の自動化**  
-https://qiita.com/mima_ita/items/d4655de865f30bb51c65  
+https://github.com/mima3/note/blob/master/RPA九人衆による「ｱｶﾈﾁｬﾝｶﾜｲｲﾔｯﾀ」の自動化.md  
   
   
 ### 操作したいコントロールの特定方法  
@@ -275,7 +275,7 @@ Windowsアプリの多くは[Inspect](https://docs.microsoft.com/en-us/windows/w
   
 [UiAutomation](https://docs.microsoft.com/ja-jp/windows/win32/winauto/ui-automation-specification)、[WinAppDriver](https://github.com/microsoft/WinAppDriver)、[Friendly](https://github.com/Codeer-Software/Friendly)、[UWSC](https://www.vector.co.jp/soft/winnt/util/se115105.html)、[UiPAth](https://www.uipath.com/platform-trial)などでサポートしている検出方法です。  
   
-なお、JavaのSwingアプリケーションでオブジェクトを特定したい場合は「[Javaで作った画面をWindowsで自動操作する方法](https://qiita.com/mima_ita/items/702fdbdee30346b5738e)」をElectronでオブジェクトを特定したい場合は「[Electronで作った画面の自動操作](https://qiita.com/mima_ita/items/32265ea071d291c750ed)」をそれぞれ参照してください。  
+なお、JavaのSwingアプリケーションでオブジェクトを特定したい場合は「[Javaで作った画面をWindowsで自動操作する方法](https://github.com/mima3/note/blob/master/Javaで作った画面をWindowsで自動操作する方法.md)」をElectronでオブジェクトを特定したい場合は「[Electronで作った画面の自動操作](https://github.com/mima3/note/blob/master/Electronで作った画面の自動操作.md)」をそれぞれ参照してください。  
   
   
 #### テンプレートの画像を指定して特定する方法  
@@ -289,7 +289,7 @@ Windowsアプリの多くは[Inspect](https://docs.microsoft.com/en-us/windows/w
 OpenCVのライブラリを使用することで、このあたりの機能は自作も可能です。  
   
 **C#やPowerShellで画面上の特定の画像の位置をクリックする方法**  
-https://qiita.com/mima_ita/items/f7d2c38767bda8b35cbd  
+https://github.com/mima3/note/blob/master/C#やPowerShellで画面上の特定の画像の位置をクリックする方法.md  
   
 ### どの技術を採用すべきか？  
 一番最初は「オブジェクトで特定する方法」が可能か検討してください。  
@@ -309,12 +309,12 @@ https://qiita.com/mima_ita/items/f7d2c38767bda8b35cbd
 #### 画像で特定する方法の技術比較  
 [UWSC](https://www.vector.co.jp/soft/winnt/util/se115105.html)は優れたツールですが、公式ページが消えたので今後は使用しない方がいいです。  
   
-[Sikulix1.1.4を使って画面の自動操作をする方法](https://qiita.com/mima_ita/items/8f653042ac9140e5023f)はIDEも使い易く自動操作をサポートするための機能を多数有しておりおすすめです。  
+[Sikulix1.1.4を使って画面の自動操作をする方法](https://github.com/mima3/note/blob/master/Sikulix1.1.4を使って画面の自動操作をする.md)はIDEも使い易く自動操作をサポートするための機能を多数有しておりおすすめです。  
   
 1.1.4時点の機能は下記にまとめています。  
   
 **Sikulix1.1.4を使って画面の自動操作をする**  
-https://qiita.com/mima_ita/items/8f653042ac9140e5023f  
+https://github.com/mima3/note/blob/master/Sikulix1.1.4を使って画面の自動操作をする.md  
   
 問題がでるとしたら、Java8SDKの64bitが必要であり環境を選ぶことと、使用しているPythonがJythonのため純粋なPythonではない点です。  
 純粋なPythonで自動操作をしたい場合は[PyAutoGui](https://pyautogui.readthedocs.io/en/latest/)を採用するといいでしょう。  
@@ -395,7 +395,7 @@ UiPathなどはドライバからイベントを発生させてユーザの操�
 これにより、管理者権限が必要な自動操作も可能になります。  
   
 **たとえ途中で再起動と管理者権限が必要でも、自動化をあきらめたらそこで試合終了ですよ…？**  
-https://qiita.com/mima_ita/items/71ee76ab6d14a726f9f4  
+https://github.com/mima3/note/blob/master/たとえ途中で再起動と管理者権限が必要でも、自動化をあきらめたらそこで試合終了ですよ…？.md  
   
 なお、タスクスケジューラ―はコマンドプロンプトから操作することが可能になっています。  
   

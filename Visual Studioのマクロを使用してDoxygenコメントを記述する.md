@@ -11,7 +11,7 @@ http://variantsoft.co.jp/blog/2014/01/14/visualstudio2013%E3%81%AE%E6%8B%A1%E5%B
   
 (2019/12/15 追記）  
 **復活のVisualStudioのマクロ**  
-https://qiita.com/mima_ita/items/c56d6e2657cc836af7ac  
+https://github.com/mima3/note/blob/master/復活のVisualStudioのマクロ.md  
 いくつかの制限付きながら拡張機能としてVisualStudioのマクロが復活しているようです。  
   
   

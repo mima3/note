@@ -1,5 +1,5 @@
 # まえがき  
-以前、[こんな記事](https://qiita.com/mima_ita/items/d4655de865f30bb51c65)を書いたことがあります。  
+以前、[こんな記事](https://github.com/mima3/note/blob/master/RPA九人衆による「ｱｶﾈﾁｬﾝｶﾜｲｲﾔｯﾀ」の自動化.md)を書いたことがあります。  
 色々な方法でWindowsのGUIの自動操作を行う方法を記載しましたが、PowerShellで**画像認識**を利用した自動操作については逃げました。  
   
 今回は宿題として残っていたPowerShellとOpenCVを使用して画像認識での自動操作を行ってみます。  

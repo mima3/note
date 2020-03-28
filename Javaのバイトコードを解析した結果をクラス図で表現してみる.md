@@ -212,7 +212,7 @@ DSLといわれる言語でUMLを含めた以下の図を記載できます。
 - AsciiMath や JLaTeXMath による、数学的記法  
   
 公式でWebページから実際の記載を試せます。  
-[Redmineのプラグイン](https://qiita.com/mima_ita/items/fd556aef74fe9252457d)もあるのでWikiにテキストデータとして各種図を埋め込むことができます。  
+[Redmineのプラグイン](https://github.com/mima3/note/blob/master/RedmineのWikiでUMLを記述する方法.md)もあるのでWikiにテキストデータとして各種図を埋め込むことができます。  
   
 公式：  
 http://plantuml.com/ja/  

@@ -2120,7 +2120,7 @@ Const password = "pass"
   
 '  
 ' エスケープ処理  
-'https://qiita.com/mima_ita/items/8fc5fab7259835e4bcdd  
+'https://github.com/mima3/note/blob/master/VBAでのエスケープ処理.md  
 'http://www.xtremevbtalk.com/showthread.php?t=152882  
 Public Function escape(ByVal StringToEncode )  
     Dim i   

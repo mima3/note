@@ -1,7 +1,7 @@
 # 2019.08.01  
 古いので以下を参照してください。  
 **カウボーイには嫌がられるPythonの話**  
-https://qiita.com/mima_ita/items/cabcf014aa08e27c8de7  
+https://github.com/mima3/note/blob/master/カウボーイには嫌がられるPythonの話.md  
   
 # 概要  
 本ドキュメントでは、Python コードのためのコーディングスタイルであるPEP8に違反していないかチェックする方法について説明する。  

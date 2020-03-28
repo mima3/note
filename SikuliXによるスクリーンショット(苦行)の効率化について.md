@@ -3,7 +3,7 @@ SikuliX1.1.4ではスクリーンを監視して変更が生じたらスクリ�
 これにより、スクリーンキャプチャの苦行の労力を減らせるかを検討する。  
   
 Sikulix1.1.4については下記参照  
-https://qiita.com/mima_ita/items/8f653042ac9140e5023f  
+https://github.com/mima3/note/blob/master/Sikulix1.1.4を使って画面の自動操作をする.md  
   
 ## コード  
   

@@ -2,7 +2,7 @@
 PowerShellを使用したレジストリの操作方法についてまとめます。  
 レジストリについては下記を参考にしてください。  
   
-https://qiita.com/mima_ita/items/ff656af8e4b56ed17a53  
+https://github.com/mima3/note/blob/master/Windowsのレジストリについての概要とアプリケーションでの利用方針.md  
   
   
   

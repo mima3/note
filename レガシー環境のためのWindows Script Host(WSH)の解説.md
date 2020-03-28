@@ -1,13 +1,13 @@
 ここでは、XPやVista以前のレガシーな環境でのスクリプト処理を行うためのWSHについて説明します。  
   
  __もし、Windows7以降のみが前提であれば、Windows PowerShell の使用も検討しましょう。__   
-→*ただしPowerShellだと[OfficeのCOMの解放処理が面倒だったり](https://qiita.com/mima_ita/items/aa811423d8c4410eca71)、[InternetExploreの操作が安定しなかったりする](https://qiita.com/mima_ita/items/4149a4cdb9a33084258b#powershell%E3%81%A7%E3%81%AEie%E6%93%8D%E4%BD%9C%E3%81%AE%E5%95%8F%E9%A1%8C%E7%82%B9)*  
+→*ただしPowerShellだと[OfficeのCOMの解放処理が面倒だったり](https://github.com/mima3/note/blob/master/.NETを使ったOfficeの自動化が面倒なはずがない―そう考えていた時期が俺にもありました。.md)、[InternetExploreの操作が安定しなかったりする](https://github.com/mima3/note/blob/master/Webアプリケーションを自動で操作してみよう.md#powershell%E3%81%A7%E3%81%AEie%E6%93%8D%E4%BD%9C%E3%81%AE%E5%95%8F%E9%A1%8C%E7%82%B9)*  
   
 # 概要  
 WSHとはWindows Script Hostの略です。  
   
 Microsoft Visual Basic Scripting Edition (以下 VBScript) と, Microsoft JScriptの２種類がサポートされています。※  
-※環境によってはEdgeのエンジンが使用可能です。[参照](https://qiita.com/mima_ita/items/453bb6c313e459c44689#comment-c1ebd3350d93efe9d8cf)  
+※環境によってはEdgeのエンジンが使用可能です。[参照](https://github.com/mima3/note/blob/master/自称IT企業があまりにITを使わずに嫌になって野に下った俺が紹介するWindowsの自動化の方法.md#comment-c1ebd3350d93efe9d8cf)  
   
 JScriptはMS独自の規格で一般なJavaScriptとは規格が異なります。  
   

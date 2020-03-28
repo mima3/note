@@ -38,7 +38,7 @@ https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/
 仮に旧Edgeだったとしても以下の方法で無理やりInternet Explorer_Serverを取得して動かすことが可能でした。  
   
 **VBAでInternetExplore上のJavaScriptを無理やり動かすよ！**  
-https://qiita.com/mima_ita/items/fdff129a8db1153c9940  
+https://github.com/mima3/note/blob/master/VBAでInternetExplore上のJavaScriptを無理やり動かすよ！.md  
   
 当然、新Edgeでは動作しません。  
 **すなわち、ダウンロード禁止縛り環境ではブラウザの自動操作はできなくなります。**  

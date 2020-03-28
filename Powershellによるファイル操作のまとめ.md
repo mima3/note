@@ -100,7 +100,7 @@ Set-Location c:\d?v
   
 [Set-Location](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/set-location?view=powershell-5.1)を使用してカレントディレクトリを変更可能です。  
   
-この際、-Pathまたは-Pathと-LiteralPathを省略をした場合は[ワイルドカード](https://qiita.com/mima_ita/items/486566b717743e9d2626#%E3%83%91%E3%83%A9%E3%83%A1%E3%83%BC%E3%82%BF%E3%81%AE%E3%83%AF%E3%82%A4%E3%83%AB%E3%83%89%E3%82%AB%E3%83%BC%E3%83%89)の指定を受け付けることができます。  
+この際、-Pathまたは-Pathと-LiteralPathを省略をした場合は[ワイルドカード](https://github.com/mima3/note/blob/master/PowerShellのメモ～PathとLiteralPathパラメータについて.md#%E3%83%91%E3%83%A9%E3%83%A1%E3%83%BC%E3%82%BF%E3%81%AE%E3%83%AF%E3%82%A4%E3%83%AB%E3%83%89%E3%82%AB%E3%83%BC%E3%83%89)の指定を受け付けることができます。  
 もし、これにより複数のパスが帰った場合は以下のエラーが発生します。  
   
 ```text
@@ -137,7 +137,7 @@ PS C:\dev>
 ```  
   
 [Push-Location](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/push-location?view=powershell-5.1)はカレントディレクトリをスタックの一番上に積んだのちに、-Path,-Literalで指定したパスをカレントディレクトリとします。  
--Pathを指定した場合、[ワイルドカード](https://qiita.com/mima_ita/items/486566b717743e9d2626#%E3%83%91%E3%83%A9%E3%83%A1%E3%83%BC%E3%82%BF%E3%81%AE%E3%83%AF%E3%82%A4%E3%83%AB%E3%83%89%E3%82%AB%E3%83%BC%E3%83%89)による指定が可能になりますが、対象が複数になった場合、エラーとなります。  
+-Pathを指定した場合、[ワイルドカード](https://github.com/mima3/note/blob/master/PowerShellのメモ～PathとLiteralPathパラメータについて.md#%E3%83%91%E3%83%A9%E3%83%A1%E3%83%BC%E3%82%BF%E3%81%AE%E3%83%AF%E3%82%A4%E3%83%AB%E3%83%89%E3%82%AB%E3%83%BC%E3%83%89)による指定が可能になりますが、対象が複数になった場合、エラーとなります。  
 -Path,-LiteralPathを省略してパスを指定した場合、-Pathが指定されたものとしてワイルドカードを受け付けます。  
   
 [Get-Location](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-location?view=powershell-5.1)の-Stackオプションを付与することで現在のスタックの状況を表示することが可能です。  
@@ -230,7 +230,7 @@ New-Item ./abc[1].txt -Type File -Force
   
 -Pathオプションは「,」区切りでパスを指定できます。  
   
--Pathには[ワイルドカード](https://qiita.com/mima_ita/items/486566b717743e9d2626#%E3%83%91%E3%83%A9%E3%83%A1%E3%83%BC%E3%82%BF%E3%81%AE%E3%83%AF%E3%82%A4%E3%83%AB%E3%83%89%E3%82%AB%E3%83%BC%E3%83%89)を受け付けることが可能です。  
+-Pathには[ワイルドカード](https://github.com/mima3/note/blob/master/PowerShellのメモ～PathとLiteralPathパラメータについて.md#%E3%83%91%E3%83%A9%E3%83%A1%E3%83%BC%E3%82%BF%E3%81%AE%E3%83%AF%E3%82%A4%E3%83%AB%E3%83%89%E3%82%AB%E3%83%BC%E3%83%89)を受け付けることが可能です。  
 **また、New-ItemコマンドレットにはLiteralPathが存在しません。**  
 そのため、以下のような挙動を行っているようです。  
   
@@ -492,7 +492,7 @@ Modeの意味合いは以下のようになります。
   
 -LiteralPathは-Literalまたは-PsPathと記述することも可能のようです。  
   
--Pathを指定した場合は[ワイルドカード](https://qiita.com/mima_ita/items/486566b717743e9d2626#%E3%83%91%E3%83%A9%E3%83%A1%E3%83%BC%E3%82%BF%E3%81%AE%E3%83%AF%E3%82%A4%E3%83%AB%E3%83%89%E3%82%AB%E3%83%BC%E3%83%89)を受け付けます。  
+-Pathを指定した場合は[ワイルドカード](https://github.com/mima3/note/blob/master/PowerShellのメモ～PathとLiteralPathパラメータについて.md#%E3%83%91%E3%83%A9%E3%83%A1%E3%83%BC%E3%82%BF%E3%81%AE%E3%83%AF%E3%82%A4%E3%83%AB%E3%83%89%E3%82%AB%E3%83%BC%E3%83%89)を受け付けます。  
 -LiteralPathも-Pathも省略した場合に指定されたパスは-Pathと同様の動作をします。  
   
 サブフォルダの内容も取得したい場合は-Recurseを付与します。  
@@ -593,7 +593,7 @@ C:\DEV\PS\FILE\TESTDIR
   
 #### -Filterオプション  
 -Filterオプションは「*」と「!」のワイルドカードを使用してフィルタを行います。  
-このワイルドカードはいわゆるPowerShellの[ワイルドカード](https://qiita.com/mima_ita/items/486566b717743e9d2626#%E3%83%91%E3%83%A9%E3%83%A1%E3%83%BC%E3%82%BF%E3%81%AE%E3%83%AF%E3%82%A4%E3%83%AB%E3%83%89%E3%82%AB%E3%83%BC%E3%83%89)とは異なります。  
+このワイルドカードはいわゆるPowerShellの[ワイルドカード](https://github.com/mima3/note/blob/master/PowerShellのメモ～PathとLiteralPathパラメータについて.md#%E3%83%91%E3%83%A9%E3%83%A1%E3%83%BC%E3%82%BF%E3%81%AE%E3%83%AF%E3%82%A4%E3%83%AB%E3%83%89%E3%82%AB%E3%83%BC%E3%83%89)とは異なります。  
   
 では実際に以下のフォルダで-Filterと-Pathで与えられるワイルドカードのふるまいについて検証してみます。  
   
@@ -723,7 +723,7 @@ https://tfl09.blogspot.com/2012/02/get-childitem-and-theinclude-and-filter.html
 -Excludeオプションで指定した文字のパターンを除外します。  
 -LiteralPathオプションと組み合わせた場合、期待通り動作しません。  
   
-このオプションは[ワイルドカード](https://qiita.com/mima_ita/items/486566b717743e9d2626#%E3%83%91%E3%83%A9%E3%83%A1%E3%83%BC%E3%82%BF%E3%81%AE%E3%83%AF%E3%82%A4%E3%83%AB%E3%83%89%E3%82%AB%E3%83%BC%E3%83%89)を受け付けることが可能です。  
+このオプションは[ワイルドカード](https://github.com/mima3/note/blob/master/PowerShellのメモ～PathとLiteralPathパラメータについて.md#%E3%83%91%E3%83%A9%E3%83%A1%E3%83%BC%E3%82%BF%E3%81%AE%E3%83%AF%E3%82%A4%E3%83%AB%E3%83%89%E3%82%AB%E3%83%BC%E3%83%89)を受け付けることが可能です。  
 「,」区切りで複数のパターンを指定できますが、この場合は指定したパターン全てを除外します。  
   
 #### -Includeオプション  
@@ -732,7 +732,7 @@ https://tfl09.blogspot.com/2012/02/get-childitem-and-theinclude-and-filter.html
   
 このオプションは-Recurseと共に使用します。  
   
-このオプションは[ワイルドカード](https://qiita.com/mima_ita/items/486566b717743e9d2626#%E3%83%91%E3%83%A9%E3%83%A1%E3%83%BC%E3%82%BF%E3%81%AE%E3%83%AF%E3%82%A4%E3%83%AB%E3%83%89%E3%82%AB%E3%83%BC%E3%83%89)を受け付けることが可能です。  
+このオプションは[ワイルドカード](https://github.com/mima3/note/blob/master/PowerShellのメモ～PathとLiteralPathパラメータについて.md#%E3%83%91%E3%83%A9%E3%83%A1%E3%83%BC%E3%82%BF%E3%81%AE%E3%83%AF%E3%82%A4%E3%83%AB%E3%83%89%E3%82%AB%E3%83%BC%E3%83%89)を受け付けることが可能です。  
 「,」区切りで複数のパターンを指定できますが、この場合は指定したパターン全てを受け付けます。  
   
 ### シンボリックリンク、ジャンクションを含む場合  
@@ -919,7 +919,7 @@ Get-ChildItem . -Filter *.txt -Recurse | Remove-Item -WhatIf
   
 ファイルの削除は[Remove-Item](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/remove-item?view=powershell-5.1)で行います。  
   
--Pathオプションを指定した場合、[ワイルドカード](https://qiita.com/mima_ita/items/486566b717743e9d2626#%E3%83%91%E3%83%A9%E3%83%A1%E3%83%BC%E3%82%BF%E3%81%AE%E3%83%AF%E3%82%A4%E3%83%AB%E3%83%89%E3%82%AB%E3%83%BC%E3%83%89)による指定が可能になります。  
+-Pathオプションを指定した場合、[ワイルドカード](https://github.com/mima3/note/blob/master/PowerShellのメモ～PathとLiteralPathパラメータについて.md#%E3%83%91%E3%83%A9%E3%83%A1%E3%83%BC%E3%82%BF%E3%81%AE%E3%83%AF%E3%82%A4%E3%83%AB%E3%83%89%E3%82%AB%E3%83%BC%E3%83%89)による指定が可能になります。  
 -LiteralPathと-Pathオプションを省略した場合、-Pathと同じ動作をします。  
   
 -LiteralPathと-Pathオプションには削除対象のパスをコンマ区切りで複数指定可能です。  
@@ -979,7 +979,7 @@ Remove-Item lsfiltertest -Recurse
 これらを安全に削除する方法は下記を参考にしてください。  
   
 **.NETでディレクトリを消すのがこんなに面倒なわけがない**  
-https://qiita.com/mima_ita/items/f84e187d60b63074927f  
+https://github.com/mima3/note/blob/master/.NETでディレクトリを消すのがこんなに面倒なわけがない.md  
   
 # ファイルのコピー  
 ## 従来の方法  
@@ -1022,7 +1022,7 @@ Copy-Item * xxxx -Exclude t* -WhatIf
   
 -LiteralPathまた-Pathオプションにコピー元を指定します。  
   
--Pathオプションを指定した場合、[ワイルドカード](https://qiita.com/mima_ita/items/486566b717743e9d2626#%E3%83%91%E3%83%A9%E3%83%A1%E3%83%BC%E3%82%BF%E3%81%AE%E3%83%AF%E3%82%A4%E3%83%AB%E3%83%89%E3%82%AB%E3%83%BC%E3%83%89)による指定が可能になります。  
+-Pathオプションを指定した場合、[ワイルドカード](https://github.com/mima3/note/blob/master/PowerShellのメモ～PathとLiteralPathパラメータについて.md#%E3%83%91%E3%83%A9%E3%83%A1%E3%83%BC%E3%82%BF%E3%81%AE%E3%83%AF%E3%82%A4%E3%83%AB%E3%83%89%E3%82%AB%E3%83%BC%E3%83%89)による指定が可能になります。  
 -LiteralPathと-Pathオプションを省略した場合、第一引数をコピー元のパスとして取り扱います。この際、-Pathと同じ動作をします。  
   
 -LiteralPathと-Pathオプションにはコピー元のパスをコンマ区切りで複数していできます。  
@@ -1127,7 +1127,7 @@ Move-Item b*.txt ./folder2
 ファイルとフォルダの移動は[Move-Item](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/move-item?view=powershell-5.1)を用いて行います。  
   
 -LiteralPathまたは-Pathには移動元のパスを指定します。  
--Pathオプションを指定した場合、[ワイルドカード](https://qiita.com/mima_ita/items/486566b717743e9d2626#%E3%83%91%E3%83%A9%E3%83%A1%E3%83%BC%E3%82%BF%E3%81%AE%E3%83%AF%E3%82%A4%E3%83%AB%E3%83%89%E3%82%AB%E3%83%BC%E3%83%89)による指定が可能になります。  
+-Pathオプションを指定した場合、[ワイルドカード](https://github.com/mima3/note/blob/master/PowerShellのメモ～PathとLiteralPathパラメータについて.md#%E3%83%91%E3%83%A9%E3%83%A1%E3%83%BC%E3%82%BF%E3%81%AE%E3%83%AF%E3%82%A4%E3%83%AB%E3%83%89%E3%82%AB%E3%83%BC%E3%83%89)による指定が可能になります。  
 -LiteralPathと-Pathオプションを省略した場合、第一引数を移動元のパスとして取り扱います。この際、-Pathと同じ動作をします。  
   
 -Destinationオプションには移動先のパスを指定します。-Destinationオプションを省略した場合は第二引数を移動先のパスとします。  
@@ -1213,7 +1213,7 @@ Get-Content -Path C:\temp\test.txt -Encoding Byte -Raw
 -LiteralPath,-Pathオプションには表示対象のファイルパスを指定します。  
 「,」区切りで複数指定した場合、複数のファイルの内容を表示します。  
   
--Pathオプションを指定した場合、[ワイルドカード](https://qiita.com/mima_ita/items/486566b717743e9d2626#%E3%83%91%E3%83%A9%E3%83%A1%E3%83%BC%E3%82%BF%E3%81%AE%E3%83%AF%E3%82%A4%E3%83%AB%E3%83%89%E3%82%AB%E3%83%BC%E3%83%89)による指定が可能になります。  
+-Pathオプションを指定した場合、[ワイルドカード](https://github.com/mima3/note/blob/master/PowerShellのメモ～PathとLiteralPathパラメータについて.md#%E3%83%91%E3%83%A9%E3%83%A1%E3%83%BC%E3%82%BF%E3%81%AE%E3%83%AF%E3%82%A4%E3%83%AB%E3%83%89%E3%82%AB%E3%83%BC%E3%83%89)による指定が可能になります。  
   
 -LiteralPath,-Pathオプションを省略した場合は、指定したパスを-Pathオプションと同じ方法で開きます。  
   
@@ -1289,7 +1289,7 @@ Set-Content -Path .\b*.txt -Value 'Hello, World' -WhatIf
 -Literal,-Pathオプションには更新対象のファイルパスを指定します。  
 「,」区切りで複数指定した場合、複数のファイルを更新します。  
   
--Pathオプションを指定した場合、[ワイルドカード](https://qiita.com/mima_ita/items/486566b717743e9d2626#%E3%83%91%E3%83%A9%E3%83%A1%E3%83%BC%E3%82%BF%E3%81%AE%E3%83%AF%E3%82%A4%E3%83%AB%E3%83%89%E3%82%AB%E3%83%BC%E3%83%89)による指定が可能になります。  
+-Pathオプションを指定した場合、[ワイルドカード](https://github.com/mima3/note/blob/master/PowerShellのメモ～PathとLiteralPathパラメータについて.md#%E3%83%91%E3%83%A9%E3%83%A1%E3%83%BC%E3%82%BF%E3%81%AE%E3%83%AF%E3%82%A4%E3%83%AB%E3%83%89%E3%82%AB%E3%83%BC%E3%83%89)による指定が可能になります。  
   
 ワイルドカードを使用していない場合、指定のファイルが存在しなければ新規にファイルを作成します。  
   
@@ -1323,7 +1323,7 @@ Out-File c.txt -InputObject '私はかもめ' -Encoding Utf8
 [Out-File](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/out-file?view=powershell-5.1)を使用してファイルを更新可能です。  
   
 -LiteralPath,-FilePathオプションには更新対象のファイルパスを指定します。  
--FilePathには[ワイルドカード](https://qiita.com/mima_ita/items/486566b717743e9d2626#%E3%83%91%E3%83%A9%E3%83%A1%E3%83%BC%E3%82%BF%E3%81%AE%E3%83%AF%E3%82%A4%E3%83%AB%E3%83%89%E3%82%AB%E3%83%BC%E3%83%89)による指定が可能ですが、複数更新対象がある場合以下のエラーとなります。  
+-FilePathには[ワイルドカード](https://github.com/mima3/note/blob/master/PowerShellのメモ～PathとLiteralPathパラメータについて.md#%E3%83%91%E3%83%A9%E3%83%A1%E3%83%BC%E3%82%BF%E3%81%AE%E3%83%AF%E3%82%A4%E3%83%AB%E3%83%89%E3%82%AB%E3%83%BC%E3%83%89)による指定が可能ですが、複数更新対象がある場合以下のエラーとなります。  
 ![image.png](/image/86e7c7e5-244e-c3cd-0813-b60b3d38e418.png)  
 また、ドキュメントにも「Accept wildcard characters: False」とあるので指定できてもやめときましょう。  
   
@@ -1404,7 +1404,7 @@ Add-Content ./byte.txt -Encoding Byte -Value @([byte]0x30,[byte]0x31,[byte]0x32)
 -LiteralPath,-Pathオプションには更新対象のファイルパスを指定します。  
 「,」区切りで複数指定した場合、複数のファイルを更新します。  
   
--Pathオプションを指定した場合、[ワイルドカード](https://qiita.com/mima_ita/items/486566b717743e9d2626#%E3%83%91%E3%83%A9%E3%83%A1%E3%83%BC%E3%82%BF%E3%81%AE%E3%83%AF%E3%82%A4%E3%83%AB%E3%83%89%E3%82%AB%E3%83%BC%E3%83%89)による指定が可能になります。  
+-Pathオプションを指定した場合、[ワイルドカード](https://github.com/mima3/note/blob/master/PowerShellのメモ～PathとLiteralPathパラメータについて.md#%E3%83%91%E3%83%A9%E3%83%A1%E3%83%BC%E3%82%BF%E3%81%AE%E3%83%AF%E3%82%A4%E3%83%AB%E3%83%89%E3%82%AB%E3%83%BC%E3%83%89)による指定が可能になります。  
   
 ワイルドカードを使用していない場合、指定のファイルが存在しなければ新規にファイルを作成します。  
   
@@ -1495,7 +1495,7 @@ Get-ChildItem * -File | Clear-Content
 -LiteralPath,-Pathオプションには表示対象のファイルパスを指定します。  
 「,」区切りで複数指定した場合、複数のファイルの内容を表示します。  
   
--Pathオプションを指定した場合、[ワイルドカード](https://qiita.com/mima_ita/items/486566b717743e9d2626#%E3%83%91%E3%83%A9%E3%83%A1%E3%83%BC%E3%82%BF%E3%81%AE%E3%83%AF%E3%82%A4%E3%83%AB%E3%83%89%E3%82%AB%E3%83%BC%E3%83%89)による指定が可能になります。  
+-Pathオプションを指定した場合、[ワイルドカード](https://github.com/mima3/note/blob/master/PowerShellのメモ～PathとLiteralPathパラメータについて.md#%E3%83%91%E3%83%A9%E3%83%A1%E3%83%BC%E3%82%BF%E3%81%AE%E3%83%AF%E3%82%A4%E3%83%AB%E3%83%89%E3%82%AB%E3%83%BC%E3%83%89)による指定が可能になります。  
   
 操作対象のパスはパイプラインの入力から指定も可能です。  
   
@@ -1560,7 +1560,7 @@ Set-ItemProperty  -Path *.txt -Name IsReadOnly -Value $True -Confirm
 -LiteralPath,-Pathオプションには表示対象のファイルパスを指定します。  
 「,」区切りで複数指定した場合、複数のファイルの内容を表示します。  
   
--Pathオプションを指定した場合、[ワイルドカード](https://qiita.com/mima_ita/items/486566b717743e9d2626#%E3%83%91%E3%83%A9%E3%83%A1%E3%83%BC%E3%82%BF%E3%81%AE%E3%83%AF%E3%82%A4%E3%83%AB%E3%83%89%E3%82%AB%E3%83%BC%E3%83%89)による指定が可能になります。  
+-Pathオプションを指定した場合、[ワイルドカード](https://github.com/mima3/note/blob/master/PowerShellのメモ～PathとLiteralPathパラメータについて.md#%E3%83%91%E3%83%A9%E3%83%A1%E3%83%BC%E3%82%BF%E3%81%AE%E3%83%AF%E3%82%A4%E3%83%AB%E3%83%89%E3%82%AB%E3%83%BC%E3%83%89)による指定が可能になります。  
   
 操作対象のパスはパイプラインの入力から指定も可能です。  
   
@@ -1614,7 +1614,7 @@ SetOwnerメソッドには[NTAccount](https://docs.microsoft.com/en-us/dotnet/ap
 その後、[Set-Acl](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-acl?view=powershell-5.1)を使用して所有者を変更したACLオブジェクトを指定のパスに設定します。  
   
 Set-AclのLiteralPath、Pathオプションはコンマ区切りで複数のファイルを指定することが可能です。  
-また、-Pathオプションを指定した場合、[ワイルドカード](https://qiita.com/mima_ita/items/486566b717743e9d2626#%E3%83%91%E3%83%A9%E3%83%A1%E3%83%BC%E3%82%BF%E3%81%AE%E3%83%AF%E3%82%A4%E3%83%AB%E3%83%89%E3%82%AB%E3%83%BC%E3%83%89)による指定が可能になります。  
+また、-Pathオプションを指定した場合、[ワイルドカード](https://github.com/mima3/note/blob/master/PowerShellのメモ～PathとLiteralPathパラメータについて.md#%E3%83%91%E3%83%A9%E3%83%A1%E3%83%BC%E3%82%BF%E3%81%AE%E3%83%AF%E3%82%A4%E3%83%AB%E3%83%89%E3%82%AB%E3%83%BC%E3%83%89)による指定が可能になります。  
   
   
   
@@ -1667,7 +1667,7 @@ Select-String -Path *.txt -Pattern "a" -NotMatch
 -LiteralPath,-Pathオプションには表示対象のファイルパスを指定します。  
 「,」区切りで複数指定した場合、複数のファイルの内容を表示します。  
   
--Pathオプションを指定した場合、[ワイルドカード](https://qiita.com/mima_ita/items/486566b717743e9d2626#%E3%83%91%E3%83%A9%E3%83%A1%E3%83%BC%E3%82%BF%E3%81%AE%E3%83%AF%E3%82%A4%E3%83%AB%E3%83%89%E3%82%AB%E3%83%BC%E3%83%89)による指定が可能になります。  
+-Pathオプションを指定した場合、[ワイルドカード](https://github.com/mima3/note/blob/master/PowerShellのメモ～PathとLiteralPathパラメータについて.md#%E3%83%91%E3%83%A9%E3%83%A1%E3%83%BC%E3%82%BF%E3%81%AE%E3%83%AF%E3%82%A4%E3%83%AB%E3%83%89%E3%82%AB%E3%83%BC%E3%83%89)による指定が可能になります。  
   
 操作対象のパスはパイプラインの入力から指定も可能です。  
   
@@ -1842,7 +1842,7 @@ Test-Path -Path c:\dev\ps\file\grep\* -Exclude *.txt
 -Literal,-Pathオプションには対象のファイルパスを指定します。  
 「,」区切りで複数指定した場合、複数のファイルの内容を検査します。  
   
--Pathオプションを指定した場合、[ワイルドカード](https://qiita.com/mima_ita/items/486566b717743e9d2626#%E3%83%91%E3%83%A9%E3%83%A1%E3%83%BC%E3%82%BF%E3%81%AE%E3%83%AF%E3%82%A4%E3%83%AB%E3%83%89%E3%82%AB%E3%83%BC%E3%83%89)による指定が可能になります。  
+-Pathオプションを指定した場合、[ワイルドカード](https://github.com/mima3/note/blob/master/PowerShellのメモ～PathとLiteralPathパラメータについて.md#%E3%83%91%E3%83%A9%E3%83%A1%E3%83%BC%E3%82%BF%E3%81%AE%E3%83%AF%E3%82%A4%E3%83%AB%E3%83%89%E3%82%AB%E3%83%BC%E3%83%89)による指定が可能になります。  
   
 -Filter,-Include,-Excludeを使用してさらに絞り込むこともできます。  
   

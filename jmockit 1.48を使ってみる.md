@@ -1641,4 +1641,4 @@ http://jmockit.github.io/tutorial/CodeCoverage.html
 なお、以下でpowermock+mockitoも調べてみました。  
   
 **powermock-mockito2-2.0.2を使ってみる**  
-https://qiita.com/mima_ita/items/3574a03b3379fb5f3c3c  
+https://github.com/mima3/note/blob/master/powermock-mockito2-2.0.2を使ってみる.md  

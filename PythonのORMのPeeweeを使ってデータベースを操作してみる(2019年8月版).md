@@ -604,7 +604,7 @@ db.create_tables([Person, Pet], True)
 APSWについての詳細とインストール方法は下記を参照してください。  
   
 **SQLiteが本気を出せるPythonのライブラリのAPSWを使用してみる**  
-https://qiita.com/mima_ita/items/711f4324da14cbd7741c  
+https://github.com/mima3/note/blob/master/SQLiteが本気を出せるPythonのライブラリのAPSWを使用してみる.md  
   
 下記でインストールできます。  
   

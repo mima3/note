@@ -156,7 +156,7 @@ End Function
   
 ## VoiceRoid.cls  
 VOICEROIDE2で音声ファイルを作成するための処理です。  
-このあたりは[二番煎じ](https://qiita.com/mima_ita/items/d4655de865f30bb51c65#vba--uiautomation%E3%81%A7%EF%BD%B1%EF%BD%B6%EF%BE%88%EF%BE%81%EF%BD%AC%EF%BE%9D%EF%BD%B6%EF%BE%9C%EF%BD%B2%EF%BD%B2%EF%BE%94%EF%BD%AF%EF%BE%80%EF%BD%B0)になっています。  
+このあたりは[二番煎じ](https://github.com/mima3/note/blob/master/RPA九人衆による「ｱｶﾈﾁｬﾝｶﾜｲｲﾔｯﾀ」の自動化.md#vba--uiautomation%E3%81%A7%EF%BD%B1%EF%BD%B6%EF%BE%88%EF%BE%81%EF%BD%AC%EF%BE%9D%EF%BD%B6%EF%BE%9C%EF%BD%B2%EF%BD%B2%EF%BE%94%EF%BD%AF%EF%BE%80%EF%BD%B0)になっています。  
   
   
 **VoiceRoid.cls**  

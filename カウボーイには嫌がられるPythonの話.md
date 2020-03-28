@@ -21,7 +21,7 @@ Effective Pythonの項目2「PEP8 スタイルガイドに従う」がありま�
 なお、5年ほどまえ、こんな記事を書きましたが、さすがに古いです。  
   
 **pep8を用いてpythonのコードのスタイルをチェックする**  
-https://qiita.com/mima_ita/items/af2b53b3a33006db23ff  
+https://github.com/mima3/note/blob/master/pep8を用いてpythonのコードのスタイルをチェックする.md  
   
   
 ## pylintでPEP8をチェックする  

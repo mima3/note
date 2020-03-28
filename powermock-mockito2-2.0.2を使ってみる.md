@@ -1,5 +1,5 @@
 # はじめに  
-以前でJavaの[jmockit](https://qiita.com/mima_ita/items/4e48a24561960851e3fa)を調べてみたんですが、ちょっと合わないのでプランBとしてMockitoとPowermockを調べた際のメモになります。  
+以前でJavaの[jmockit](https://github.com/mima3/note/blob/master/jmockit 1.48を使ってみる.md)を調べてみたんですが、ちょっと合わないのでプランBとしてMockitoとPowermockを調べた際のメモになります。  
   
 **Mockito**  
 https://site.mockito.org/  

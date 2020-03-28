@@ -410,13 +410,13 @@ saveText $mainForm 'ｱｶﾈﾁｬﾝｶﾜｲｲﾔｯﾀ' $fileName
   
 ・PowerShell中にC#のコードを埋め込んでいる理由は「名前を付けて保存」ダイアログを操作するためです。  
 　下記を参照してください。  
-　＞[PowerShellのUIAutomationは複雑怪奇なり](https://qiita.com/mima_ita/items/3f2aa49fceca7496c587)  
+　＞[PowerShellのUIAutomationは複雑怪奇なり](https://github.com/mima3/note/blob/master/PowerShellのUIAutomationは複雑怪奇なり.md)  
   
 ・using等の新しい機能は使わないようにしているのでPowershell2.0あたりでも動くと思います（未検証）  
   
 ・PowerShellで画像認識をやりたい場合は以下を参照してください。  
 　**C#やPowerShellで画面上の特定の画像の位置をクリックする方法**  
-　https://qiita.com/mima_ita/items/f7d2c38767bda8b35cbd  
+　https://github.com/mima3/note/blob/master/C#やPowerShellで画面上の特定の画像の位置をクリックする方法.md  
   
 ## WinAppDriverでｱｶﾈﾁｬﾝｶﾜｲｲﾔｯﾀｰ  
 Seleniumライクな操作でWindowsアプリを操作するためにマイクロソフトが開発したツールです。Seleniumの操作とほぼ同じなので、学習コストは低くなることが期待できます。  
@@ -1004,7 +1004,7 @@ reload(sys)
 sys.setdefaultencoding('utf-8')
 ```  
   
-・その他詳細は[ココにまとめ](https://qiita.com/mima_ita/items/8f653042ac9140e5023f)ました  
+・その他詳細は[ココにまとめ](https://github.com/mima3/note/blob/master/Sikulix1.1.4を使って画面の自動操作をする.md)ました  
   
   
 ## Rocket Mouose Proでｱｶﾈﾁｬﾝｶﾜｲｲﾔｯﾀｰ  

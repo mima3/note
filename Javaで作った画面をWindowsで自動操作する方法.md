@@ -2,7 +2,7 @@
 たいていのWindowsの画面の自動操作は以下で紹介した方法で可能になっています。  
   
 **RPA九人衆による「ｱｶﾈﾁｬﾝｶﾜｲｲﾔｯﾀ」の自動化**  
-https://qiita.com/mima_ita/items/d4655de865f30bb51c65  
+https://github.com/mima3/note/blob/master/RPA九人衆による「ｱｶﾈﾁｬﾝｶﾜｲｲﾔｯﾀ」の自動化.md  
   
 実は厄介なケースがあって、それはJavaで画面を作っているケースです。  
 今回はJavaで作られた画面を例に自動操作が可能かどうか検討してみましょう。  
