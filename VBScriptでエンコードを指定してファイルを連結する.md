@@ -3,7 +3,7 @@ VBScriptでエンコードを指定してファイルを連結するスクリプ
   
 ## スクリプト  
   
-**:jointext.vbs**  
+**jointext.vbs**  
 ```vbnet:jointext.vbs
 
 '* 指定ディレクトリの検索を行う

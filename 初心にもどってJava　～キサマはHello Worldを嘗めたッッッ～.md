@@ -16,7 +16,7 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.202-b08, mixed mode)
 いつものようにHello Worldを作成して実行します。  
 まずテキストエディタでjavaのコードを作成します。  
   
-**:HelloWorld.java**  
+**HelloWorld.java**  
 ```java:HelloWorld.java
 public class HelloWorld {
 	public static void main(String[] args) {
@@ -361,7 +361,7 @@ https://en.wikipedia.org/wiki/Comparison_of_hex_editors
 構造体の定義をBZEditorの実行ファイルと同じフォルダにあるBz.defで定義できます。  
 なお、固定サイズの構造体しか指定できませんので完璧に解析できません。  
   
-**:Bz.def**  
+**Bz.def**  
 ```c:Bz.def
 struct ClassFile_1 {
        BYTE magic[4];
@@ -847,7 +847,7 @@ https://download.java.net/openjdk/jdk8u40/ri/openjdk-8u40-src-b25-10_feb_2015.zi
   
 このコード中でPrintCompilationを付与した際に出力される内容を作成していると考えられる下記のコードをみてみます。  
   
-**:openjdk\hotspot\src\share\vm\compiler\compileBroker.cpp**  
+**openjdk\hotspot\src\share\vm\compiler\compileBroker.cpp**  
 ```c++:openjdk\hotspot\src\share\vm\compiler\compileBroker.cpp
 // ------------------------------------------------------------------
 // CompileTask::print_compilation_impl
@@ -957,7 +957,7 @@ java -XX:+UnlockDiagnosticVMOptions -XX:+TraceClassLoading -XX:+PrintAssembly -X
   
 カレントディレクトリにlogファイルが作成されて、どんなマシンコードを作ったか閲覧できます。  
   
-**:出力例**  
+**出力例**  
 ```text:出力例
 Decoding compiled method 0x0000000002d00750:
 Code:
@@ -1076,7 +1076,7 @@ BytecodeInterpreter::run(interpreterState istate) {
 これはメソッド中の全てのバイトコードを実行するまでwhileでループし、命令コードに合わせてCASE区で分岐されて実行されています。  
 たとえばgetstaticは以下のような実装になっています。  
   
-**:getstatic**  
+**getstatic**  
 ```cpp:getstatic
       CASE(_getfield):
       CASE(_getstatic):

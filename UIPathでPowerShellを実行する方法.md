@@ -8,7 +8,7 @@ UiPathでPowerShellを起動することを考えてみます。
   
 今回は以下のようなPowerShellを実行する方法を考えてみます。  
   
-**:list.ps1**  
+**list.ps1**  
 ```powershell:list.ps1
 Param(
     [String]$Path

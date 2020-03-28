@@ -21,7 +21,7 @@ https://qiita.com/yoichiro6642/items/a951178fbd2d82256d68
 StackOverflowのAPIは1日1万回程度の上限があるので、一旦、DBに格納します。  
 以下のプログラムは特定のタグを作成日順にソートして取得するものになります。  
   
-**:stackoverflow_create.py**  
+**stackoverflow_create.py**  
 ```python:stackoverflow_create.py
 import http.client
 import json
@@ -112,7 +112,7 @@ stackoverflow_setting.db.close()
 
 ```  
   
-**:stackoverflow_setting.py**  
+**stackoverflow_setting.py**  
 ```python:stackoverflow_setting.py
 from peewee import *
 
@@ -126,7 +126,7 @@ def connectDb(tag):
 
 ```  
   
-**:stackoverflow_db.py**  
+**stackoverflow_db.py**  
 ```python:stackoverflow_db.py
 from peewee import *
 import dateutil.parser
@@ -195,7 +195,7 @@ pythonとかjavascriptとかを取得すると当然の権利のように1万リ
 ### 特定期間の質問数を検索する。  
 作成したDBから特定期間の質問数がいくつあったかを調べるスクリプトは以下のようになります。  
   
-**:stackoverflow_hist.py**  
+**stackoverflow_hist.py**  
 ```python:stackoverflow_hist.py
 import sys
 import codecs
@@ -313,7 +313,7 @@ wshとvbscriptは10%以上のマイナス成長を続けています。
   
 なお、同時に着けられたタグのトップ30は以下のようになります。  
   
-**:使用SQL**  
+**使用SQL**  
 ```sql:使用SQL
 select name, count(name) as cnt from tagrelations group by name order by cnt desc
 ```  

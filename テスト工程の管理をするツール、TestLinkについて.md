@@ -101,12 +101,12 @@ Account Setting画面が表示されるのでLocaleで「Japanese」を選択後
 ### 再起動とシャットダウンの方法  
 以下のコマンドで再起動とシャットダウンが行えます。  
   
-**:再起動**  
+**再起動**  
 ```shell:再起動
 sudo reboot
 ```  
   
-**:シャットダウン**  
+**シャットダウン**  
 ```shell:シャットダウン
 sudo poweroff
 ```  
@@ -487,7 +487,7 @@ https://ja.osdn.net/projects/ipafonts/releases/46148
   
 3 config.inc.phpのcharts_font_path を変更してフォントを切り替える  
   
-**:/opt/bitnami/apps/testlink/htdocs/config.inc.php**  
+**/opt/bitnami/apps/testlink/htdocs/config.inc.php**  
 ```php:/opt/bitnami/apps/testlink/htdocs/config.inc.php
 /**
  * fonts set used to draw charts

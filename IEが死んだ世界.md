@@ -137,7 +137,7 @@ ContentScriptは以下のようになります。
   
 backgroundの処理は以下のようになります。  
   
-**:content.js**  
+**content.js**  
 ```javascript:content.js
 window.addEventListener("load", function(event) {
   var button=document.createElement("button");
@@ -175,7 +175,7 @@ content_scriptsからのメッセージをNativeメッセージでEXEに渡し�
 Exeから受信したメッセージをcontent_scriptsに渡します。  
   
   
-**:background.js**  
+**background.js**  
 ```javascript:background.js
 
 var port = null;
@@ -237,7 +237,7 @@ ClickOnceかブラウザいずれかに倒して実装するかなさそうで�
   
 ![image.png](/image/7f0c29ca-c52c-d13e-a3f5-ac960a9f0e37.png)  
   
-**:test.hta**  
+**test.hta**  
 ```html:test.hta
 <html>
 <head>

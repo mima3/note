@@ -26,7 +26,7 @@ editValue.SetValue("csharsssssp");
 C#側は上記のコードで期待通り動作します。  
 次にPowerShellでC#と同様の実装をして実行してみます。  
   
-**:test1.ps1**  
+**test1.ps1**  
 ```powershell:test1.ps1
 Add-Type -AssemblyName UIAutomationClient
 Add-Type -AssemblyName UIAutomationTypes
@@ -253,7 +253,7 @@ $root = [UIAutTools.Element]::RootElement
 これは簡単にいうとPowerShellの型の取り扱いの問題で発生しているっぽいから、C#で記載してしちゃえばいいじゃないという考えです。  
 この考えを取り入れて最初のコードを直した物が以下になります。  
   
-**:test3.ps1**  
+**test3.ps1**  
 ```powershell:test3.ps1
 Add-Type -AssemblyName UIAutomationClient
 Add-Type -AssemblyName UIAutomationTypes
@@ -297,7 +297,7 @@ $txt.SetValue("Test3")
 そこで、さらに操作対象のウィンドウをFindFirstで取得するところまでC#で記載します。  
 ※ちょうどC#でUIAutomationClientsideProvidersResourceまで読み込んだ時点です。  
   
-**:test4.ps1**  
+**test4.ps1**  
 ```powershell:test4.ps1
 Add-Type -AssemblyName UIAutomationClient
 Add-Type -AssemblyName UIAutomationTypes

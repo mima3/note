@@ -136,7 +136,7 @@ access_token=XXX&expires=5183979
 ## PythonでBottle+Beakerでセッションを使用する方法  
 以下にbottleをCGIで動作した場合のサンプルを以下に示す。  
   
-**:index.cgi**  
+**index.cgi**  
 ```py:index.cgi
 from bottle import run
 from application import app
@@ -153,7 +153,7 @@ run(appSession, server='cgi')
 
 ```  
   
-**:application.py**  
+**application.py**  
 ```py:application.py
 from bottle import get, post, template, Bottle, response, request, redirect
 import os

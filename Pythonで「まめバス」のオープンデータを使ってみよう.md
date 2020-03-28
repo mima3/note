@@ -179,7 +179,7 @@ https://github.com/mima3/bus_data/blob/master/data/kusatu.json
 今回は圧縮済みのデータと、圧縮していないデータが混ざっています。  
 そこで、設定ファイルのdownloadにてダウンロード後の処理を記載しています。  
   
-**:data/kusatu.json**  
+**data/kusatu.json**  
 ```json:data/kusatu.json
     "download" : {
         "http://www.city.kusatsu.shiga.jp/kurashi/kotsudorokasen/mamebus/opendata.files/M01_stop_times.xlsx" : "save_local",
@@ -203,7 +203,7 @@ CSVとExcelの表記のゆれに対応します。
   
  **バス停名の変換**   
   
-**:data/kusatu.json**  
+**data/kusatu.json**  
 ```json:data/kusatu.json
     "convert_rule" : {
         "山田小学校前": "山田小学校",
@@ -215,7 +215,7 @@ CSVとExcelの表記のゆれに対応します。
 ```  
   
   
-**:bus_data_parser.py**  
+**bus_data_parser.py**  
 ```py:bus_data_parser.py
 def convert_bus_stop_name(rule, bus_stops):
     for bus_stop in bus_stops:
@@ -225,7 +225,7 @@ def convert_bus_stop_name(rule, bus_stops):
   
  **改行の除去・半角を全角にする**   
   
-**:bus_data_parser.py**  
+**bus_data_parser.py**  
 ```py:bus_data_parser.py
 def get_bus_timetable(wbname, sheetname, stop_offset_row, stop_offset_col, stopdirection, timetable_offset_row, timetable_offset_col, chk_func):
     xls = xlsReader(wbname, sheetname)
@@ -356,7 +356,7 @@ check_funcは省略可能な項目で、時刻表を１行読み込むたびに�
   
 ここでは、下記のように特定の列の値をチェックして、無効なデータであれば、Falseを返し行を無視します。これは土曜日の判定に使用しています。  
   
-**:import.py**  
+**import.py**  
 ```py:import.py
 class BusParserCallBack(object):
     def check_shoutengai_saturday(self, workbook, sheet, busrow, buscol, item):
@@ -388,7 +388,7 @@ select AsText(Transform(GeomFromText('POINT(-4408.916645 -108767.765479)', 2448)
   
 pythonのコードでは次のようになります。  
   
-**:bus_db.py**  
+**bus_db.py**  
 ```py:bus_db.py
         for timetable in timetables:
             database_proxy.get_conn().execute(

@@ -18,7 +18,7 @@ VisualStudio Community 2013
   
 2.UnitTestを記述する。  
   
-**:UnitTest1.cs**  
+**UnitTest1.cs**  
 ```csharp:UnitTest1.cs
 using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -223,7 +223,7 @@ https://msdn.microsoft.com/ja-jp/library/microsoft.visualstudio.testtools.unitte
   
 この内容は、コマンドラインで実行した場合に作成された「.trx」ファイルにも記録されている。  
   
-**:テスト結果.trx**  
+**テスト結果.trx**  
 ```xml:テスト結果.trx
 <TestRun>
   <Results>
@@ -361,7 +361,7 @@ System.Dataが必要なので参照に追加しておくこと。
 ### もっともシンプルな例  
 1.以下のようなtest.csvファイルを用意する。  
   
-**:test.csv**  
+**test.csv**  
 ```csv:test.csv
 a,b,result
 1,2,3
@@ -711,7 +711,7 @@ PM> Install-Package Moq
 ```  
   
 ### 簡単なサンプル  
-**:テスト対象**  
+**テスト対象**  
 ```csharp:テスト対象
 using System;
 using System.Collections.Generic;
@@ -757,7 +757,7 @@ namespace CalcLib
 既定のDataCalc をモックを使用して実装する。  
 モックで使うメソッドは、virtual でなければならない。  
   
-**:テストコード**  
+**テストコード**  
 ```cshar:テストコード
         [TestMethod]
         public void モックのテスト()

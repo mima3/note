@@ -1,7 +1,7 @@
 # 目的  
 VOICEROID2の琴葉茜ちゃんをPowerShellでしゃべらせます。  
   
-![000097.jpg](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/8675bff0-29cf-c440-6e25-2edb70c6a405.jpeg)  
+![000097.jpg](/image/8675bff0-29cf-c440-6e25-2edb70c6a405.jpeg)  
   
 この際、なるべくどこでも動くように、UIAutoMationを使用します。  
   
@@ -89,7 +89,7 @@ PowerShellでいきなり実装するのは辛いので、まずC#で実装し�
 ## PowerShellでの実装  
 続いてPowerShellで実装します。  
   
-**:voiceroid.ps1**  
+**voiceroid.ps1**  
 ```PowerShell:voiceroid.ps1
 $message = $Args[0]
 $target = Get-Process | Where-Object {$_.MainWindowTitle.StartsWith("VOICEROID2") -eq $True} | Select-Object 

@@ -31,7 +31,7 @@ $htdigest -c /var/git/git.htdigest Git admin
   
 /etc/apache2/sites-available/default  
   
-**:/etc/apache2/sites-available/default**  
+**/etc/apache2/sites-available/default**  
 ```text:/etc/apache2/sites-available/default
         SetENV GIT_PROJECT_ROOT /var/git
         SetENV GIT_HTTP_EXPORT_ALL
@@ -106,7 +106,7 @@ To http://debian/git/test
   
 gitのリポジトリ中のpost-receiveフックを作成する。  
   
-**:/var/git/test.git/hooks/post-receive**  
+**/var/git/test.git/hooks/post-receive**  
 ```text:/var/git/test.git/hooks/post-receive
 # !/bin/sh
 wget  http://localhost/redmine/sys/fetch_changesets?key=作成したAPIキー

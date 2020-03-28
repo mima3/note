@@ -36,7 +36,7 @@ http://qiita.com/Quramy/items/578efec667267acf6871
 もし、LiquidFunに付属するthree.jsでなく、最新のthree.jsを用いてサンプルを動作させる場合には注意があります。  
 renderer.js中のaddAttributeの呼び出し方法が古いので以下のように修正する必要があります。  
   
-**:liquidfun-1.1.0/liquidfun/Box2D/lfjs/testbed/renderer.js**  
+**liquidfun-1.1.0/liquidfun/Box2D/lfjs/testbed/renderer.js**  
 ```js:liquidfun-1.1.0/liquidfun/Box2D/lfjs/testbed/renderer.js
 function Renderer() {
   // init large buffer geometry
@@ -234,7 +234,7 @@ private:
   
 この構造体のweightを取得するJavaScriptコードは次のようになります。  
   
-**:lfjs/jsBindings/Particle/b2ParticleSystem.js**  
+**lfjs/jsBindings/Particle/b2ParticleSystem.js**  
 ```js:lfjs/jsBindings/Particle/b2ParticleSystem.js
 /**@constructor*/
 function b2ParticleContact(ptr) {
@@ -255,7 +255,7 @@ b2ParticleContact.prototype.GetWeight = function() {
   
 まず、lfjs/jsBindings/jsBindings.cppには次のようにコメントアウトされた行があるのでコレを有効にします。  
   
-**:lfjs/jsBindings/jsBindings.cpp**  
+**lfjs/jsBindings/jsBindings.cpp**  
 ```cpp:lfjs/jsBindings/jsBindings.cpp
 // TODO clean all of this up, and/or make it auto generated from the
 // header files

@@ -85,14 +85,14 @@ loadExtensionを用いて拡張モジュールを使う場合、php.iniを修正
   
 Windowsの場合はデフォルトでSQLite3が無効になっている場合もあるのでphp.iniのコメントアウトを外してください。  
   
-**:php.ini**  
+**php.ini**  
 ```ini:php.ini
 extension=php_sqlite3.dll
 ```  
   
 次に拡張モジュールを格納しているフォルダを指定します。  
   
-**:php.ini**  
+**php.ini**  
 ```ini:php.ini
 [sqlite3]
 sqlite3.extension_dir =C:\tool\spatialite\mod_spatialite-4.2.0-win-x86
@@ -273,7 +273,7 @@ SELECT load_extension("mod_spatialite", "sqlite3_modspatialite_init")'
   
 https://github.com/php/php-src/blob/PHP-5.5/ext/sqlite3/sqlite3.c  
   
-**:sqlite3.c**  
+**sqlite3.c**  
 ```c:sqlite3.c
 PHP_METHOD(sqlite3, loadExtension)
 {
@@ -375,7 +375,7 @@ sqlite3_modspatialite_initという文字をバイナリエディタで検索し
 ### sqliteのコードで「\」も考慮するようにする。  
 そもそも論として、sqlite3.cを以下のように修正すれば「\」でもファイル名のみを抽出します。  
   
-**:sqlite3.c**  
+**sqlite3.c**  
 ```c:sqlite3.c
   if( xInit==0 && zProc==0 ){
     int iFile, iEntry, c;

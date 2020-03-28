@@ -29,7 +29,7 @@ Jinja2    2.10.3
 # クライアントの実装例  
 まず、WordPressを操作するモジュールを用意します。  
   
-**:wordpress_ctrl.py**  
+**wordpress_ctrl.py**  
 ```python:wordpress_ctrl.py
 """WORDPRESSの操作"""
 import json

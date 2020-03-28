@@ -339,7 +339,7 @@ print (template.render(data))
 ##### 手動エスケープ  
 手動エスケープは[escapeフィルタ](https://jinja.palletsprojects.com/en/2.10.x/templates/#escape)をテンプレートの変数に指定する方法です。  
   
-**:templates/002.tpl**  
+**templates/002.tpl**  
 ```jinja:templates/002.tpl
 <!DOCTYPE html>
 <html lang="en">

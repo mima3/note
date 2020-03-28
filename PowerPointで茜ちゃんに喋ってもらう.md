@@ -45,7 +45,7 @@ https://github.com/mima3/akanechan_powerpoint
 ## VbaUiAuto.cls  
 UIAutomationを操作する処理をまとめたものになります。  
   
-**:VbaUiAuto.cls**  
+**VbaUiAuto.cls**  
 ```vb:VbaUiAuto.cls
 Option Explicit
 '* UIAutomationClientを参照設定してください。
@@ -159,7 +159,7 @@ VOICEROIDE2で音声ファイルを作成するための処理です。
 このあたりは[二番煎じ](https://qiita.com/mima_ita/items/d4655de865f30bb51c65#vba--uiautomation%E3%81%A7%EF%BD%B1%EF%BD%B6%EF%BE%88%EF%BE%81%EF%BD%AC%EF%BE%9D%EF%BD%B6%EF%BE%9C%EF%BD%B2%EF%BD%B2%EF%BE%94%EF%BD%AF%EF%BE%80%EF%BD%B0)になっています。  
   
   
-**:VoiceRoid.cls**  
+**VoiceRoid.cls**  
 ```vb:VoiceRoid.cls
 Option Explicit
 Private vua As VbaUiAuto
@@ -213,7 +213,7 @@ End Sub
 ## Main.bas  
 スライドショーのノート解析～VOICEROIDE2で作成したWavファイルの埋め込みを行っています。  
   
-**:Main.bas**  
+**Main.bas**  
 ```vb:Main.bas
 Option Explicit
 

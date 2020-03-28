@@ -203,7 +203,7 @@ skl拡張子としてエクスポートをします。
   
 たとえば以下のスクリプトを含むsklを作成します。  
   
-**:myModule.skl**  
+**myModule.skl**  
 ```python:myModule.skl
 from sikuli import *
 def myFunction(s):
@@ -257,7 +257,7 @@ GitHub版のコードをコンパイルして実行すると以下のような�
 #### Sikulix Global Options  
 Settingsの初期値を設定できます。  
   
-**:SikulixOptions.txt**  
+**SikulixOptions.txt**  
 ```text:SikulixOptions.txt
 # key = value
 Settings.LogTime = True
@@ -297,7 +297,7 @@ pythonの指定の目的がいまいちわかりませんでした。
   
 addImportPathを使わなくても以下のように設定することで使用することができるようになります。  
   
-**:sites.txt**  
+**sites.txt**  
 ```text:sites.txt
 # add absolute paths one per line, that point to other directories/jars,
 # where importable modules (Jython, plain Python, SikuliX scripts, ...) can be found.
@@ -1069,7 +1069,7 @@ set sikulixadb=C:\Program Files (x86)\Android\android-sdk\platform-tools\adb.exe
 Xperia SO-02Kの実機だと固まりました。  
 この場合、ADBDevice.javaのcaptureDeviceScreenMatを以下のように修正してむりやり動かします。  
   
-**:ADBDevice.java**  
+**ADBDevice.java**  
 ```java:ADBDevice.java
   public Mat captureDeviceScreenMat(int x, int y, int actW, int actH) {
 // 略
@@ -1176,7 +1176,7 @@ https://sikulix-2014.readthedocs.io/en/latest/scripting.html
   
 以下の例ではPowerShellの標準出力をUTF-8にして無理やり日本語を扱えるようにしています。  
   
-**:test.ps1**  
+**test.ps1**  
 ```powershell:test.ps1
 chcp 65001
 ls
@@ -1195,7 +1195,7 @@ print RunTime.get().getLastCommandResult().encode('utf-8').replace('ディレク
   
 このコードはlsの結果で表示される「ディレクトリ」という文字列をpythonの処理で「フォルダ」に変換してコンソールに出力しています。  
   
-**:出力**  
+**出力**  
 ```text:出力
 ディレクトリ: C:\tool\sikulix 
 Mode LastWriteTime Length Name 

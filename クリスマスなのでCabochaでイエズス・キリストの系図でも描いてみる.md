@@ -110,7 +110,7 @@ Cabochaでは-uオプションでユーザ辞書のパスを指定すること�
   
 ## 家系図作成用のコード  
   
-**:bible.py**  
+**bible.py**  
 ```py:bible.py
 # !/usr/bin/python
 # -*- coding: utf-8 -*-

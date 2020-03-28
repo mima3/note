@@ -25,7 +25,7 @@ Javaで画面を作成する主な方法としてSwingを使用する場合と�
 ![image.png](/image/d1c4e83e-6deb-7453-15bd-09b0ea90201e.png)  
   
   
-**:ToDoListPane.java**  
+**ToDoListPane.java**  
 ```java:ToDoListPane.java
 package SwingSample;
 import java.awt.BorderLayout;
@@ -86,7 +86,7 @@ https://github.com/mima3/testjavagui/tree/master/java/Swing001
 JavaFxでも単純な画面を作成します。  
 ![image.png](/image/29bbd2cd-5e4b-9206-c825-3d35da0c7d1d.png)  
   
-**:Main.fxml**  
+**Main.fxml**  
 ```xml:Main.fxml
 <?xml version="1.0" encoding="UTF-8"?>
 
@@ -110,7 +110,7 @@ JavaFxでも単純な画面を作成します。
 </AnchorPane>
 ```  
   
-**:Controler.java**  
+**Controler.java**  
 ```java:Controler.java
 package ctrl;
 import java.net.URL;

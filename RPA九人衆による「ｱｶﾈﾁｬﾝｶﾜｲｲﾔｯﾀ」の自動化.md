@@ -52,7 +52,7 @@ https://github.com/mima3/rpa_akanechan/tree/master/vba(UIAutomationCom)
 ![image.png](/image/618a5695-a0f4-4f3e-8229-6ae8806edaa1.png)  
   
   
-**:Module1**  
+**Module1**  
 ```vb:Module1
 Option Explicit
 
@@ -101,7 +101,7 @@ Public Sub Kawaii()
 End Sub
 ```  
   
-**:VoiceRoid.cls**  
+**VoiceRoid.cls**  
 ```vb:VoiceRoid.cls
 Option Explicit
 Private uia As UIAutomationClient.CUIAutomation
@@ -228,7 +228,7 @@ PowerShellさえ入っているWin7以降ならOfficeすら不要で自動操作
 ### PowerShellでの実装  
 https://github.com/mima3/rpa_akanechan/tree/master/powershell(UIAutomation.NET)  
   
-**:kawaii.ps1**  
+**kawaii.ps1**  
 ```PowerShell:kawaii.ps1
 Add-Type -AssemblyName UIAutomationClient
 Add-Type -AssemblyName UIAutomationTypes
@@ -454,7 +454,7 @@ NuGetで取得した資材。
 　・Appium.WebDriver v3.0.0.2  
   
   
-**:**  
+****  
 ```csharp:
 using System;
 using System.Collections.Generic;
@@ -611,7 +611,7 @@ TestAssistantというツールが提供されており、画面の要素の調�
 #### 同一アプリに対する操作について  
 同一アプリに複数のプロセスがFriendlyを使用して操作すると以下のエラーを出力してエラーになります。  
   
-**:エラー内容**  
+**エラー内容**  
 ```txt:エラー内容
 型 'Codeer.Friendly.FriendlyOperationException' のハンドルされていない例外が Codeer.Friendly.Windows.dll で発生しました
 
@@ -642,7 +642,7 @@ https://github.com/mima3/rpa_akanechan/tree/master/visualstudio/FriendlySample
 ・Codeer.TestAssistant.GeneratorToolKit  
 ・RM.Friendly.WPFStandardControls  
   
-**:Program.cs**  
+**Program.cs**  
 ```csharp:Program.cs
 using Codeer.Friendly;
 using Codeer.Friendly.Windows;

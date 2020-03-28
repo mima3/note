@@ -91,7 +91,7 @@ cd ~/test
   
 ### Set-Locationの例  
   
-**:例１Set-Locationを使用する場合**  
+**例１Set-Locationを使用する場合**  
 ```powershell:例１Set-Locationを使用する場合
 Set-Location -Literal c:\dev\
 Set-Location -Path c:\d?v

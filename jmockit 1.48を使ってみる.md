@@ -1524,7 +1524,7 @@ Fakeクラス内で特別なメソッドとして\$init,\$clinit,\$adviceが存�
   
 **テスト対象**  
   
-**:ClassC.java**  
+**ClassC.java**  
 ```java:ClassC.java
 package SampleProject;
 

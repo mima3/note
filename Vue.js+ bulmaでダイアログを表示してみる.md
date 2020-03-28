@@ -18,7 +18,7 @@ Vue.jsにbulmadialog-componentコンポーネントを追加します。
 ### コンポーネント側  
 IE11で動くようにしています。  
   
-**:bulma_dialog.js**  
+**bulma_dialog.js**  
 ```javascript:bulma_dialog.js
 /**
  * bulma + vue.jsでダイアログを表示します。

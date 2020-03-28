@@ -44,7 +44,7 @@ https://www.visualstudio.com/ja/downloads/
 |ClassLibrary1|テスト対象|  
 |UnitTestProject1|テストプログラム|  
   
-**:テスト対象**  
+**テスト対象**  
 ```csharp:テスト対象
 using System;
 using System.Collections.Generic;
@@ -89,7 +89,7 @@ namespace ClassLibrary1
   
 (4)テストコードの実装  
   
-**:テストコードの例**  
+**テストコードの例**  
 ```csharp:テストコードの例
 using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -135,7 +135,7 @@ namespace UnitTestProject1
 ### Shimの対象  
 public/private/protectedのあらゆるスコープのメソッドを偽装できるが、privateの内部クラスや型をパラメータもしくは戻り値にする関数は偽装はできない。  
   
-**:偽装対象のクラス**  
+**偽装対象のクラス**  
 ```csharp:偽装対象のクラス
     public class Class3
     {
@@ -177,7 +177,7 @@ public/private/protectedのあらゆるスコープのメソッドを偽装で�
     }
 ```  
   
-**:Shimによる偽装の方法**  
+**Shimによる偽装の方法**  
 ```csharp:Shimによる偽装の方法
         [TestMethod]
         public void TestMethod4()
@@ -317,7 +317,7 @@ VS2015だと、後方の文字を切って適正な文字に変換している�
 ### 内部クラスのメソッドを偽装  
 内部クラスはShim親クラス名.Shim内部クラス名という形で偽装が可能である。  
   
-**:内部クラス**  
+**内部クラス**  
 ```csharp:内部クラス
     public class Class5
     {
@@ -331,7 +331,7 @@ VS2015だと、後方の文字を切って適正な文字に変換している�
     }
 ```  
   
-**:内部クラスのメソッドを偽装**  
+**内部クラスのメソッドを偽装**  
 ```csharp:内部クラスのメソッドを偽装
         [TestMethod]
         public void TestMethod5()
@@ -352,7 +352,7 @@ VS2015だと、後方の文字を切って適正な文字に変換している�
 ### ベースクラスのメソッドを偽装  
 ベースクラスの偽装はベースクラス自体を偽装する必要がある。継承先のShimにはベースクラスのメソッドは存在しない。  
   
-**:テスト対象**  
+**テスト対象**  
 ```csharp:テスト対象
     public class Class6Base
     {
@@ -371,7 +371,7 @@ VS2015だと、後方の文字を切って適正な文字に変換している�
     }
 ```  
   
-**:テストコード**  
+**テストコード**  
 ```csharp:テストコード
         [TestMethod]
         public void TestMethod6()
@@ -392,7 +392,7 @@ VS2015だと、後方の文字を切って適正な文字に変換している�
 ### ジェネリックメソッドの偽装方法  
 ジェネリックメソッドの偽装方法は型を指定したShimを作成する必要がある。  
   
-**:テスト対象**  
+**テスト対象**  
 ```csharp:テスト対象
     public static class Class7
     {
@@ -419,7 +419,7 @@ VS2015だと、後方の文字を切って適正な文字に変換している�
     }
 ```  
   
-**:テストコード**  
+**テストコード**  
 ```csharp:テストコード
         [TestMethod]
         public void TestMethod7()
@@ -445,7 +445,7 @@ VS2015だと、後方の文字を切って適正な文字に変換している�
 ### ジェネリッククラスの偽装  
 ジェネリッククラスのShimを使うにはShimクラス名<型>を定義する必要がある。  
   
-**:偽装対象**  
+**偽装対象**  
 ```csharp:偽装対象
     public class Class8<K, V>
     {
@@ -459,7 +459,7 @@ VS2015だと、後方の文字を切って適正な文字に変換している�
     }
 ```  
   
-**:テストコード**  
+**テストコード**  
 ```csharp:テストコード
        [TestMethod]
         public void TestMethod8()
@@ -534,7 +534,7 @@ Shimの実行回数をカウントとするか、フラグで管理すること�
 ### 複数回実行されるShimの場合  
 Shimが複数回実行される場合は、以下のようにリストで期待するパラメータとShimが返す値を設定します。  
   
-**:テスト対象**  
+**テスト対象**  
 ```csharp:テスト対象
     public class Class11
     {
@@ -556,7 +556,7 @@ Shimが複数回実行される場合は、以下のようにリストで期待�
     }
 ```  
   
-**:テスト対象**  
+**テスト対象**  
 ```csharp:テスト対象
         class ShimIncData
         {
