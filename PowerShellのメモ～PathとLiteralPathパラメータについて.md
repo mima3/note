@@ -23,7 +23,7 @@ Get-ChildItem -Path *.txt
   
 下記は[Get-ChildItem](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-childitem)のPathパラメータのドキュメントになります。  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/6711639d-fe74-ad58-9f64-b77ee48fc7f0.png  
+![image.png](/image/6711639d-fe74-ad58-9f64-b77ee48fc7f0.png)  
   
   
 では次にPowerShellで使用できるワイルドカードパターンの特殊文字を確認してみます。  

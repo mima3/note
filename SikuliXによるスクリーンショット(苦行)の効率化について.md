@@ -66,10 +66,10 @@ selRegion.stopObserver()
   
 ## 使ってみる  
 1. 実行すると矩形が選択できるので、監視したい範囲を選択する。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/ebc42396-0699-9bd6-dc32-2790c763bd32.png  
+![image.png](/image/ebc42396-0699-9bd6-dc32-2790c763bd32.png)  
   
 2. 以下のポップアップが表示されるので**ＯＫを押さない**で邪魔にならない位置にどかしておく  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/8f2b984a-d271-b552-4f5d-75806d48c3ee.png  
+![image.png](/image/8f2b984a-d271-b552-4f5d-75806d48c3ee.png)  
 監視を終了したくなったらＯＫをおして処理を停止する。  
   
 3. 監視対象の画面を操作する。  
@@ -78,17 +78,17 @@ https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/8f2b984a-d271-
 ・プロパティを表示  
   
 4. ３の操作後に作成された画像ファイル  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/1b22108a-fa04-161b-8dc0-5585b6e87656.png  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/921d7c16-8e79-86ed-c051-f78aa31d98ce.png  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/cab87192-d350-71f2-3497-48fc1c133102.png  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/8e077c0d-1df4-347a-594c-c244873a43bd.png  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/ac35e1c7-d6dd-fd6c-73f1-f66204399fa6.png  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/2e495eb0-6931-7b94-8924-4610ba0884f8.png  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/3a1bf8f7-a6d3-3b98-1e1d-8f72e21ebd53.png  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/5a9f9acc-4827-9e31-fdaa-61a91c7caacc.png  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/cae8b88a-ae28-e606-7cdf-3c687c49fcf7.png  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/7f4c2b41-34e1-1948-079c-1740cc942b8d.png  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/712c44e2-a172-7984-6e9c-d965ad9ec3e7.png  
+![20190610_172512624.png](/image/1b22108a-fa04-161b-8dc0-5585b6e87656.png)  
+![20190610_172513288.png](/image/921d7c16-8e79-86ed-c051-f78aa31d98ce.png)  
+![20190610_172513620.png](/image/cab87192-d350-71f2-3497-48fc1c133102.png)  
+![20190610_172514295.png](/image/8e077c0d-1df4-347a-594c-c244873a43bd.png)  
+![20190610_172519636.png](/image/ac35e1c7-d6dd-fd6c-73f1-f66204399fa6.png)  
+![20190610_172551705.png](/image/2e495eb0-6931-7b94-8924-4610ba0884f8.png)  
+![20190610_172552031.png](/image/3a1bf8f7-a6d3-3b98-1e1d-8f72e21ebd53.png)  
+![20190610_172552351.png](/image/5a9f9acc-4827-9e31-fdaa-61a91c7caacc.png)  
+![20190610_172553022.png](/image/cae8b88a-ae28-e606-7cdf-3c687c49fcf7.png)  
+![20190610_172553355.png](/image/7f4c2b41-34e1-1948-079c-1740cc942b8d.png)  
+![20190610_172554021.png](/image/712c44e2-a172-7984-6e9c-d965ad9ec3e7.png)  
   
 ### 使用感  
 ・一文字づつのキー押下や、ウィンドウが表示される過程の半透明のものもキャプチャされてしまう  

@@ -59,7 +59,7 @@ TracやRedmineのサーバが動作していないときにテストの実行を
   
 http://needtec.sakura.ne.jp/release/testlink.xlsm  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/c045b1aa-c545-8fae-9c5f-d0751b5f6313.png  
+![testlink.png](/image/c045b1aa-c545-8fae-9c5f-d0751b5f6313.png)  
   
   
 このExcelは入力した項目をTestLink用のXMLに変換してファイルとして出力する。  
@@ -84,7 +84,7 @@ TestLinkを利用した自動テストは結合フェーズ以降で行うとよ
 結論からいうとXML-RPCを使用したほうがいい。  
   
 １．APIキーを作成し取得する。  
-https://qiita-image-store.s3.amazonaws.com/0/47856/e8298f3e-b24f-b817-2683-78b01d39a2fe.png  
+![testlink.png](/image/e8298f3e-b24f-b817-2683-78b01d39a2fe.png)  
   
 2.Pythonで以下のようなコードを作成する。  
 このコードはテストの実行結果を記録するものである。  

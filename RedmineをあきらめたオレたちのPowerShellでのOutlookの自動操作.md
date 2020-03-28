@@ -91,7 +91,7 @@ Outlookオブジェクトの解放処理について冗長な書き方をして�
 
 ```  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/90d35564-6412-7ec2-8d40-0b374d32a190.png  
+![image.png](/image/90d35564-6412-7ec2-8d40-0b374d32a190.png)  
   
 ## メールの受信フォルダ中のアイテムの列挙  
 受信フォルダ内のメールを列挙します。  
@@ -182,7 +182,7 @@ https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/90d35564-6412-
 ```  
   
 フォルダの構成：  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/1d192e01-f2be-c1b3-2aaa-72938703b61d.png  
+![image.png](/image/1d192e01-f2be-c1b3-2aaa-72938703b61d.png)  
   
 出力例：  
   
@@ -254,8 +254,8 @@ https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/1d192e01-f2be-
 
 ```  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/fe7ffc48-d9d9-2710-a97d-f018e673435b.png  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/7a484a43-00f4-3b2a-b824-76e29971e3c9.png  
+![image.png](/image/fe7ffc48-d9d9-2710-a97d-f018e673435b.png)  
+![image.png](/image/7a484a43-00f4-3b2a-b824-76e29971e3c9.png)  
   
 ## 会議の予約  
   
@@ -351,9 +351,9 @@ https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/7a484a43-00f4-
   
 出席依頼された人のスケジュール：  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/725fb818-a1e9-ef2a-4415-87ed928eb16e.png  
+![image.png](/image/725fb818-a1e9-ef2a-4415-87ed928eb16e.png)  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/31854032-2b79-3aa4-3e1f-57d5c08fdfd3.png  
+![image.png](/image/31854032-2b79-3aa4-3e1f-57d5c08fdfd3.png)  
   
 ## 予定の取得  
   
@@ -475,9 +475,9 @@ https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/31854032-2b79-
 	[System.GC]::Collect()
 
 ```  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/dbc22563-f143-bd03-343d-08745efad5cf.png  
+![image.png](/image/dbc22563-f143-bd03-343d-08745efad5cf.png)  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/9ba4f42a-cc61-f93b-11cd-829009ad1920.png  
+![image.png](/image/9ba4f42a-cc61-f93b-11cd-829009ad1920.png)  
   
 ## タスクを依頼する場合  
   
@@ -562,13 +562,13 @@ https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/9ba4f42a-cc61-
 ```  
   
 依頼先のタスク  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/0a4f6e59-f1c4-4a98-b8e6-d98a0ff4f238.png  
+![image.png](/image/0a4f6e59-f1c4-4a98-b8e6-d98a0ff4f238.png)  
   
 承認を押下することで進捗率等が変更できるようになる。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/b52aa462-0269-9688-03e9-cd3cb51f6544.png  
+![image.png](/image/b52aa462-0269-9688-03e9-cd3cb51f6544.png)  
   
 進捗レポートの送信をすることで、依頼者のタスクが更新される。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/0dbdccae-368b-09f5-807e-ad2f5703e8e5.png  
+![image.png](/image/0dbdccae-368b-09f5-807e-ad2f5703e8e5.png)  
   
 ## タスクの列挙  
   

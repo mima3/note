@@ -65,15 +65,15 @@ https://github.com/WinMerge/winmerge/blob/30a5674030a8318a9239893a3cc0a4e8798a62
 "C:\Program Files\WinMerge\WinMergeU.exe" C:\dev\winmerge\a.txt C:\dev\winmerge\b.txt -cfg "Font/Height=32" -cfg "Font/FaceName=ＭＳ 明朝" -cfg "Font/Underline=1"
 ```  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/23915577-61b5-3972-9d09-035dbabb1951.png  
+![image.png](/image/23915577-61b5-3972-9d09-035dbabb1951.png)  
   
 -cfgで指定できる設定項目の種類は設定値からエクスポートしたものと同じになります。  
   
 ・編集→設定でひらくオプション画面で「エクスポート」を行う  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/026d5121-1552-03b5-3082-06cd3c913e90.png  
+![image.png](/image/026d5121-1552-03b5-3082-06cd3c913e90.png)  
   
 ・作成されるINIファイルは下記の通り  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/c604b5b8-ed50-0f89-3ed4-6b9e10494d48.png  
+![image.png](/image/c604b5b8-ed50-0f89-3ed4-6b9e10494d48.png)  
   
 ## ファイルの比較結果をレポートとして出力する例  
 /orを使用してレポートにファイルを出力します。  
@@ -84,7 +84,7 @@ https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/c604b5b8-ed50-
 ```  
   
 **作成されたレポート**  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/ad905297-76f4-1b8f-f269-cf72479749ce.png  
+![image.png](/image/ad905297-76f4-1b8f-f269-cf72479749ce.png)  
   
   
   
@@ -103,7 +103,7 @@ https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/ad905297-76f4-
 ```  
   
 **作成されたレポート（ディレクトリの比較結果)**  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/0be867c1-2c4b-da91-9802-bd9042bcb535.png  
+![image.png](/image/0be867c1-2c4b-da91-9802-bd9042bcb535.png)  
   
 ※注意：2.14だと-minimizeがついているとレポートが常に差分なしになってしまう。  
   
@@ -117,7 +117,7 @@ https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/0be867c1-2c4b-
 残念ながら、以下で止まるのでコマンドラインだけの操作で自動化はできません。  
 またコンフリクトが発生した場合も、マージできません。  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/6f005c27-667a-24f0-fcbb-05ef7a9313a9.png  
+![image.png](/image/6f005c27-667a-24f0-fcbb-05ef7a9313a9.png)  
   
 どうしても自動化したかったら以下のPowerShellを使います。  
   
@@ -215,7 +215,7 @@ powershell -ExecutionPolicy RemoteSigned -File  ./automerge.ps1
 WinMergeU.exe C:\dev\winmerge\test1.txt C:\dev\winmerge\test2.txt C:\dev\winmerge\test3.txt /dl "Version 1.0" /dm "Version 1.1" /dr "Version 1.2"
 ```  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/248d68ef-4a6d-e7e8-75bf-69da97e4825f.png  
+![image.png](/image/248d68ef-4a6d-e7e8-75bf-69da97e4825f.png)  
   
 ## ファイルフィルタの設定 /f  
 指定したフィルタを設定して比較対象のファイルを制限します。  
@@ -227,14 +227,14 @@ https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/248d68ef-4a6d-
 WinMergeU.exe C:\dev\winmerge\abc C:\dev\winmerge\acc -f "*.cpp *.h"
 ```  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/e1e98f83-5fe5-04ff-9c2d-a863e6196f93.png  
+![image.png](/image/e1e98f83-5fe5-04ff-9c2d-a863e6196f93.png)  
 ※他の拡張子が表示されない  
   
 ## 末尾の空白の無視 /ignorews  
 末尾の半角スペースとタブを無視します。  
   
 空白を無視しない場合：  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/59b7eb05-a17e-a5d7-5182-6238a40a2381.png  
+![image.png](/image/59b7eb05-a17e-a5d7-5182-6238a40a2381.png)  
   
   
 空白を無視する場合:  
@@ -243,14 +243,14 @@ https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/59b7eb05-a17e-
 "C:\Program Files\WinMerge\WinMergeU.exe" C:\dev\winmerge\a.txt C:\dev\winmerge\b.txt  /ignorews
 ```  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/9ae6c907-42e6-a725-767d-ca4502c68be6.png  
+![image.png](/image/9ae6c907-42e6-a725-767d-ca4502c68be6.png)  
   
 ## 空白行の無視 /ignoreblanklines  
 ignoreblanklinesオプションを使用することで空白行の差異を無視することができます。  
   
   
 空白行を無視しない  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/dbbd434a-1cf4-e363-701a-9d7927670e13.png  
+![image.png](/image/dbbd434a-1cf4-e363-701a-9d7927670e13.png)  
   
   
 空白行を無視する  
@@ -259,13 +259,13 @@ https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/dbbd434a-1cf4-
 "C:\Program Files\WinMerge\WinMergeU.exe" C:\dev\winmerge\a.txt C:\dev\winmerge\b.txt  /ignoreblanklines
 ```  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/3e142ee9-5119-faad-7e26-0cae740a10d5.png  
+![image.png](/image/3e142ee9-5119-faad-7e26-0cae740a10d5.png)  
   
 ## 大文字小文字を無視　/ignorecase  
 ignorecaseオプションを利用することで大文字小文字の差異を無視することが可能です。  
   
 無視しない場合  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/7118c58e-a360-3e3b-3f22-c5dea9097047.png  
+![image.png](/image/7118c58e-a360-3e3b-3f22-c5dea9097047.png)  
   
 無視する場合  
   
@@ -273,14 +273,14 @@ https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/7118c58e-a360-
 "C:\Program Files\WinMerge\WinMergeU.exe" C:\dev\winmerge\c.txt C:\dev\winmerge\d.txt   /ignorecase
 ```  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/20084fc5-48de-689f-6a20-c4fecd49d0c0.png  
+![image.png](/image/20084fc5-48de-689f-6a20-c4fecd49d0c0.png)  
   
   
 ## 改行文字の無視 /ignoreeol  
 行末の改行文字の違いを無視します。  
   
 無視しない場合  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/816fda6f-586e-f97a-411d-b9eee447f13d.png  
+![image.png](/image/816fda6f-586e-f97a-411d-b9eee447f13d.png)  
   
   
 無視する場合  
@@ -289,15 +289,15 @@ https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/816fda6f-586e-
 "C:\Program Files\WinMerge\WinMergeU.exe" C:\dev\winmerge\a.txt C:\dev\winmerge\b.txt  /ignoreeol
 ```  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/7ec1711b-e6c1-188b-d136-bab3f3f04b21.png  
+![image.png](/image/7ec1711b-e6c1-188b-d136-bab3f3f04b21.png)  
   
 ## コードページの無視 /ignorecodepage  
 /ignorecodepageでコードページの差異を無視できます。  
 ただし、2.16.4.0で実験した限り、このパラメータを無効にしてかつ、下記の設定であっても、コードページの違いを無視して比較しているようです。  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/00c7f9c1-52ad-6ced-6396-dc50b92a0511.png  
+![image.png](/image/00c7f9c1-52ad-6ced-6396-dc50b92a0511.png)  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/cd45bc3a-0235-b125-1552-f5a2baab81d5.png  
+![image.png](/image/cd45bc3a-0235-b125-1552-f5a2baab81d5.png)  
 ※コードページの違いを無視する設定で、文字コードのことなるファイルを比較しても差異がでてこない。  
   
   

@@ -1,7 +1,7 @@
 # 目的  
 VOICEROID2の琴葉茜ちゃんをPowerShellでしゃべらせます。  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/8675bff0-29cf-c440-6e25-2edb70c6a405.jpeg  
+![000097.jpg](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/8675bff0-29cf-c440-6e25-2edb70c6a405.jpeg)  
   
 この際、なるべくどこでも動くように、UIAutoMationを使用します。  
   

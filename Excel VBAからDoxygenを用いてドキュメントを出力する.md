@@ -153,7 +153,7 @@ CScript test.vbs
   
 ## ExcelVBAのDoxygen出力を容易にする方法  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/2fa6231b-0599-2b39-05be-7f95b730265c.png  
+![b0232065_3103513.png](/image/2fa6231b-0599-2b39-05be-7f95b730265c.png)  
   
 上記の図のように、VBSを用いてCLSファイル、BASファイルなどを抽出する。  
 そして、Doxygenの設定ファイルのテンプレートと、VBFilterのExe化したものを使用してDoxygenを実行する。  

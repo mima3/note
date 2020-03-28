@@ -2,7 +2,7 @@
 JavaScriptで2ファイルのテキストの差分を確認するためのDiff用ライブラリについて調べます。  
   
 # difflib  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/1b4e6a1b-c5f4-8501-d9bf-dbe930f99fbe.png  
+![image.png](/image/1b4e6a1b-c5f4-8501-d9bf-dbe930f99fbe.png)  
   
 **GitHub:**  
 https://github.com/cemerick/jsdifflib  
@@ -76,7 +76,7 @@ function b() {
 ・BSDライセンスです。  
   
 # prettydiff  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/047a855a-7e76-1592-fff0-99bebb87da27.png  
+![image.png](/image/047a855a-7e76-1592-fff0-99bebb87da27.png)  
   
 **GitHub**  
 https://github.com/prettydiff/prettydiff/  
@@ -152,7 +152,7 @@ console.log(output);
 ・ライセンスは[CC0](https://github.com/prettydiff/prettydiff/blob/master/license)  
   
 # mergely  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/1c7c723c-ebb5-a46c-2747-8289b63e694c.png  
+![image.png](/image/1c7c723c-ebb5-a46c-2747-8289b63e694c.png)  
   
 **GitHub**  
 https://github.com/wickedest/Mergely  

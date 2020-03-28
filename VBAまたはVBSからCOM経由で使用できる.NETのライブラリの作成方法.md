@@ -11,19 +11,19 @@
 　これはCOM登録時にレジストリを変更するため。  
   
 ２．プロジェクトの追加で「.NET Framework 2.0」 と 「クラスライブラリ」を選択  
-https://qiita-image-store.s3.amazonaws.com/0/47856/5c4a1c01-ea74-3c1a-1a18-d6b835d29390.png  
+![5sban21z.png](/image/5c4a1c01-ea74-3c1a-1a18-d6b835d29390.png)  
   
   
 ３. ビルドにてプラットフォームのターゲットを「x86」または「x64」とする。  
 これは使用するExcelに合わせる。  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/405f26bc-cf47-a003-f344-9083fe91e91e.png  
+![1w04banj.png](/image/405f26bc-cf47-a003-f344-9083fe91e91e.png)  
   
 ４. ビルドにてCOM相互運用機能の登録にチェックをつける。  
-https://qiita-image-store.s3.amazonaws.com/0/47856/d72c34af-b0cb-e7b4-698d-9008eebf7706.png  
+![1w04banj.png](/image/d72c34af-b0cb-e7b4-698d-9008eebf7706.png)  
   
 ５. アプリケーションのアセンブリ情報で、「アセンブリをCOM参照可能にする」  
-https://qiita-image-store.s3.amazonaws.com/0/47856/cedc7ece-5421-53eb-7b45-59ae3889acea.png  
+![1w04banj.png](/image/cedc7ece-5421-53eb-7b45-59ae3889acea.png)  
   
 ６． 公開したいインターフェイスとその実態について以下のように記述する  
   
@@ -174,7 +174,7 @@ REM 登録
 これは、警告だけであり、COMの登録はされている。  
 この警告を消すには、プロジェクトの設定で「署名」→「アセンブリの署名」　厳密な名前のキーファイルを選択する必要がある。  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/b057d5eb-b085-46ee-2b8f-ce1b901b3618.png  
+![1w04banj.png](/image/b057d5eb-b085-46ee-2b8f-ce1b901b3618.png)  
   
   
 依存するすべてのDLLが同様に厳密な名前を有しなければならないので気をつけること。  
@@ -190,10 +190,10 @@ regasm /tlb C:\dev\NMeCabCom\NMeCabCom\bin\Debug\NMeCabCom.dll  /unregister
   
 ## ExcelVBAで利用する方法  
 参照設定してやれば、使用できるようになる  
-https://qiita-image-store.s3.amazonaws.com/0/47856/f501ff58-5826-38db-e82f-03270ac5298f.png  
+![1w04banj.png](/image/f501ff58-5826-38db-e82f-03270ac5298f.png)  
   
 以下のようにインテリセンスが効く。  
-https://qiita-image-store.s3.amazonaws.com/0/47856/c57bf96d-37e9-a188-ff43-307ae7f77c16.png  
+![1w04banj.png](/image/c57bf96d-37e9-a188-ff43-307ae7f77c16.png)  
   
 ## VBSからの利用方法  
   

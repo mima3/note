@@ -17,7 +17,7 @@ Javaのバイトコードからクラスやメソッドの情報を抜き出し�
 BCEL API（バイトコードエンジニアリングライブラリ）は、静的分析および動的なJavaクラスファイルの作成のツールキットです。  
 FindBugはBCELを使用してクラスファイルから静的解析を行っています。  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/651ec926-321f-b299-d74c-c01e4fa4d1e1.png  
+![bcel.png](/image/651ec926-321f-b299-d74c-c01e4fa4d1e1.png)  
   
   
 https://commons.apache.org/proper/commons-bcel/manual/introduction.html  
@@ -860,7 +860,7 @@ public class BcelToSqlite {
   
 ### bcelの解析結果からクラス図を作成する  
 bcelの解析結果を格納したSqliteからクラス図を作成しています。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/687fa1c7-f24a-405b-e374-c86e2438836b.png  
+![plantUML.png](/image/687fa1c7-f24a-405b-e374-c86e2438836b.png)  
   
 ```java:SqliteToGraph.java
 
@@ -1094,7 +1094,7 @@ public class SqliteToGraph {
 ### bcelの解析結果からコールグラフを作成する  
 bcelの解析結果を格納したSqliteから指定のメソッドのコールグラフを作成しています。  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/e0c84cd0-a356-d0a1-5fc3-248ec0130b53.png  
+![planguml2.png](/image/e0c84cd0-a356-d0a1-5fc3-248ec0130b53.png)  
   
   
 ```java:DependMethod.java

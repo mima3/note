@@ -60,43 +60,43 @@ http://debian:10020/
 １．初回に下記のアドレスにアクセスすると管理用のユーザのパスワードの登録を求められる。  
   
 http://debian:10020/  
-https://qiita-image-store.s3.amazonaws.com/0/47856/e1fcd299-bea2-e488-a48d-9b4d496d607c.png  
+![git2.png](/image/e1fcd299-bea2-e488-a48d-9b4d496d607c.png)  
   
   
 ２．管理ユーザの登録に成功すると次のようなメッセージが表示される。  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/847a4e4b-ee29-50c9-767d-1c6133028f1c.png  
+![git5.png](/image/847a4e4b-ee29-50c9-767d-1c6133028f1c.png)  
   
 ## 通常ユーザの登録  
 １．画面右上の「Sign in」を入力して今登録した管理ユーザでログインする。  
 管理ユーザではユーザの作成は行えるが、リポジトリの作成は行えない。  
   
 ２．Usersを押すとユーザを登録する画面に遷移できる。  
-https://qiita-image-store.s3.amazonaws.com/0/47856/13770656-784e-10e8-7722-283c58ea45aa.png  
+![git5.png](/image/13770656-784e-10e8-7722-283c58ea45aa.png)  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/1caea9a2-5c8f-ac72-de48-cef46843f4d1.png  
+![git5.png](/image/1caea9a2-5c8f-ac72-de48-cef46843f4d1.png)  
   
 ３．ユーザ登録画面で下記のように「alice」と「Joe」を追加したものとする。  
-https://qiita-image-store.s3.amazonaws.com/0/47856/0f38de02-336f-8cc3-1309-f4d94013ee3d.png  
+![git5.png](/image/0f38de02-336f-8cc3-1309-f4d94013ee3d.png)  
   
 以降、alice,Joeでログインが可能になる。  
   
 ## リポジトリの追加  
 １．aliceでログインをする。  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/e5f73bb1-351f-31c9-5a48-a2d8c6056554.png  
+![git5.png](/image/e5f73bb1-351f-31c9-5a48-a2d8c6056554.png)  
   
 管理ユーザとことなり、「Create Repogitory」のメニューが追加されていることがわかる。  
   
 ２．必要な情報を入力して「testproject」を登録する。  
-https://qiita-image-store.s3.amazonaws.com/0/47856/6d36d6d8-ccd2-c101-4d15-c6150d8b233d.png  
+![git4.png](/image/6d36d6d8-ccd2-c101-4d15-c6150d8b233d.png)  
   
 ３．作成に成功すると、リポジトリ―の操作例が表示される。  
-https://qiita-image-store.s3.amazonaws.com/0/47856/824fa795-4d9c-8857-fa8c-0c33c1ed33bc.png  
+![git5.png](/image/824fa795-4d9c-8857-fa8c-0c33c1ed33bc.png)  
   
 また、aliceのホームページには今追加した  
 testprojectが表示される。  
-https://qiita-image-store.s3.amazonaws.com/0/47856/20767fc0-f752-b2a2-0e29-94c69c87ad78.png  
+![git4.png](/image/20767fc0-f752-b2a2-0e29-94c69c87ad78.png)  
   
 ４．クライアントで作成したtestprojectを操作してみる。  
   
@@ -140,13 +140,13 @@ Branch master set up to track remote branch master from origin.
   
 ## リポジトリに作業者を追加する。  
 １．aliceでtestprojectを開いて、「Settings」ボタンを押す  
-https://qiita-image-store.s3.amazonaws.com/0/47856/3ff51d0a-0b9d-f8e5-c1dd-47846702b3cd.png  
+![git4.png](/image/3ff51d0a-0b9d-f8e5-c1dd-47846702b3cd.png)  
   
 ２．Collaboratorsを押下する。  
-https://qiita-image-store.s3.amazonaws.com/0/47856/20c3a7e9-7388-a90c-b31d-b49926bc3a0d.png  
+![git4.png](/image/20c3a7e9-7388-a90c-b31d-b49926bc3a0d.png)  
   
 ３．「joe」を入力して追加する。  
-https://qiita-image-store.s3.amazonaws.com/0/47856/2b55370c-99c8-a0b8-9118-1aa425bff7f5.png  
+![git4.png](/image/2b55370c-99c8-a0b8-9118-1aa425bff7f5.png)  
   
 ４．以降「joe」がtestprojectへの操作を行える。  
   

@@ -25,10 +25,10 @@ https://bitbucket.org/nx/squashtest-tm/wiki/devguide/HowToInstallInIDE.md#!insta
   
 eclipceに入れるプラグインは以下の通り  
 ・springIDE  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/1b11ca0f-8858-c883-aab8-c49d96a061d9.png  
+![image.png](/image/1b11ca0f-8858-c883-aab8-c49d96a061d9.png)  
   
 ・Groovy Development Tools  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/c7c6127b-c3ef-cc57-8e62-5fde4c2cc303.png  
+![image.png](/image/c7c6127b-c3ef-cc57-8e62-5fde4c2cc303.png)  
   
 ## ビルドと実行方法  
 ### ソースコードの取得からmvn installまで  
@@ -80,7 +80,7 @@ eclipseで下記の操作を行う
 #### プロジェクトのインポート  
 1 メニューから[ファイル]>[インポート]を選択  
 2 [Maven]>[既存のMavenプロジェクト]を背くん炊く  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/76e23927-b00f-f1d3-198d-7687e241f55b.png  
+![image.png](/image/76e23927-b00f-f1d3-198d-7687e241f55b.png)  
 3 「hg clone」で作成したフォルダを選択  
   
 #### provisionモジュールをEclipseに導入  
@@ -88,13 +88,13 @@ https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/76e23927-b00f-
   
 1 メニューから[ウィンドウ]>[設定]を選択する。  
 2 [プラグイン開発]>[ターゲット・プラットフォーム]を選択して「追加」ボタンを押下  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/1facc8d8-c496-abb3-d760-44e03a165bef.png  
+![image.png](/image/1facc8d8-c496-abb3-d760-44e03a165bef.png)  
 3 「空のターゲット定義で開始」を選択  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/87c978a3-37ea-2677-2fa5-28810d17dc5a.png  
+![image.png](/image/87c978a3-37ea-2677-2fa5-28810d17dc5a.png)  
 4 ターゲットコンテンツにて「追加」ボタンを押下  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/e1a8cc9a-3fd7-c26d-b741-6b9aded975f9.png  
+![image.png](/image/e1a8cc9a-3fd7-c26d-b741-6b9aded975f9.png)  
 5 ディレクトリーを選択する。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/59809f07-cea0-fece-4cd9-c18ce1e78508.png  
+![image.png](/image/59809f07-cea0-fece-4cd9-c18ce1e78508.png)  
 6 ロケーションに「squashtest-tm/provision/target/eclipse-provision/bundles」を入力する。  
 7 ターゲットコンテンツが追加されるので、引数タブでそれぞれ下記の値を入力する。  
 プログラム引数 :  
@@ -123,19 +123,19 @@ com.sun.tools.javadoc,javax.xml.namespace
 2 実行構成画面にて[Spring Bootアプリケーション]を右クリックして「新規」ボタンを押下  
 3 それぞれのタブで値を入力する  
 **SpringBoot タブ**  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/2e80c955-d815-41a9-ddf5-d3f36dd7851d.png  
+![image.png](/image/2e80c955-d815-41a9-ddf5-d3f36dd7851d.png)  
   
 ・プロジェクト：tm.web  
 ・メイン型：org.squashtest.tm.SquashTm  
 ・プロファイル:h2,dev  
   
 **引数 タブ**  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/d39b5e5e-cfdf-06d3-e60e-565bcce9d789.png  
+![image.png](/image/d39b5e5e-cfdf-06d3-e60e-565bcce9d789.png)  
   
 プログラム引数：-XX:MaxPermSize=256m -Xmx1024m  
   
 **クラスパス タブ**  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/d4c885d7-46ba-f44f-e5b9-fe7152dfbfed.png  
+![image.png](/image/d4c885d7-46ba-f44f-e5b9-fe7152dfbfed.png)  
   
 ①「ユーザ・エントリー」を選択後、「拡張ボタン」を押下  
 ②「フォルダの追加」を選択  
@@ -159,7 +159,7 @@ Spring IDEの設定で実行構成を設定しているので、そこで実行�
 ## 色々修正してみる  
 ### 「Attach Test Cases」画面での文字化けの修正をしてみる  
 テストスィートでテストケースを関連付ける際、日本語文字が文字化けする。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/9c8ace24-3698-bf02-dc2e-b6a44c6be460.png  
+![image.png](/image/9c8ace24-3698-bf02-dc2e-b6a44c6be460.png)  
   
 原因はjspにcontentTypeが設定していないため。  
 以下のように修正する。  

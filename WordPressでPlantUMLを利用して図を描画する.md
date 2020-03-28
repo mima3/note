@@ -1,7 +1,7 @@
 # 目的  
 WordPressでPlantUMLを利用して図を作成します。  
 なおこの際、日ノ本言葉を使うものとします。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/36695a56-04bc-b068-baf3-d86a01bcbd1e.png  
+![plantumlphp.png](/image/36695a56-04bc-b068-baf3-d86a01bcbd1e.png)  
   
 # 環境  
 PHP　7.3  
@@ -25,7 +25,7 @@ Alice <-- Bob: another authentication Response
   
 以下のような画像が表示されます。  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/753c0904-9c09-d18f-d620-570cc0d58f3b.png  
+![plantumlphp0.png](/image/753c0904-9c09-d18f-d620-570cc0d58f3b.png)  
   
   
 **ただし当然の権利のように日ノ本言葉を記載すると文字化けします。**  
@@ -174,7 +174,7 @@ utf8_encodeを除去します
   
 ## 結果  
 上記２つの対応により、日ノ本言葉がつかえるようになります。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/36695a56-04bc-b068-baf3-d86a01bcbd1e.png  
+![plantumlphp.png](/image/36695a56-04bc-b068-baf3-d86a01bcbd1e.png)  
   
   
 ## 改造案  

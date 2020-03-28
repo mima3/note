@@ -54,7 +54,7 @@ namespace CLRProfilerTest
 CLRProfilerは２種類の実行ファイルが存在します。これは「32」というフォルダと「64」というフォルダにあります。  
 プロファイル対象のアプリケーションが32ビットの場合は「32」というフォルダ中のCLRProfiler.exeを実行してください。もし、64ビットのアプリケーションをプロファイルする場合は「64」フォルダ中のCLRProfiler.exeを実行してください。  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/4f54bc0d-8a54-2d6a-8886-bba545b5dd75.png  
+![Profile.png](/image/4f54bc0d-8a54-2d6a-8886-bba545b5dd75.png)  
   
 ４．プロファイルの対象を選択  
 すべてのチェックボックスをONにします。  
@@ -81,11 +81,11 @@ Attachなどの機能が一部、使用できなくなります。
 今回は. .NET Framework2.0で作成したアプリケーションが対象なので「V2 Desktop CLR」を選択することになります。  
   
 つまり、次のようになります。  
-https://qiita-image-store.s3.amazonaws.com/0/47856/172df9ef-6e5a-53f6-afb0-89986e8581e3.png  
+![Profile.png](/image/172df9ef-6e5a-53f6-afb0-89986e8581e3.png)  
   
 ５．プロファイルの対象を選択して実行します。  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/a056fe76-9634-bcc2-8ced-dda7d9dca188.png  
+![Profile.png](/image/a056fe76-9634-bcc2-8ced-dda7d9dca188.png)  
   
 「File」メニューの「Profile Application…」を選択するとファイルを選択するダイアログが開きます。  
 ここでプロファイル対象のアプリケーションを選択して「開く」ボタンを押してください。  
@@ -93,14 +93,14 @@ https://qiita-image-store.s3.amazonaws.com/0/47856/a056fe76-9634-bcc2-8ced-dda7d
   
 またWindows７以前で実行した場合、プロファイル中に下記のメッセージが表示されることがあります。  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/0622f25e-a693-9034-df2c-f06e3091974b.png  
+![Profile.png](/image/0622f25e-a693-9034-df2c-f06e3091974b.png)  
   
 これは、WindowsStoreAppのサポートの有無をチェックしており、Windows8より前のOSではサポートしていないため表示されるメッセージです。このメッセージはOKを押して無視してかまいません。  
   
 ６．Summaryの確認  
 プロファイルが終了すると以下のSummaryダイアログが表示されます。  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/bd2bfdee-0972-1cc7-11cc-8cb4f7a95a98.png  
+![Profile.png](/image/bd2bfdee-0972-1cc7-11cc-8cb4f7a95a98.png)  
   
 このSummaryダイアログから詳細の情報画面に遷移ができます。  
   

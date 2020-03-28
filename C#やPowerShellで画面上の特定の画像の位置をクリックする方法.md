@@ -181,7 +181,7 @@ OpenCvSharpは.NET2.0でも動作するのですが、どうも.NET2.0ではOpen
 Windows10 Home + PowerShell5.1でもC#と同様のことが行えます。  
   
 まず、DLLを以下のように配置します。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/add7285c-125b-c9b8-aadc-6ff1833a61c3.png  
+![image.png](/image/add7285c-125b-c9b8-aadc-6ff1833a61c3.png)  
   
 OpenCvSharpExtern.dllは使用するPowerShellがx86の場合はx86,x64の場合はx64を使用してください。  
   
@@ -336,11 +336,11 @@ Add-Type -Path "$dllPath\OpenCVSharp.Extensions.dll"
   
 ## 実行結果  
 **target.bmp**  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/b7a70a12-8508-aca9-cc99-82f96af81534.png  
+![image.png](/image/b7a70a12-8508-aca9-cc99-82f96af81534.png)  
   
   
 **画面の状態**  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/7e8910ad-915a-dc08-5bd9-375970002dcc.png  
+![image.png](/image/7e8910ad-915a-dc08-5bd9-375970002dcc.png)  
   
   
 ## 初期状態のWindows7のPowerShellでできないか？  

@@ -11,7 +11,7 @@ Microsoft Fakesはこのような非情な現実を突き付けられた者に�
   
 MicrosoftFakesのShim機能を使用することで、複雑に依存した機能を切り離して特定の箇所のみテストを実施することが可能になります。  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/270e376f-8853-db30-5ee0-1617c97dd9b0.png  
+![unit004.png](/image/270e376f-8853-db30-5ee0-1617c97dd9b0.png)  
   
 **Microsoft Fakes を使用したテストでのコードの分離**  
 https://msdn.microsoft.com/ja-jp/library/hh549175.aspx  
@@ -37,7 +37,7 @@ https://www.visualstudio.com/ja/downloads/
   
 ## 簡単なチュートリアル  
 (1)以下のような構成のプロジェクトを用意する  
-https://qiita-image-store.s3.amazonaws.com/0/47856/333cbecf-2587-023b-bc60-124509d737eb.png  
+![unit001.png](/image/333cbecf-2587-023b-bc60-124509d737eb.png)  
   
 |プロジェクト名|説明|  
 |:--|:--|  
@@ -79,10 +79,10 @@ namespace ClassLibrary1
 ```  
   
 (2)テストプロジェクトの参照から偽装したいアセンブリを選択して右クリックをして「Fakesアセンブリに追加」を実行する。  
-https://qiita-image-store.s3.amazonaws.com/0/47856/cdc4677f-6c49-25b2-2ec5-72fa3ff749d7.png  
+![unit002.png](/image/cdc4677f-6c49-25b2-2ec5-72fa3ff749d7.png)  
   
 (3)Fakesフォルダに拡張子がfakesのファイルが作成される。  
-https://qiita-image-store.s3.amazonaws.com/0/47856/a8eb4b5f-c9c3-0d5c-aab2-a3330916e5e9.png  
+![unit003.png](/image/a8eb4b5f-c9c3-0d5c-aab2-a3330916e5e9.png)  
   
 構成管理にあげる場合は、このfakesファイルを上げること。  
   
@@ -242,9 +242,9 @@ VS2015だと、後方の文字を切って適正な文字に変換している�
 現在日付はテストをするうえでやっかいだが、これも偽装できる。  
   
 (1)System.dllのfakesアセンブリを追加する。  
-https://qiita-image-store.s3.amazonaws.com/0/47856/98bb1768-632a-872f-58a5-3c8bd6846fbd.png  
+![unit005.png](/image/98bb1768-632a-872f-58a5-3c8bd6846fbd.png)  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/bc00a29e-9971-272f-6b19-f4d9950d9fce.png  
+![unit006.png](/image/bc00a29e-9971-272f-6b19-f4d9950d9fce.png)  
   
   
 (2)System.DateTime.Nowを偽装する。  
@@ -271,7 +271,7 @@ https://qiita-image-store.s3.amazonaws.com/0/47856/bc00a29e-9971-272f-6b19-f4d99
   
 ### 現在ユーザやマシン名などのSysetem.Environmentを偽装する。  
 (1)Fakesフォルダの「mscorlib.fakes」を開く  
-https://qiita-image-store.s3.amazonaws.com/0/47856/4b9a303c-a086-01a0-55b4-7bd3786e1319.png  
+![unit007.png](/image/4b9a303c-a086-01a0-55b4-7bd3786e1319.png)  
   
 (2)ShimGenerationにSystem.Environmentを追加する。  
   

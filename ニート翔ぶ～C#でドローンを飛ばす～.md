@@ -10,7 +10,7 @@ https://www.amazon.co.jp/gp/product/B07979Q4YS
   
 **注意事項：**  
 ・充電用のUSBはついてこないので自前でそろえる必要があります。  
-https://qiita-image-store.s3.amazonaws.com/0/47856/d2a7bce6-d779-ae59-0120-d6b2b3a2d785.jpeg  
+![DSC_0032.JPG](https://qiita-image-store.s3.amazonaws.com/0/47856/d2a7bce6-d779-ae59-0120-d6b2b3a2d785.jpeg)  
 機体にささないと充電できません。ただし別売りのバッテリーケースを購入すれば機体にささずに充電が可能のようですが、おっさんは無職なので購入してまでの検証はしてません。  
   
 ・ハードウェアの性能としてはカメラがついているので動画撮影が可能です。つまり、住宅地で飛ばすと覗きとまちがわれるので気をつけましょう。おっさんは無職なのでポリス沙汰になると無職で全国デビューになるので細心の注意しないといけません。  
@@ -165,7 +165,7 @@ o agz: 加速度z,
 ・ステータス取得のための8890とビデオストリーム取得のためのポート11111を開けておきます。  
 　つながらない場合は、アプリケーション固有のファイアウォールの設定も確認してください。　  
 　Telloとのネットワークはパブリックのネットワークになっているはずなので、パブリックの設定もちゃんとみましょう**（２敗）**  
-https://qiita-image-store.s3.amazonaws.com/0/47856/2637f8e8-63ad-c371-4a1f-95d35ae8aa66.png  
+　![settei.png](/image/2637f8e8-63ad-c371-4a1f-95d35ae8aa66.png)  
   
 ・WireShark等でネットワークの電文をみれるようにしておきます。  
 　https://www.wireshark.org/  
@@ -179,7 +179,7 @@ https://qiita-image-store.s3.amazonaws.com/0/47856/2637f8e8-63ad-c371-4a1f-95d35
   
 ## 簡単なTelloプログラミング  
 画面  
-https://qiita-image-store.s3.amazonaws.com/0/47856/ca8262fc-8fd7-c0dc-ccce-6e661b947144.png  
+![gamen.png](/image/ca8262fc-8fd7-c0dc-ccce-6e661b947144.png)  
   
 ```csharp
 using System;
@@ -336,7 +336,7 @@ ffplay -probesize 32 -sync ext udp://127.0.0.1:11111
   
 ウィンドウが起動して現在のカメラが表示されます。  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/4ab963b0-46c0-4284-026d-00d0fb811f8d.png  
+![camera.png](/image/4ab963b0-46c0-4284-026d-00d0fb811f8d.png)  
   
   
 ### よくある問題  

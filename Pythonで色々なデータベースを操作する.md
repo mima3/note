@@ -164,7 +164,7 @@ SQLSERVER EXPRESS 2012
   
 ## データベースの設定  
 SQL SERVER接続を許可する。  
-https://qiita-image-store.s3.amazonaws.com/0/47856/9e123023-df0a-d4fc-5d04-2cde9ee91506.png  
+![無題.png](/image/9e123023-df0a-d4fc-5d04-2cde9ee91506.png)  
   
   
  __テーブル__   

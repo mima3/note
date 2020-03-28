@@ -46,7 +46,7 @@ searchTwitter(iconv("おっぱい","CP932","UTF-8")) #日本語の場合はUTF8�
 
 ```  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/657e17a1-4fcc-e54a-e7ce-fed716a34aaf.png  
+![oppai.png](/image/657e17a1-4fcc-e54a-e7ce-fed716a34aaf.png)  
   
 コードを見る限り、since、untilもサポートしているので、昔にさかのぼって取得することもできるかと思います（未検証）  
   

@@ -22,7 +22,7 @@ Javaで画面を作成する主な方法としてSwingを使用する場合と�
   
  - [SwingのキホンJFrameを使う](https://www.atmarkit.co.jp/ait/articles/0605/31/news125.html)  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/d1c4e83e-6deb-7453-15bd-09b0ea90201e.png  
+![image.png](/image/d1c4e83e-6deb-7453-15bd-09b0ea90201e.png)  
   
   
 ```java:ToDoListPane.java
@@ -83,7 +83,7 @@ https://github.com/mima3/testjavagui/tree/master/java/Swing001
   
 ## JavaFxで作成した画面  
 JavaFxでも単純な画面を作成します。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/29bbd2cd-5e4b-9206-c825-3d35da0c7d1d.png  
+![image.png](/image/29bbd2cd-5e4b-9206-c825-3d35da0c7d1d.png)  
   
 ```xml:Main.fxml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -157,7 +157,7 @@ JavaFXはJDK 11以降、Oracle JDKから分離されます。そのためJavaFx�
 https://gluonhq.com/products/javafx/  
   
 (2)ダウンロードしたフォルダ中のlibの中のjarをプロジェクトの参照ライブラリに追加する。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/0c6e25b8-8826-abb5-0943-963ea148d7d0.png  
+![image.png](/image/0c6e25b8-8826-abb5-0943-963ea148d7d0.png)  
   
 (3)実行時  
 **コマンドラインから実行する場合**  
@@ -167,18 +167,18 @@ C:\pleiades201904\java\11\bin\java --module-path=C:\tool\lib\javafx-sdk-11.0.2\l
 ```  
   
 **Eclipseで実行する場合の実行構成**  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/d79a0635-5648-a76a-9420-4f1129dbc3c6.png  
+![image.png](/image/d79a0635-5648-a76a-9420-4f1129dbc3c6.png)  
   
 # UIAutomationの自動操作  
 作成したJavaの画面を[inspect.exe](https://docs.microsoft.com/en-us/windows/win32/winauto/inspect-objects)を使用してUIAutomation経由で操作できるかを確認します。  
   
 ## Swingの場合：  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/7ce53454-8fdc-0cd0-927f-2d348b425219.png  
+![image.png](/image/7ce53454-8fdc-0cd0-927f-2d348b425219.png)  
   
 UIAutomationでコントロールの情報が取得されていないことが確認できます。つまり**Swingで作成したアプリケーションはUIAutomation経由で操作が不可能です**。  
   
 ## JavaFxの場合：  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/afa0ded0-2ed9-15a8-ac6c-2b0c9e631c34.png  
+![image.png](/image/afa0ded0-2ed9-15a8-ac6c-2b0c9e631c34.png)  
   
 UIAutomationの要素が取得されており、ControlTypeも適切に設定されていることが確認できます。  
 実際にPowerShellを使用して自動操作をしてみましょう。  
@@ -353,7 +353,7 @@ $listPtn.Select()
 ```  
   
 **実行結果**  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/ae08fef1-83e6-a62e-3332-81e074f82251.gif  
+![auto4.gif](/image/ae08fef1-83e6-a62e-3332-81e074f82251.gif)  
   
   
 これを実行するとJava11のJavaFxを使用した画面は正常に完了しますが、Java8のJavaFxを使用した画面は下記のエラーを出力します。  
@@ -415,7 +415,7 @@ https://www.oracle.com/technetwork/java/javase/tech/index-jsp-136191.html
 https://github.com/google/access-bridge-explorer/releases  
   
 (4)Access Bridge Explorerを起動する。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/a5f92abd-2088-ca55-ced8-873f4cf0ff2d.png  
+![image.png](/image/a5f92abd-2088-ca55-ced8-873f4cf0ff2d.png)  
   
 ※Java Access BridgeではSwingで作成した画面しか操作できません。JavaFxで作成した画面を操作することは不可能です。  
   
@@ -508,7 +508,7 @@ JabApiでは[Java Access BridgeのAPI](https://docs.oracle.com/javase/10/access/
   
   
 **実行結果**  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/d63c6267-38b3-831b-45fa-b29cb91bf149.gif  
+![auto5.gif](/image/d63c6267-38b3-831b-45fa-b29cb91bf149.gif)  
   
 ### PowerShellでの例  
 C#を基にPowerShellでも同じ操作を行うスクリプトが記述できます。  
@@ -552,14 +552,14 @@ foreach($item in $list.children) {
   
 # UIPathの場合  
 ツールからJava拡張機能をインストールすることでJavaのGUI操作が可能になります。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/31aea456-9bf1-8de1-8869-d3785812b4cd.png  
+![image.png](/image/31aea456-9bf1-8de1-8869-d3785812b4cd.png)  
 拡張機能をインストールすると「%JRE_HOME%\bin\」にUiPathJavaBridgeV8_x64.dllが、格納されます。  
   
 拡張機能をインストールすると、いつも通りに画面が作成できるようになります。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/1684833a-fb64-b155-e512-fb9b0f343403.png  
+![image.png](/image/1684833a-fb64-b155-e512-fb9b0f343403.png)  
   
 **実行結果**  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/cb0cf87d-f56d-3914-5b71-c1bc8a5b6909.gif  
+![auto6.gif](/image/cb0cf87d-f56d-3914-5b71-c1bc8a5b6909.gif)  
   
 # その他の選択肢  
 GUIのテストフレームワークを利用して自動操作がおこなえるかもしれません。  

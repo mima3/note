@@ -27,7 +27,7 @@ https://radon.readthedocs.org/en/latest/intro.html#cyclomatic-complexity
 radon cc -s ".\*.py"
 ```  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/3ab4e165-ce47-4d48-dc15-846530314f76.png  
+![無題.png](/image/3ab4e165-ce47-4d48-dc15-846530314f76.png)  
   
  __出力内容：__   
 最初の記号はブロックタイプを表す  

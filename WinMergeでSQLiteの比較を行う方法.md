@@ -134,7 +134,7 @@ End Sub
   
 ３．WinMergeの展開プラグインを自動にするか、SqliteToText.sctを明示して比較  
 を実行する。  
-https://qiita-image-store.s3.amazonaws.com/0/47856/8a540841-3442-3620-f8f6-19356f0faa10.png  
+![無題.png](/image/8a540841-3442-3620-f8f6-19356f0faa10.png)  
   
 このように、テーブル、トリガー、ビュー、インデックスの情報、とテーブルの中身を比較する。  
   

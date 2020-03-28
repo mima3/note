@@ -42,32 +42,32 @@ http://fb.dev-plus.jp/what-devplus/dev_register/
 2.開発者ページの[Apps]->[Add a New App]を実行する。  
 https://developers.facebook.com/  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/dc70636f-7def-4340-467d-2a5352882ab3.png  
+![facebook1.png](/image/dc70636f-7def-4340-467d-2a5352882ab3.png)  
   
 3.アプリケーションの種類で[ウェブサイト]を選択する  
-https://qiita-image-store.s3.amazonaws.com/0/47856/a165a05f-b75d-4433-4d0d-8e74f3a268c6.png  
+![facebook2.png](/image/a165a05f-b75d-4433-4d0d-8e74f3a268c6.png)  
   
 4.アプリケーション名を入力して、[Create New Facebook APP ID]を選択する  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/4e9816e5-4cac-36bd-a937-5939bed0f021.png  
+![facebook3.png](/image/4e9816e5-4cac-36bd-a937-5939bed0f021.png)  
   
 5.カテゴリーを選択して[Create APP ID]を入力する。  
-https://qiita-image-store.s3.amazonaws.com/0/47856/e663993f-e47f-9458-7c01-d8667bf5b014.png  
+![facebook4.png](/image/e663993f-e47f-9458-7c01-d8667bf5b014.png)  
   
 6.作成されたページを下にスクロールすると「サイトURL」を入力できるので、そこを入力して「次へ」を押下する  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/797cd78a-88ec-ce67-ce7d-068d7110ddf4.png  
+![facebook5.png](/image/797cd78a-88ec-ce67-ce7d-068d7110ddf4.png)  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/1301ac74-38e2-876e-4a0e-24c21f64e59a.png  
+![facebook6.png](/image/1301ac74-38e2-876e-4a0e-24c21f64e59a.png)  
   
 FacebookAPIで指定するredirect_urlは、このサイとで指定したドメイン名でなければならない。IPアドレスの指定はできないようなので、ローカルで動かす場合はlocalhostとしておく。  
   
 7.ページをリロードするとメニューから作成したアプリケーションを選択できるようになる。  
-https://qiita-image-store.s3.amazonaws.com/0/47856/b0afc373-22ee-7d25-8333-1e2b013a67db.png  
+![facebook8.png](/image/b0afc373-22ee-7d25-8333-1e2b013a67db.png)  
   
 8.アプリを選択すると、「App ID」と「App Secret」を表示できる。この値を使って認証を行いアクセストークンを取得できる。  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/b1ec2936-d896-1364-574d-752715c3bc08.png  
+![facebook9.png](/image/b1ec2936-d896-1364-574d-752715c3bc08.png)  
   
 ## アクセストークン取得する  
 以下にアクセストークン取得する方法を示す。  

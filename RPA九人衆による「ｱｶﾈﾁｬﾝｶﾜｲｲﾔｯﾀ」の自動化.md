@@ -7,7 +7,7 @@
 　VoiceRoide2  
   
 **画面構成**  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/a1e790fd-cf19-4f2c-80ec-405e4bafc9a3.png  
+![スライド1.PNG](/image/a1e790fd-cf19-4f2c-80ec-405e4bafc9a3.png)  
   
   
 タブの中の子要素が取れない問題について：  
@@ -16,7 +16,7 @@ https://teratail.com/questions/53276
   
   
 **保存時の画面遷移**  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/41f096bf-3feb-67b8-3bbb-211996cb5233.png  
+![スライド2.PNG](/image/41f096bf-3feb-67b8-3bbb-211996cb5233.png)  
   
 **参加ツール**  
   
@@ -43,13 +43,13 @@ Officeさえ入っていればWindowsの自動操作が行えます。
 画面上の要素を正確に捕捉できるため、違うPCでも動かしやすいという利点があります。  
 操作対象のオブジェクトの調査は[Inspect](https://docs.microsoft.com/en-us/windows/desktop/winauto/inspect-objects)を用いて行うとよいでしょう。  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/e06a3709-0e0c-aa34-f774-82f1ce8998e5.png  
+![inspect.png](/image/e06a3709-0e0c-aa34-f774-82f1ce8998e5.png)  
   
 ### VBAによる実装  
 https://github.com/mima3/rpa_akanechan/tree/master/vba(UIAutomationCom)  
   
 **参照設定**  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/618a5695-a0f4-4f3e-8229-6ae8806edaa1.png  
+![image.png](/image/618a5695-a0f4-4f3e-8229-6ae8806edaa1.png)  
   
   
 ```vb:Module1
@@ -420,13 +420,13 @@ Seleniumライクな操作でWindowsアプリを操作するためにマイク�
   
 その構成は以下のようになります。  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/e0443b38-4e1f-cd70-3173-5004c61bec99.png  
+![RPA画面構成.png](/image/e0443b38-4e1f-cd70-3173-5004c61bec99.png)  
   
 操作プログラムは操作対象のプログラムを直接操作するのでなくWebAppDriver経由で操作をおこないます。  
 操作プログラムとWebAppDriverの間は下記のようなJSONデータでやりとりが行われています。  
   
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/8145708a-2ab2-b049-8926-ff3c920d5558.png  
+![image.png](/image/8145708a-2ab2-b049-8926-ff3c920d5558.png)  
   
 WebAppDriverは[ダウンロードページ](https://github.com/Microsoft/WinAppDriver/releases) から入手してください。  
   
@@ -434,11 +434,11 @@ WebAppDriverは[ダウンロードページ](https://github.com/Microsoft/WinApp
 ### WinAppDriverUiRecorderについて  
 XPathを用いてWindowの要素を操作するのですが、そのXPathの検査にはWinAppDriverUiRecorderを使用します。  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/bcd0a319-94f1-cdaa-b3db-049106129ceb.png  
+![RPA画面構成.png](/image/bcd0a319-94f1-cdaa-b3db-049106129ceb.png)  
   
   
 C# Codeのタブを選択すると行った操作の内容の実装例が表示されます。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/dbb17633-d2c2-3cdd-c7b7-d260c1f09958.png  
+![image.png](/image/dbb17633-d2c2-3cdd-c7b7-d260c1f09958.png)  
   
 ただし、基本的にあてにはならないのでXPathの参考程度にするといいでしょう。  
 またマルチディスプレイで作業している場合、１つめのディスプレイしか認識しないので注意してください。  
@@ -589,7 +589,7 @@ namespace WinAppDriverSemple
 操作プログラムが使用しているFrendlyが操作対象の茜ちゃんにDLLインジェクションをします。  
 それにより、そこでプロセス間通信を行い画面の要素の情報を取得しています。  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/24b037c0-4d75-da5a-48ee-8b258a528258.png  
+![image.png](/image/24b037c0-4d75-da5a-48ee-8b258a528258.png)  
   
 この仕組みのため、マイクロソフト製のUIAutomationとWinAppDriverでも、やれないことを平然とやってのけます。~~そこにしびれるあこがれる～！！！~~  
 ただし、操作対象のアプリケーションにテスト用のDLLを差し込んだものをテストや運用で使っていいのかという問題がありますので導入時にはよく検討すべきです。一方、単体テストや、再起動可能な画面の自動操作では非常に強力なライブラリです。  
@@ -601,7 +601,7 @@ https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/24b037c0-4d75-
 TestAssistantというツールが提供されており、画面の要素の調査がおこなえます。  
 要素を選択してコードのサンプルを作成したり、実際作成したサンプルをツール上で実行できたりと、かなり強力なツールになっています。  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/167bcaf7-cb87-679d-3de2-e0d9312563b9.png  
+![RPA画面構成.png](/image/167bcaf7-cb87-679d-3de2-e0d9312563b9.png)  
   
   
 #### 同一アプリに対する操作について  
@@ -623,7 +623,7 @@ https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/167bcaf7-cb87-
 #### ウィルスバスターの検知  
 設定によってはウィルスバスターによって誤検知されるので注意してください。  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/d3dbdd42-3eaa-c21c-5aad-a110961262fb.png  
+![image.png](/image/d3dbdd42-3eaa-c21c-5aad-a110961262fb.png)  
   
   
 ### Friendlyによる実装  
@@ -838,7 +838,7 @@ pyautogui.click(akane[0], akane[1])
   
   
 ## UWSCでｱｶﾈﾁｬﾝｶﾜｲｲﾔｯﾀｰ  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/a74afb64-400d-71ce-2dd2-a592c3df433d.png  
+![image.png](/image/a74afb64-400d-71ce-2dd2-a592c3df433d.png)  
   
 １０年以上前から存在するツールです。  
 レコード機能が強力でAutoHotKeyやAutoItでは認識しないような画面の要素を検出できます。  
@@ -915,12 +915,12 @@ Ruby,Python,JavaScriptで記載されたスクリプトをJavaで解析して動
 基本がJavaなのでMacやLinuxでも動作します。ただし1.1.4よりJavaの64ビットが要求されています。  
   
 下記がIDEになります。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/0c1b0cd3-b889-adcc-b0ec-ba8f0ffa76d2.png  
+![image.png](/image/0c1b0cd3-b889-adcc-b0ec-ba8f0ffa76d2.png)  
   
 UWSC,pyAutoGuiともに画像認識は行えますが、使用する画像はあらかじめ用意する必要がありました。しかしsikulixでは、必要な際にディスクトップ全体から切り取って使用できます。  
   
 また画像のどこをクリックするかという指定もGUI上で行えます。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/a40ad0b3-92c3-e5ac-e67b-8f107d47133f.png  
+![image.png](/image/a40ad0b3-92c3-e5ac-e67b-8f107d47133f.png)  
   
 操作記録の機能こそないものの、直観的に作成できる貴重なツールです。  
   
@@ -1006,7 +1006,7 @@ sys.setdefaultencoding('utf-8')
 いままで紹介したツールと違い、スクリプトなどは記載しません。  
   
 以下のように処理をGUIで列挙していく形になります。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/3e49fac3-3bda-370b-1733-68d912a81b46.png  
+![image.png](/image/3e49fac3-3bda-370b-1733-68d912a81b46.png)  
   
 このため、単純な処理は容易に作成できますが、複雑な分岐がある場合は対応できません。  
   
@@ -1017,39 +1017,39 @@ Rocket Mouseでは「最初の処理」、「繰り返しの処理」、「最�
 また、最後の処理につては完了メッセージを表示するだけになります。  
   
 **最初の処理1行目**  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/23ea9cda-8343-ab3f-aaff-b2f70c6068b3.png  
+![image.png](/image/23ea9cda-8343-ab3f-aaff-b2f70c6068b3.png)  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/c536a8c4-842c-a4a0-3ea3-ac32e40e98af.png  
+![image.png](/image/c536a8c4-842c-a4a0-3ea3-ac32e40e98af.png)  
   
 テキストと再生ボタンの画像認識を行い、認識できた場合はテキストをクリックします。  
 認識できなければ「最期の処理の1行目」にジャンプし処理を終了します。  
   
 **最初の処理2～4行目**  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/c8731b52-ec19-e738-60dc-7d68216f2421.png  
+![image.png](/image/c8731b52-ec19-e738-60dc-7d68216f2421.png)  
   
 この処理はキーボード操作でテキストをクリアしたのち、入力したい文字を入れています。  
   
 **最初の処理5行目**  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/268bafcc-6dff-f361-4419-4679bb87f303.png  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/ad96a6e0-c925-2ce0-8711-994cd8a26580.png  
+![image.png](/image/268bafcc-6dff-f361-4419-4679bb87f303.png)  
+![image.png](/image/ad96a6e0-c925-2ce0-8711-994cd8a26580.png)  
 これは最初の処理1行目とほぼ同じで押下している箇所が違うだけです。  
 今回は再生ボタンをおしています。  
   
 **最初の処理6行目**  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/31c668e4-d445-74d2-78e3-3c887f8aca67.png  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/923e9263-8161-82ec-898c-718ba1340774.png  
+![image.png](/image/31c668e4-d445-74d2-78e3-3c887f8aca67.png)  
+![image.png](/image/923e9263-8161-82ec-898c-718ba1340774.png)  
 この処理は「テキストを読み上げました」と表示されるまで無限ループをしています。  
   
 **最初の処理7行目**  
 ショートカットキーで音声保存をしています。  
   
 **最初の処理8行目**  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/be1fbae9-8b5d-4b51-3812-8fcd51e7936d.png  
+![image.png](/image/be1fbae9-8b5d-4b51-3812-8fcd51e7936d.png)  
 「音声保存」というタイトルのウィンドウが表示されるまで待機します。  
   
 **最初の処理9行目**  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/da8d76c7-d723-469b-4854-e859bb3e7a37.png  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/80c9b513-2502-7bc9-a7b1-7816216f27c6.png  
+![image.png](/image/da8d76c7-d723-469b-4854-e859bb3e7a37.png)  
+![image.png](/image/80c9b513-2502-7bc9-a7b1-7816216f27c6.png)  
   
 OKボタンが表示されたらクリックする、されなければ終了としています。  
   
@@ -1057,7 +1057,7 @@ OKボタンが表示されたらクリックする、されなければ終了と
 最初の処理8行目と同様に「名前を付けて保存」画面がでるまで待ちます。  
   
 **最初の処理11行目**  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/82223daf-5495-5f11-976d-99ba539fcddf.png  
+![image.png](/image/82223daf-5495-5f11-976d-99ba539fcddf.png)  
   
 時刻を取得して書式を整えたあと、変数$now$に格納します。  
   
@@ -1100,7 +1100,7 @@ https://qiita.com/UmegayaRollcake/items/c9ff9a01b101ba9193fc
 今回作成したプロジェクトのファイルは下記の通りです。  
 https://github.com/mima3/rpa_akanechan/tree/master/UiPathSample  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/ff5da448-4ab4-eb63-cee2-e4273a92d9a1.png  
+![image.png](/image/ff5da448-4ab4-eb63-cee2-e4273a92d9a1.png)  
   
 シーケンスの中に「しゃべる＋保存」アクティビティと「葵ちゃんに切り替え」アクティビティがあります。  
   
@@ -1109,21 +1109,21 @@ https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/ff5da448-4ab4-
   
 ##### 変数の設定  
 シーケンス内で有効、アクティビティ内で有効といったスコープを極めて変数を定義できます。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/ce60fc95-7b41-8b65-986c-1ed6e01972d9.png  
+![image.png](/image/ce60fc95-7b41-8b65-986c-1ed6e01972d9.png)  
   
 設定値ではVB.NETの式が使用でき、今回は現在時刻のファイル名を構築してます。  
   
 ##### 処理の流れ  
 ・テキストを入力して再生～完了まで  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/9562b874-62b6-d3cf-3199-1cb05b8a03b8.png  
+![image.png](/image/9562b874-62b6-d3cf-3199-1cb05b8a03b8.png)  
   
 ・音声保存  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/cda1c61e-7be7-b7b7-c52f-ac3744d44a8c.png  
+![image.png](/image/cda1c61e-7be7-b7b7-c52f-ac3744d44a8c.png)  
   
   
 #### あかねちゃんに切り替えアクティビティ  
 UIPathでもタブの子要素になっている要素を検知することはできないので画像識別を利用します。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/9cd9176f-320d-be7a-ef99-d64328a3d261.png  
+![image.png](/image/9cd9176f-320d-be7a-ef99-d64328a3d261.png)  
   
   
 # 完走した感想  

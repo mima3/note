@@ -18,7 +18,7 @@ https://archive.codeplex.com/?p=transactionalfilemgr
   
 # インストール方法  
 NuGetでTxFileMangerをインストールしてください。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/401bca73-ab44-10fd-6611-971531723677.png  
+![image.png](/image/401bca73-ab44-10fd-6611-971531723677.png)  
   
 1.3と2.0があります。2.0は2019年の4月ころに追加されたもので、いくつかの機能が追加されているようですが、今回は1.3を使用することにします。  
   
@@ -90,17 +90,17 @@ namespace FileTest
   
 ## サンプルの実行結果  
 (1)実行前  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/58aa4f4e-f834-8bdb-6ca2-21a3e4f6da5e.png  
+![image.png](/image/58aa4f4e-f834-8bdb-6ca2-21a3e4f6da5e.png)  
   
 (2)Complete実行前  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/5aaaea58-1e5a-9dbf-3bd5-45a6f1ca7718.png  
+![image.png](/image/5aaaea58-1e5a-9dbf-3bd5-45a6f1ca7718.png)  
   
 (3-1)Completeした場合  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/5aaaea58-1e5a-9dbf-3bd5-45a6f1ca7718.png  
+![image.png](/image/5aaaea58-1e5a-9dbf-3bd5-45a6f1ca7718.png)  
 ・・・(2)より変化なし  
   
 (3-2)Completeしない場合  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/58aa4f4e-f834-8bdb-6ca2-21a3e4f6da5e.png  
+![image.png](/image/58aa4f4e-f834-8bdb-6ca2-21a3e4f6da5e.png)  
 ・・・(1)と同じになる  
   
 ## サンプルの解説  

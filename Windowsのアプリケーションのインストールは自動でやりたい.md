@@ -21,7 +21,7 @@ exeの場合、それぞれが異なる可能性もありますし、また、�
 WinMerge-2.1.6.4-Setup.exe /?
 ```  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/a64ab5a4-95aa-a048-b379-7bf0314f10a0.png  
+![image.png](/image/a64ab5a4-95aa-a048-b379-7bf0314f10a0.png)  
   
 これを読めば、/SILENT、または/VERYSILENTを付与して実行すればGUIの操作なしでインストールできると考えられます。  
 では実行してみましょう。  
@@ -31,7 +31,7 @@ WinMerge-2.1.6.4-Setup.exe /VERYSILENT
 ```  
   
 GUIなしでWinMergeがインストールできることが確認できます。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/b543fc4b-b758-52fe-bb56-85ef9ec9bd0c.png  
+![image.png](/image/b543fc4b-b758-52fe-bb56-85ef9ec9bd0c.png)  
   
 ## 拡張子がmsiのインストーラの操作例  
 msiexecでMSIファイルの操作が行えます。このコマンドについては/?でヘルプを確認するか、公式のヘルプを参考にしてください。  
@@ -141,14 +141,14 @@ https://docs.microsoft.com/ja-jp/windows/win32/msi/command-line-options
 msiexec /i TortoiseSVN-1.12.2.28653-x64-svn-1.12.2.msi /passive /qn /norestart
 ```  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/72267e3b-0eb4-b877-9379-7e7752c99e38.png  
+![image.png](/image/72267e3b-0eb4-b877-9379-7e7752c99e38.png)  
   
   
 ## インストール時のオプションを変更したい  
 上記のインストールを行った場合、コマンドラインからSVNコマンドが実行できません。  
 これは、デフォルトのインストールの動作が以下のように「command line client tools」が除外されているためです。  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/9922019f-bcfa-dfa5-06aa-a94e65b7e2d0.png  
+![image.png](/image/9922019f-bcfa-dfa5-06aa-a94e65b7e2d0.png)  
   
   
 このオプションを変更するには各アプリケーションが持っている特定のプロパティを指定する必要があります。  
@@ -184,7 +184,7 @@ msiexec /lp! log_cli.txt /i TortoiseSVN-1.12.2.28653-x64-svn-1.12.2.msi
 (5)Command Line Toolを設定した状態でインストールをする。  
   
 (6)作成されたログファイルを比較する  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/2fcc46d3-88d1-fdd9-2425-1120f8ddf975.png  
+![image.png](/image/2fcc46d3-88d1-fdd9-2425-1120f8ddf975.png)  
   
 比較をしているとCommand Line Toolを有効にした場合は、ADDLOCALにCLIが追加されていることがわかります。  
   

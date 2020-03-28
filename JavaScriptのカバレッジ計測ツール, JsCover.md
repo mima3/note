@@ -4,12 +4,12 @@ Webブラウザで実行される前に、JavaScriptコードに計測用のコ�
   
 JsCoverをHTTPサーバーとして起動させて、[QUnit](https://qunitjs.com/)のようにHTMLにテストコードを記載し、JavaScriptのカバレッジを計測することができます。  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/47ed539a-979d-1973-0f5a-874d08fe0558.png  
+![image.png](/image/47ed539a-979d-1973-0f5a-874d08fe0558.png)  
   
 この際、サーバーと通信する箇所は[sinon](https://sinonjs.org/)などのモックを利用して、ダミーコードを用意するとテストが容易になります。  
   
 また下記のようにプロキシサーバーとしてJsCoverを起動することも可能です。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/cb821343-5382-bcd8-6b8f-53cd0c73c5a5.png  
+![image.png](/image/cb821343-5382-bcd8-6b8f-53cd0c73c5a5.png)  
   
 詳細は下記を参照してください。  
 https://tntim96.github.io/JSCover/manual/manual.xml  
@@ -33,41 +33,41 @@ java -jar target/dist/JSCover-all.jar -ws --document-root=doc/example --report-d
   
 次に、ブラウザを用いて「[http://localhost:8080/jscoverage.html](http://localhost:8080/jscoverage.html)」にアクセスしてJSCover用の画面を表示します。  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/900f5650-7f75-62c2-4ede-a228b7c3f26e.png  
+![image.png](/image/900f5650-7f75-62c2-4ede-a228b7c3f26e.png)  
   
 URLの入力ボックスに「[http://localhost:8080/index.html](http://localhost:8080/index.html)」を入力して「Open in frame」ボタンを押下します。  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/76038567-0587-c2f8-690f-ab5071558a9e.png  
+![image.png](/image/76038567-0587-c2f8-690f-ab5071558a9e.png)  
   
 これにより、フレーム内にテスト対象のページが表示されました。  
 では、「Two」オプションを選択してみましょう。  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/5fb9b4f8-bf0e-c970-b44b-38d92dacdb02.png  
+![image.png](/image/5fb9b4f8-bf0e-c970-b44b-38d92dacdb02.png)  
   
 JavaScriptが実行されて画面が更新されます。  
 この状態で、カバレッジを確認するには、「Summary」タブをクリックします。  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/d37d3331-3de8-6735-9187-58db24f79d28.png  
+![image.png](/image/d37d3331-3de8-6735-9187-58db24f79d28.png)  
   
 「Summary」画面では、File、Coverage、Branch、またはFunctionの列をクリックしてソート順を変更できます。  
 カバーされていない行を確認するには「Show missing statements column」チェックボックスにチェックを付けます。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/c26ed44b-bf85-9b6f-ce7b-eef3a7582050.png  
+![image.png](/image/c26ed44b-bf85-9b6f-ce7b-eef3a7582050.png)  
 Missingという列が追加されて、カバーされていない行が表示されます。  
   
 ソースコードを見るにはFile列のファイル名をクリックするか、Missing列の行番号をクリックします。その結果は以下のようになります。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/49cd20e3-a26e-c5e5-8d9d-db53c29d9834.png  
+![image.png](/image/49cd20e3-a26e-c5e5-8d9d-db53c29d9834.png)  
   
 カバーされた行は緑となり、カバーされていない行は赤になります。  
 今回は「Two」オプションをクリックした場合の分岐のみが実行されていることがわかります。  
   
 また、分岐においてどの条件が実行されたかを確認するには「info」ボタンを押下します。  
 9行目をクリックすると以下のようなメッセージボックスが表示されます。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/8ade3c98-79bc-3bad-0820-b1116d0c1585.png  
+![image.png](/image/8ade3c98-79bc-3bad-0820-b1116d0c1585.png)  
   
 element.id=='radio1'がtrueになる条件をみたしていないと通知されます。  
   
 カバレッジの計測結果を外部ファイルに保存するには「Store」タブを押下後、「Store Report」ボタンを押下することで「jscoverage.json」というファイル名で起動時に指定したレポート出力フォルダに出力されます。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/f493583c-a442-cf6a-0eaf-a9638dff295a.png  
+![image.png](/image/f493583c-a442-cf6a-0eaf-a9638dff295a.png)  
   
 URLを再読み込みしても、JsCoverのサーバーが起動中はカバレッジは累積して計測されます。  
 １から計測しなおしたい場合はJsCoverを再起動してください。  
@@ -87,7 +87,7 @@ java -jar C:\tool\JSCover-2.0.8\target\dist\JSCover-all.jar -ws --proxy --port=3
   
 ### C#のSeleniumによるカバレッジの取得例  
 まずSelenium用のライブラリを取得します。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/951353c6-2d55-a9be-4109-8eaf5a5c90ed.png  
+![image.png](/image/951353c6-2d55-a9be-4109-8eaf5a5c90ed.png)  
   
 以下の例は、指定のURLをプロキシ経由で開いてradio2をクリックしたのちに、カバレッジを取得する例です。  
   
@@ -141,7 +141,7 @@ JSCoverで計測したレポートはJenkinsに表示させることも可能で
 その手順は以下のようになります。  
   
 (1)JenkinsのプラグインでCoberturaをインストールします。	  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/9ece2ee8-f1b8-3d5d-9864-f1d5412fc9dc.png  
+![image.png](/image/9ece2ee8-f1b8-3d5d-9864-f1d5412fc9dc.png)  
   
 (2)JSCoverのコマンドを用いて「jscoverage.json」から「cobertura-coverage.xml」を生成します。  
   
@@ -152,15 +152,15 @@ java -cp JSCover-all.jar jscover.report.Main --format=COBERTURAXML jscoverage.js
 Jenkinsで使用する場合、「cobertura-coverage.xml」とJavaScriptのあるフォルダはワークスペース上に配置するようにした方がいいでしょう。  
   
 (3)Jenkinsのジョブのビルド後イベントで「Cobertura カバレッジ・レポートの集計」を追加する  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/22bdac05-7051-f49e-d9b4-55e822315f0a.png  
+![image.png](/image/22bdac05-7051-f49e-d9b4-55e822315f0a.png)  
   
 (4)Jenkinsでビルドが成功するとカバレッジのレポートが作成されます。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/aa0c9d64-4474-d91d-153f-1e9ce57528d1.png  
+![image.png](/image/aa0c9d64-4474-d91d-153f-1e9ce57528d1.png)  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/cfa3f1f3-a1cf-da1b-1384-7cffb5552586.png  
+![image.png](/image/cfa3f1f3-a1cf-da1b-1384-7cffb5552586.png)  
   
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/08a53774-ba0f-4df2-8787-ed15bea3a211.png  
+![image.png](/image/08a53774-ba0f-4df2-8787-ed15bea3a211.png)  
   
 ## LocalStorageモード  
 JsCover起動時に「--local-storage」を付与することで、ブラウザのローカルストレージにカバレッジ情報を記録することができます。これにより、JSCoverを再起動しても継続してカバレッジを収取しつづけることが期待できます。  

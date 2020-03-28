@@ -50,7 +50,7 @@ VSIXはVisualStudioの拡張配置である。このVSIXはzipファイルにす
   
 次のような内容が確認できる。  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/ac8f7237-3342-934e-168c-2dae2f4f61f3.png  
+![jslint1.png](/image/ac8f7237-3342-934e-168c-2dae2f4f61f3.png)  
   
 JSLint.Framework.dllが実際のjslintなどの処理を行っているプログラムである。  
 このDLLはjavascriptファイルをリソースとしてもっており、そのJavaScriptをNoesis.Javascript.dllを利用して実行し、静的解析を行っている。  
@@ -127,7 +127,7 @@ VisualStudioの開発者コマンド プロンプトから以下のコマンド�
 ildasm ../JSLint.Framework.dll /out=JSLint.Framework.il
 ```  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/8a21202a-960e-960a-2168-75047d26e3df.png  
+![jslint2.png](/image/8a21202a-960e-960a-2168-75047d26e3df.png)  
   
 ## jslintの比較方法を修正する。  
 JSLint.Framework.JS.jshint.jsを以下のように修正する。07-25-2015でコメントを打っている箇所が修正箇所だ。  

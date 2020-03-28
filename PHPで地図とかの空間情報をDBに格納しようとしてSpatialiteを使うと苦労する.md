@@ -130,7 +130,7 @@ http://www.sqlite.org/loadext.html
   
 これについては、Dependency.Walkerで調べるかソースコード読んでください。  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/f6340ec8-6dfe-1865-8ec9-e8701e8a13b9.png  
+![spatialite.png](/image/f6340ec8-6dfe-1865-8ec9-e8701e8a13b9.png)  
 http://www.dependencywalker.com/  
   
 つまり、PHPからloadExtensionを行った場合にエントリーポイントを「sqlite3_modspatialite_init」に変換できていないのが、このエラーの原因となります。  
@@ -361,9 +361,9 @@ loadExtensionをするまえにsqlite3_enable_load_extensionで拡張モジュ�
   
 ### mod_spatialite.dllをバイナリエディタで開いて、エントリーポイント名を改ざんする  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/0be5ebef-2ba6-d1e2-d14d-2fdfbbdfd246.png  
+![spatialite_bin.png](/image/0be5ebef-2ba6-d1e2-d14d-2fdfbbdfd246.png)  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/f370afef-410c-5205-0eb7-7040ecd89741.png  
+![spatialite_bin2.png](/image/f370afef-410c-5205-0eb7-7040ecd89741.png)  
   
 sqlite3_modspatialite_initという文字をバイナリエディタで検索して、sqlite3_extension_initに置き換えます。この際、足りないところには00で埋めます。削除したりすると、アドレスが変わるので動作しなくなります。  
   

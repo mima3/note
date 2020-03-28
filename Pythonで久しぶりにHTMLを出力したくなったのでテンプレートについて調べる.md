@@ -157,11 +157,11 @@ Mako,Jinja2,Genshiともに、機能や環境的には今回の使用目的に�
 そのため、StackOverflowでの質問件数を調べます。  
   
 2019/10/18時点  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/5b31076b-33e5-03bb-fada-c2922121b0a3.png  
+![image.png](/image/5b31076b-33e5-03bb-fada-c2922121b0a3.png)  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/cf354f9b-5191-0e94-2f31-1b88f96abf21.png  
+![image.png](/image/cf354f9b-5191-0e94-2f31-1b88f96abf21.png)  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/e3a88e7e-bcca-50db-830b-a077f30b1766.png  
+![image.png](/image/e3a88e7e-bcca-50db-830b-a077f30b1766.png)  
   
   
 **結果：**  

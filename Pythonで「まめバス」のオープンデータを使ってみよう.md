@@ -10,7 +10,7 @@ http://www.city.kusatsu.shiga.jp/kurashi/kotsudorokasen/mamebus/opendata.html
  **デモ**   
 http://needtec.sakura.ne.jp/bus_data/kusatu.html  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/43cdcd04-7dbc-01a0-e9af-00c224773e02.png  
+![bus7.png](/image/43cdcd04-7dbc-01a0-e9af-00c224773e02.png)  
   
   
   
@@ -69,12 +69,12 @@ ExcelとCSVでバス停名が異なる場合があります。
 普通、Excelのデータの配置は同じようになるもんですが、ワークブック毎に異なっています。  
   
 M01_stop_times.xlsxを見てみましょう。  
-https://qiita-image-store.s3.amazonaws.com/0/47856/9ef5a859-c5a7-35f3-5b2b-a62d4e9a109e.png  
+![bus3.png](/image/9ef5a859-c5a7-35f3-5b2b-a62d4e9a109e.png)  
   
 このワークブックでは「●」の有無で土曜日か、平日かを判断しています。  
 しかし、別のM03_stop_times.xlsxを見てみましょう。  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/0df7f0f9-03ae-ec3d-98fc-2047f9d23d58.png  
+![bus4.png](/image/0df7f0f9-03ae-ec3d-98fc-2047f9d23d58.png)  
   
 ここではシート毎に曜日を分けています。  
   
@@ -97,10 +97,10 @@ M04_stop_times.xlsxの山田線（木ノ川循環：左回り）を見てみま�
   
 ### 拡張性のないデータの配置  
 以下のシートの場合、バスの本数が増えても単純にデータ量が変わるだけなので、Excelを解析する処理に変更はありません。  
-https://qiita-image-store.s3.amazonaws.com/0/47856/5294fcd8-705e-9722-466f-327ef5c699f0.png  
+![bus6.png](/image/5294fcd8-705e-9722-466f-327ef5c699f0.png)  
   
 しかし、次の行を考えてみましょう。  
-https://qiita-image-store.s3.amazonaws.com/0/47856/ce22ccd8-a1a9-4ef3-98f1-2c84a103281c.png  
+![bus5.png](/image/ce22ccd8-a1a9-4ef3-98f1-2c84a103281c.png)  
   
 この例だと、データ量が増えると下部のデータ開始位置もずれるため、処理を変更する必要がでてきます。  
   
@@ -134,7 +134,7 @@ for sh in wb.sheets():
 XLS拡張子や、セルの結合のないxlsxでは上記のコードは何の問題もなく動作します。  
 しかし、以下のようなセルの結合があるシートを操作するとエラーになります。  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/e1fe1d1d-89f1-a1f7-6162-f8adc32cfb9c.png  
+![bus2.png](/image/e1fe1d1d-89f1-a1f7-6162-f8adc32cfb9c.png)  
   
  **エラー内容**   
   

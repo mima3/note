@@ -18,7 +18,7 @@ Windowsの自動化のテクニックの話をする前にちょっと重要な�
   
 たとえば...  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/c68c91ae-7184-f6f9-1a1d-fda1317653f4.png  
+![image.png](/image/c68c91ae-7184-f6f9-1a1d-fda1317653f4.png)  
   
 …と思っている方も、一旦、その存在は忘れてください。  
   
@@ -179,16 +179,16 @@ MicroSoftのOfficeアプリケーションは多くの現場で使用されて�
 ひと昔前のOfficeは既定のメニューから簡単にマクロの開発のメニューができましたが、最近のOfficeはひと手間必要になります。  
   
 (1)Word等のOfficeアプリケーションを開いたら、オプション画面を表示します。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/5487b8e7-a0a5-a7ec-536f-a3de3840ad75.png  
+![image.png](/image/5487b8e7-a0a5-a7ec-536f-a3de3840ad75.png)  
   
 (2)オプション画面を開いたら「リボンのユーザ設定」を選択します。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/aee7bc80-794b-c399-ef6b-785a15808848.png  
+![image.png](/image/aee7bc80-794b-c399-ef6b-785a15808848.png)  
   
 (3)その後、開発にチェックします。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/77fad527-2043-1bec-33ed-e8886abad6cf.png  
+![image.png](/image/77fad527-2043-1bec-33ed-e8886abad6cf.png)  
   
 (4)するとメニューに「開発」が表示されます。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/cf43de3e-a3c4-10ac-6904-c4d5e52866f9.png  
+![image.png](/image/cf43de3e-a3c4-10ac-6904-c4d5e52866f9.png)  
   
 これによりOfficeアプリケーションからマクロを記述して自動化することが可能になります。  
 おそらく、色々な書籍が売っているので学習には困らないと思います。  
@@ -254,11 +254,11 @@ https://qiita.com/mima_ita/items/d4655de865f30bb51c65
 画面の自動化を行う場合、なんらかの方法で画面上のコントロールを特定する必要があります。  
   
 たとえば電卓アプリで「÷」キーを特定する方法を考えてみましょう。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/30e1d1a2-368b-bd45-6590-c11dea280724.png  
+![image.png](/image/30e1d1a2-368b-bd45-6590-c11dea280724.png)  
   
 #### 座標で特定する方法  
 もっとも簡単な方法はコントロールの座標で特定する方法です。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/5e53ca59-9be8-062b-a5d8-290261f0c8cf.png  
+![image.png](/image/5e53ca59-9be8-062b-a5d8-290261f0c8cf.png)  
   
 この方法は簡単に、そして多くのツールで行える方法ですが、安定しません。  
 たとえば、ウィンドウの位置が変更されたり、サイズが変更されたりしただけで容易に破綻します。  
@@ -268,7 +268,7 @@ https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/5e53ca59-9be8-
 #### オブジェクトで特定する方法  
 Windowsアプリの多くは[Inspect](https://docs.microsoft.com/en-us/windows/win32/winauto/inspect-objects)などで表示されるようなオブジェクトの構造をもっています。  
 たとえば電卓の例だと以下のようにNameとControlTypeを指定して特定のオブジェクトを検出が可能です。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/e5e63a18-843d-f8b6-3f99-c1ae29f897fc.png  
+![image.png](/image/e5e63a18-843d-f8b6-3f99-c1ae29f897fc.png)  
   
 この方法が最も安定した画面の自動操作を実現しますが、常に使用できるとは限りません。  
 アプリケーションの作り方と使用した技術しだいでは[検出できないコントロール](https://teratail.com/questions/53276)が存在したり、そもそもゲームのようにボタンとかを独自に描画している場合は検出不能です。  
@@ -279,7 +279,7 @@ https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/e5e63a18-843d-
   
   
 #### テンプレートの画像を指定して特定する方法  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/9d4b3b05-e139-ca32-b393-b99d7116718e.png  
+![image.png](/image/9d4b3b05-e139-ca32-b393-b99d7116718e.png)  
   
 テンプレートの画像と一致する箇所をWindowsデスクトップ全体から検出します。  
 たとえ、オブジェクトが検出できない状況下でも画像でコントロールを見つけて検出が可能です。半面、画像でおこなっているため、色合いや画面のサイズなどによって影響を受けて安定して動作しなくなるケースも多いです。  
@@ -386,9 +386,9 @@ UiPathなどはドライバからイベントを発生させてユーザの操�
 ## その他自動操作の話  
 ### タスクスケジューラ―を使いこなそう。  
 タスクバーにてtaskschdと入力することでタスクスケジューラ―が起動します。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/54dc1fd8-8728-b4b5-aa6e-1b8feffa7976.png  
+![image.png](/image/54dc1fd8-8728-b4b5-aa6e-1b8feffa7976.png)  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/1586c2b1-6056-af09-4569-64b84e7cb5e5.png  
+![image.png](/image/1586c2b1-6056-af09-4569-64b84e7cb5e5.png)  
   
 定期的に実行する処理を指定できます。  
 タスクスケジューラのもっとも強力な機能として管理者権限で動作が可能になることです。  
@@ -444,13 +444,13 @@ http://totech.hateblo.jp/entry/2017/09/29/162411
 powershell -ExecutionPolicy RemoteSigned .\test.ps1
 ```  
 ## なぜか自動化できる人材がいません  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/6f55b850-d602-4d5e-c51a-180ad590732e.png  
+![image.png](/image/6f55b850-d602-4d5e-c51a-180ad590732e.png)  
   
 お野菜は勝手に生えてきませんし、人材は畑で採れません。自動化してくれる人材は勝手に生えてこないので、教育期間を確保するか、高い金払って外部から雇いましょう。  
   
   
 ## ××ツールを使えば誰でも簡単に自動化ってできるものなの？  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/3b6638d6-5678-906e-3517-3dc333783328.png  
+![image.png](/image/3b6638d6-5678-906e-3517-3dc333783328.png)  
   
 私は懐疑的です。  
 おそらく、<font color=red>**「安定しない、保守コストの高い自動スクリプト」**</font>は「誰でも簡単」に作れる可能性はあります。  
@@ -462,7 +462,7 @@ https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/3b6638d6-5678-
 その実績や信頼をもって、〇〇ツール導入の交渉にあたりましょう。  
   
 実績や信頼もないのに、多くを望むのは無理です。できるところから頑張りましょう。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/bbd549c1-512a-520f-c3b1-d609a49cb7e1.png  
+![image.png](/image/bbd549c1-512a-520f-c3b1-d609a49cb7e1.png)  
   
 ## なにから自動化したらいいかわかりません。  
 費用対効果の高いところを選んでやりましょう。  
@@ -492,7 +492,7 @@ https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/bbd549c1-512a-
 そもそも、どんな状況にせよ現状の状態は、それなりの理由があって現状の状態になっているわけで、抜本的な改革とかグレートリセットなどを、周りの合意が取れずにやるのは無謀です。  
 小さいところから始めていきましょう。  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/fbb32a72-50c1-7899-63ab-01a70a27b301.png  
+![image.png](/image/fbb32a72-50c1-7899-63ab-01a70a27b301.png)  
   
   
 ## せっかく作った自動化スクリプトが動かなくなった  
@@ -534,7 +534,7 @@ http://web.archive.org/web/20170625093906/http://japanese.joelonsoftware.com/Art
 完全で完璧な状況は作れませんが、あきらめなければ少しづつ改善していくことはできると思います  
   
 ## せっかく自動化して改善したのにあんまり喜ばれません  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/d8cd0cd9-cf8a-38ac-cd5d-180008fac339.png  
+![image.png](/image/d8cd0cd9-cf8a-38ac-cd5d-180008fac339.png)  
   
 色々理由があります。  
   
@@ -550,6 +550,6 @@ https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/d8cd0cd9-cf8a-
   
   
 ## …それでなすべきことをなせましたか？  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/0364fd8c-30f0-2c22-a689-783a94c57c6a.png  
+![image.png](/image/0364fd8c-30f0-2c22-a689-783a94c57c6a.png)  
   
   

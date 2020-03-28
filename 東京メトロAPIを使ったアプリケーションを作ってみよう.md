@@ -30,7 +30,7 @@ https://developer.tokyometroapp.jp/info
   
 ２.ユーザ登録が行われたら開発者サイトにログインをして、アクセストークンを追加します。  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/b77a4223-4c6a-9e79-e714-f56e0c873a16.png  
+![スクリーンショット 2014-10-10 21.02.19.png](/image/b77a4223-4c6a-9e79-e714-f56e0c873a16.png)  
   
  ***注意：ここで発行したアクセストークンは他人に漏れないようにしましょう。***   
   

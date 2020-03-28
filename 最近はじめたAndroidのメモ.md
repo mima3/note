@@ -24,7 +24,7 @@ OS:Windows7 64bit
 ### 実機を使用する方法  
 一番楽。  
 USBケーブルでつなげて、AndroidStudioからRunを実行すれば、実行対象のデバイスを選択できる。  
-https://qiita-image-store.s3.amazonaws.com/0/47856/9d717152-57b7-7ff9-4cb8-627cd0fa7087.png  
+![androidstudiox1.png](/image/9d717152-57b7-7ff9-4cb8-627cd0fa7087.png)  
   
 ### エミュレータを利用する方法  
 AndroidStudioからエミュレータを起動することができる。  
@@ -60,7 +60,7 @@ C:\Users\ユーザー名\AppData\Local\Android\sdk\platform-tools\adb connect 19
 ```  
   
 3.Android StudioでRunを実行するとデバイスとして表示される。  
-https://qiita-image-store.s3.amazonaws.com/0/47856/3cd4c4c2-0406-e6d6-eee9-574207d416d2.png  
+![androidstudiox2.png](/image/3cd4c4c2-0406-e6d6-eee9-574207d416d2.png)  
   
 なお、VMWarePlayer上で使用できる特殊なショートカットキーは以下の通り  
   
@@ -88,7 +88,7 @@ http://blog.goo.ne.jp/jsp_job/e/8d524f55e621899b7a7fcf85a14fa8d5
   
 対象の仮想環境にSensorSimulatorをインストールして、ホストOSのGUIから、その設定値を伝える。  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/d5069492-fc48-bf6e-0fe4-849fa3a967ea.png  
+![android10.png](/image/d5069492-fc48-bf6e-0fe4-849fa3a967ea.png)  
   
 センサーの数値を明示できる分、便利かもしれないが、これは、アプリケーション側のコードでクラス名を修正する必要がある。  
   
@@ -118,29 +118,29 @@ http://qiita.com/mima_ita/items/6cee54fefcdb96999ab6
 AndroidDeviceMonitorを使用すればファイルのやり取りが行える。  
 ただし、権限の関係で全部のディレクトリの内容が見えるわけでもなさそう。  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/233b5bdb-f49f-b008-6073-7d134bc44212.png  
+![android7.png](/image/233b5bdb-f49f-b008-6073-7d134bc44212.png)  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/226ffc38-51d8-a8db-cfea-c2541b300040.png  
+![android8.png](/image/226ffc38-51d8-a8db-cfea-c2541b300040.png)  
   
 ## デバイス上のスクリーンキャプチャーと動画の作成  
 「Screen Capture」ボタンを押せば、現在接続中のデバイスのスクリーンショットを任意の名前で保存できる。  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/1499ca52-b594-d38e-af5d-f17ab0344997.png  
+![android1.png](/image/1499ca52-b594-d38e-af5d-f17ab0344997.png)  
   
 その下の「Screen Record」ボタンでは、動画として保存可能。  
   
 ## メモリの使用状況  
 「Tool->Android->Memory Monitor」を実行することで、その指定のプロセスのメモリ使用状況が確認できる。  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/32c06fc4-9a2c-6601-df07-d11bdcd93590.png  
+![androidstudiox3.png](/image/32c06fc4-9a2c-6601-df07-d11bdcd93590.png)  
   
   
 詳細な使用状況を調査するには以下のようにする。  
 1.AndroidStudioのDevicesより、調査対象のプロセスを選択して、「Dump Java Heap」を選択する。  
-https://qiita-image-store.s3.amazonaws.com/0/47856/aa6fac2a-f89c-efc6-7502-4d01b4acc4ee.png  
+![android3.png](/image/aa6fac2a-f89c-efc6-7502-4d01b4acc4ee.png)  
   
 2.MATでそのダンプを解析する。  
-https://qiita-image-store.s3.amazonaws.com/0/47856/aa44837d-f9d5-6684-5d82-f13457b1e132.png  
+![android5.png](/image/aa44837d-f9d5-6684-5d82-f13457b1e132.png)  
   
 MATは下記からダウンロードできる。  
 http://www.eclipse.org/mat/downloads.php  
@@ -154,9 +154,9 @@ http://developer.android.com/tools/building/plugin-for-gradle.html
   
 ## 便利なショートカットキー  
 「CTRL+ALT+L」で書式を自動で整形してくれる  
-https://qiita-image-store.s3.amazonaws.com/0/47856/a2d5cef0-faf9-fa6a-4aa9-dcae8e0f753b.png  
+![androidx4.png](/image/a2d5cef0-faf9-fa6a-4aa9-dcae8e0f753b.png)  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/e8e50dfb-0bd1-ddbd-3eba-af8246275077.png  
+![androidx5.png](/image/e8e50dfb-0bd1-ddbd-3eba-af8246275077.png)  
   
 その他、次のようなショートカットキーがある。  
 http://qiita.com/sugoi_wada/items/db449d5cbb5c83cb586c  
@@ -164,7 +164,7 @@ http://qiita.com/sugoi_wada/items/db449d5cbb5c83cb586c
 ## 静的解析  
 AndroidStudioは常時、静的解析を行い、まずい書き方をしているコードを教えてくれる。  
 エディタの右側に黄色くなっている箇所をマウスオーバーすると、なにがまずいか教えてくれる。  
-https://qiita-image-store.s3.amazonaws.com/0/47856/baf7da36-e31f-0ace-f3a2-21ffc72a2738.png  
+![androidstudiox4.png](/image/baf7da36-e31f-0ace-f3a2-21ffc72a2738.png)  
   
   
 ## テスト  
@@ -210,7 +210,7 @@ http://developer.android.com/design/index.html
 android:sharedUserId="http://jp.co.needtec.bmical"
 ```  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/e0bf23a6-7ab4-1aae-8fe6-23fb5492a6f9.png  
+![android9.png](/image/e0bf23a6-7ab4-1aae-8fe6-23fb5492a6f9.png)  
   
 ## AlermManager  
 AlermManagerの～WALK_UPはスリープ中でもイベント発火するっぽい。  

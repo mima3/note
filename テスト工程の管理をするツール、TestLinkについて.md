@@ -46,32 +46,32 @@ VMWareやVirtualBoxで仮想環境を作成するのが一番はやいと思い�
   
 https://bitnami.com/stack/testlink/virtual-machine  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/ae024b25-aa46-392e-6925-53436ccb5198.png  
+![testlink001.png](/image/ae024b25-aa46-392e-6925-53436ccb5198.png)  
   
 コミュニティーに勧誘されますが、さっさと進めたい人は感謝をしつつ「No thanks, just take me to the download」をクリックします。  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/682c9f86-8581-d1fe-ed76-4c106fc263e5.png  
+![testlink002.png](/image/682c9f86-8581-d1fe-ed76-4c106fc263e5.png)  
 ※600MBくらいあるので、コーヒーでも淹れながら待ちましょう。  
   
 2. VirtualBoxにインポートする  
 まずVirtualBoxを起動して「ファイル」→「仮想アプライアンスのインポート」を選択します。  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/9613f281-fb1c-d28d-8cfa-6365538e0a49.png  
+![testlink003.png](/image/9613f281-fb1c-d28d-8cfa-6365538e0a49.png)  
   
 ダウンロードしたファイルパスを入力後、「次へ」を押下します。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/428308e7-7128-a256-26eb-4207a8d0ebbf.png  
+![testlink004.png](/image/428308e7-7128-a256-26eb-4207a8d0ebbf.png)  
   
 必要に応じて仮想環境の設定を変更して「インポート」を押下します。今回は何も変更してません。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/050f690f-775f-b156-4d7f-fd40287507d5.png  
+![testlink005.png](/image/050f690f-775f-b156-4d7f-fd40287507d5.png)  
 ※2、3分かかるので、緑茶でも淹れながら待ちましょう。  
   
 bitnami-testlinkが作成されたら仮想環境の構築は終了です。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/ee23b3b6-9bcd-b02a-9016-2efd2e8c5637.png  
+![image.png](/image/ee23b3b6-9bcd-b02a-9016-2efd2e8c5637.png)  
   
   
 ３.VirtualBoxの初回起動  
 VirtualBoxで作成した仮想環境を起動すると以下のような画面が表示されます。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/bdda0586-53bf-173a-6c76-b131fb31c49e.png  
+![testlink007.png](/image/bdda0586-53bf-173a-6c76-b131fb31c49e.png)  
 ①TestLinkにアクセスする際に使用するIPアドレスです。控えておきましょう。  
 ②TestLinkにログインする際にするユーザアカウントとパスワードです。控えておきましょう。  
 ③SSH、SFTP、SCPで使用するユーザアカウントとパスワードです。  
@@ -81,18 +81,18 @@ https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/bdda0586-53bf-
 ４．TestLinkのアクセスとパスワード変更  
 ホストコンピュータのブラウザで「http://①のIP」を指定することで下記の画面が表示されます。  
 ここでユーザ名とパスワードに②に記載されているものを入力して「Log in」を実行してください。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/4feb6cd3-45d0-5030-6b23-d5f1f5985dbe.png  
+![testlink008.png](/image/4feb6cd3-45d0-5030-6b23-d5f1f5985dbe.png)  
   
 プロジェクト作成画面が表示されますが、アメリカ語は辛いのでまず、日本語化します。画面上部の「My Settings」アイコンを押下してください。  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/40d32e4f-dc21-5b7e-82d7-2b06076f18b2.png  
+![testlink009.png](/image/40d32e4f-dc21-5b7e-82d7-2b06076f18b2.png)  
   
 Account Setting画面が表示されるのでLocaleで「Japanese」を選択後、「Save」ボタンを押下します。  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/69d528e7-ea07-8371-cfa5-8f9868c381ca.png  
+![testlink010.png](/image/69d528e7-ea07-8371-cfa5-8f9868c381ca.png)  
   
 すると日本語が表示されるようになります。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/03a810ac-7182-bcbf-818f-dd49c767414d.png  
+![testlink011.png](/image/03a810ac-7182-bcbf-818f-dd49c767414d.png)  
   
 ## 仮想環境の説明と設定  
 上記の手順で最低限、TestLinkを試す手順はできました。  
@@ -116,7 +116,7 @@ sudo poweroff
 そこで、下記のページを参考にSSHを有効にします。  
 https://docs.bitnami.com/virtual-machine/faq/get-started/enable-ssh/  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/615cc28e-9931-3afb-3732-4efd14bd1634.png  
+![testlink012.png](/image/615cc28e-9931-3afb-3732-4efd14bd1634.png)  
   
 ```text
 sudo rm -f /etc/ssh/sshd_not_to_be_run
@@ -141,7 +141,7 @@ https://docs.bitnami.com/virtual-machine/faq/configuration/configure-static-addr
 sudo ifconfig
 ````  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/1756815c-d256-842a-1a51-9b2dab02fc88.png  
+![testlink013.png](/image/1756815c-d256-842a-1a51-9b2dab02fc88.png)  
   
 ・/etc/systemd/networkにネットワークの設定ファイル25-wired.networkを作成します。  
   
@@ -152,10 +152,10 @@ sudo vi 25-wired.network
 ```  
   
 ・25-wired.networkを以下のように設定します。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/014a433d-3927-27b7-c3eb-1e49763b5706.png  
+![testlink014.png](/image/014a433d-3927-27b7-c3eb-1e49763b5706.png)  
   
 ・ファイルを保存後、再起動を行います。再起動後のIPが変更されていることが確認できます。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/d10fa7d6-586b-2d99-ce26-979fb1b39989.png  
+![testlink015.png](/image/d10fa7d6-586b-2d99-ce26-979fb1b39989.png)  
   
 以降、ブラウザからも変更したIPで接続できます。  
   
@@ -189,7 +189,7 @@ bitnami@debian:~$
   
 # ケーススタディ  
 簡単なケーススタディを以下に紹介します。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/f1441011-6fc4-1bbd-1a09-b70a50962deb.png  
+![image.png](/image/f1441011-6fc4-1bbd-1a09-b70a50962deb.png)  
   
 ・管理者はテストプロジェクトを作成します。テストプロジェクトにはテストケース、要件、および、キーワード済みのテスト仕様が含まれます。  
   
@@ -221,13 +221,13 @@ https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/f1441011-6fc4-
   
 １．「admin」権限を持つユーザがログイン後に表示されるメインページの「テストプロジェクトの管理」を押下します。  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/35f1fbb7-9590-cee5-5ca4-62609b617682.png  
+![image.png](/image/35f1fbb7-9590-cee5-5ca4-62609b617682.png)  
   
 ２．テストプロジェクトの管理画面で「作成」ボタンを押下します。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/6b9f0c71-af58-d52e-24c8-d1fdb857f81b.png  
+![image.png](/image/6b9f0c71-af58-d52e-24c8-d1fdb857f81b.png)  
   
 ３．テストプロジェクト新規作成画面で項目を入力して作成を押下します。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/41a54678-fb51-a275-9def-5fdd3dcd07d2.png  
+![image.png](/image/41a54678-fb51-a275-9def-5fdd3dcd07d2.png)  
   
 |項目|説明|  
 |:--|:---|  
@@ -244,13 +244,13 @@ https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/41a54678-fb51-
   
 ## ユーザの追加  
 管理者権限でログイン後、ホームでの「ユーザの管理」アイコンをクリックします。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/f27f9a09-5ab8-8479-bffc-12a6943f77e1.png  
+![image.png](/image/f27f9a09-5ab8-8479-bffc-12a6943f77e1.png)  
   
 ユーザの管理画面が開いたあとに「作成」を行います。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/e1c36aa0-4baf-4a04-f17f-cfe17148d344.png  
+![image.png](/image/e1c36aa0-4baf-4a04-f17f-cfe17148d344.png)  
   
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/42f86616-4e8f-7ed3-cd5c-bb226d8a7590.png  
+![image.png](/image/42f86616-4e8f-7ed3-cd5c-bb226d8a7590.png)  
 項目を入力して保存をすることでユーザを追加できます。  
 役割はデフォルトの役割になるので、とりあえずゲストとして追加しておき、後述のユーザの役割の割り当てで変更するといいでしょう。  
   
@@ -259,35 +259,35 @@ https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/42f86616-4e8f-
 ## テストプロジェクトにユーザの役割の割り当て  
 各テストプロジェクトにユーザの役割の割り当てを行います。  
 管理者またはリーダでログインした場合に表示される「役割の割り当て」をクリックします。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/e9ebf8ef-a4a2-5e3f-43e4-dd2d6f804710.png  
+![image.png](/image/e9ebf8ef-a4a2-5e3f-43e4-dd2d6f804710.png)  
   
 役割管理画面で「テストプロジェクト」を選択後、それぞれのユーザにたいする役割を指定して「実行」ボタンを押下します。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/45888e37-74cd-1d67-18c3-04ac36e3a839.png  
+![image.png](/image/45888e37-74cd-1d67-18c3-04ac36e3a839.png)  
   
 ## テストケースの作成  
 テスト設計者でログインしたあとに、テストケースを作成したいテストプロジェクトを選択し、「テストケースの編集」をクリックします。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/f28b7f87-0b07-3df4-c4a8-7bce50640ca7.png  
+![image.png](/image/f28b7f87-0b07-3df4-c4a8-7bce50640ca7.png)  
   
 テスト仕様の画面が開くので「データ操作」アイコンをクリックします。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/1650e20f-e7c2-0335-aa46-baa97cb8aa91.png  
+![image.png](/image/1650e20f-e7c2-0335-aa46-baa97cb8aa91.png)  
   
 表示された「テストスィートの作成」アイコンをクリックします。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/167a1e1c-3584-c21d-d06b-5c352964212c.png  
+![image.png](/image/167a1e1c-3584-c21d-d06b-5c352964212c.png)  
   
 テストスィート名と詳細を入力して「保存」をクリックします。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/13d14c99-876a-e037-f34f-ce3fd9aeb25d.png  
+![image.png](/image/13d14c99-876a-e037-f34f-ce3fd9aeb25d.png)  
   
 テスト仕様書のナビゲータのツリーにテストスィートが追加されます。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/323fdbc8-5faf-aaba-99af-70734fe07c5e.png  
+![image.png](/image/323fdbc8-5faf-aaba-99af-70734fe07c5e.png)  
   
 テストケースを追加したいテストスィートをツリー上から選択後、「データ操作」アイコンをクリックします。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/0021536c-7d01-92cb-12f5-3185072c21d4.png  
+![image.png](/image/0021536c-7d01-92cb-12f5-3185072c21d4.png)  
   
 表示された「テストケースを作成」アイコンをクリックします。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/1f86eb21-d57a-ed07-105a-3ce058db3678.png  
+![image.png](/image/1f86eb21-d57a-ed07-105a-3ce058db3678.png)  
   
 テストケースの情報を記載し、「作成」ボタンを押下します。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/bab58bbc-89c5-5365-9df3-655e0f6bb270.png  
+![image.png](/image/bab58bbc-89c5-5365-9df3-655e0f6bb270.png)  
 ステータスはテストケースの状態を表し、下記のいずれかになります。  
 ・ドラフト  
 ・レビュー待ち  
@@ -300,83 +300,83 @@ https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/bab58bbc-89c5-
 なお、テスト実行計画でテストケースを追加する場合「廃止」と「先送り」のケースについては追加が行えません。  
   
 ツリーにテストケースが追加されます。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/2b96025f-ec07-ab5c-a25d-ecd49f2ae634.png  
+![image.png](/image/2b96025f-ec07-ab5c-a25d-ecd49f2ae634.png)  
   
 テストのステップを追加する必要がある場合は、テストケースを選択後、「ステップ追加」ボタンをクリックします。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/ce579368-8079-1a87-0b04-de50f1e56b6d.png  
+![image.png](/image/ce579368-8079-1a87-0b04-de50f1e56b6d.png)  
   
 ステップ追加画面が開くので「ステップ」と「期待値」を入力後、「保存」を押下します。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/3c705465-364d-b5f2-9aef-17a55963289f.png  
+![image.png](/image/3c705465-364d-b5f2-9aef-17a55963289f.png)  
   
 同様の作業を繰り返していきます。「保存して終了」を押下するとステップの追加が終了します。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/2efe12ca-bb73-732a-640d-46c1f4181209.png  
+![image.png](/image/2efe12ca-bb73-732a-640d-46c1f4181209.png)  
   
 テストケースにステップが追加されたことを確認します。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/ee05d9d0-2d42-d0b3-413a-352732c855e0.png  
+![image.png](/image/ee05d9d0-2d42-d0b3-413a-352732c855e0.png)  
   
 ## テスト計画  
 テストを実行するにはテスト計画を作成する必要があります。  
 リーダでログイン後、ホーム画面でテストプロジェクトを選択して「テスト計画の管理」をクリックします。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/e2f0be64-f41b-4f48-5a0b-ca34b6c1324f.png  
+![image.png](/image/e2f0be64-f41b-4f48-5a0b-ca34b6c1324f.png)  
   
 テスト計画の管理画面が表示されたら「作成」ボタンをクリックします。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/620a2a2d-12b5-2883-68e3-fde0a46bdc73.png  
+![image.png](/image/620a2a2d-12b5-2883-68e3-fde0a46bdc73.png)  
   
 テスト計画の概要画面で必要な項目を入力し、作成ボタンを押下します。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/206edf52-2454-6983-b917-6baac5f46038.png  
+![image.png](/image/206edf52-2454-6983-b917-6baac5f46038.png)  
 テスト計画はタスクであるべきで、たとえば「2019年夏コミリリース用」のテスト作業だったり「2019年冬コミリリース用」のテスト作業だったりします。  
   
 テスト計画画面を再度遷移するとテスト計画が追加されています。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/94fcf8d6-1baa-8f29-0e8a-6a868685439f.png  
+![image.png](/image/94fcf8d6-1baa-8f29-0e8a-6a868685439f.png)  
   
 つづいて、テスト計画に含める「ビルド／リリース」を作成します。テスト計画は１つ以上の「ビルド／リリース」を含める必要があります。１つ「以上」というのはテスト計画中にバグフィックス等で新しい「ビルド／リリース」が増える場合があるからです。  
 ホーム画面に戻って「ビルド／リリース」をクリックします。複数テスト計画が存在する場合は、テスト計画の選択をおこなってください。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/1d3376ff-5311-6fff-8c09-971701ac5344.png  
+![image.png](/image/1d3376ff-5311-6fff-8c09-971701ac5344.png)  
   
   
 ビルド管理画面が表示されたら「新規作成」ボタンを押下します。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/9b9a330e-7bf5-91fc-ccda-23094ddc27d2.png  
+![image.png](/image/9b9a330e-7bf5-91fc-ccda-23094ddc27d2.png)  
   
 必要な項目を入力して「作成」ボタンを押下します。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/f0261a95-0995-fed4-f3c3-bb1c90eb9e7a.png  
+![image.png](/image/f0261a95-0995-fed4-f3c3-bb1c90eb9e7a.png)  
   
 ビルド管理画面にもどると、作成したビルドが追加されています。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/13a1d8dc-9c5b-74f1-437a-636cdfdf0d23.png  
+![image.png](/image/13a1d8dc-9c5b-74f1-437a-636cdfdf0d23.png)  
   
 つづいてテスト計画にテストケースを追加します。  
 ホーム画面にもどって「テストケース」の追加をクリックします。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/a0d167fc-e82b-8bdc-16dc-5e966060afce.png  
+![image.png](/image/a0d167fc-e82b-8bdc-16dc-5e966060afce.png)  
   
 「テストケースの追加と削除」画面で、ツリーよりテストスィートを選択するとテストケースの一覧が表示されます。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/e4301ee2-391e-aa7b-bc06-6025c2b36274.png  
+![image.png](/image/e4301ee2-391e-aa7b-bc06-6025c2b36274.png)  
   
 テスト計画に追加したいテストケースを選択して「選択したものを追加」をクリックしましょう。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/c2e56ee8-ea81-14e1-d83c-19ac2b1ec25a.png  
+![image.png](/image/c2e56ee8-ea81-14e1-d83c-19ac2b1ec25a.png)  
   
 以下のように画面が更新されます。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/c0a63335-aba8-89ab-21a6-9eb6940abf0b.png  
+![image.png](/image/c0a63335-aba8-89ab-21a6-9eb6940abf0b.png)  
   
 追加されているテストケースをテスト計画から削除したい場合は、削除したい項目にチェックを付けて「選択したものを追加／削除」ボタンを押下します。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/572806eb-4c45-bd90-ad84-11db563f16a2.png  
+![image.png](/image/572806eb-4c45-bd90-ad84-11db563f16a2.png)  
   
 テスト計画に関連づいているテストケースと関連づいていないテストケースが混在している場合の画面は以下のようになります。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/721ad53a-74f8-5929-0af3-513f28637e17.png  
+![image.png](/image/721ad53a-74f8-5929-0af3-513f28637e17.png)  
 このように、テスト計画においてテスト仕様にあるテストケースから一部のテストケースを実施するということが可能です。  
   
 次にどのテストケースを誰がやるかを決めるため、テスト担当者を割り当てます。  
 ホーム画面の「テスト担当者の割り当て」をクリックします。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/fa752778-c0d0-9a25-ade0-df76be238dda.png  
+![image.png](/image/fa752778-c0d0-9a25-ade0-df76be238dda.png)  
   
 割り当てをしたいテストスィートまたはテストケースをツリーから選択します。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/73159236-16de-1cc8-85cb-def0e92fa093.png  
+![image.png](/image/73159236-16de-1cc8-85cb-def0e92fa093.png)  
   
 「テストケースに実行タスクを割り当てるテスト計画」画面が開きます。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/96437088-bd33-2d86-fbbc-c0a865ea270f.png  
+![image.png](/image/96437088-bd33-2d86-fbbc-c0a865ea270f.png)  
 もし、表示されない場合は、[テスト担当者の割り当てができない場合](#テスト担当者の割り当てができない場合)を参照してください。  
 テストケースごとにユーザを割り当てられるので設定していき、最後に「Save Assignments」をクリックします。  
   
 以下のようにテストケースごとに実行を割り当てたユーザが表示されます。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/378e8ae3-2ded-6e0a-5f67-fac34139b0e7.png  
+![image.png](/image/378e8ae3-2ded-6e0a-5f67-fac34139b0e7.png)  
   
 ### テスト担当者の割り当てができない場合  
 以下のような問題が報告されています。  
@@ -384,46 +384,46 @@ http://mantis.testlink.org/view.php?id=8467
 権限からみが適切に設定できていない場合があるので見直します。  
   
 まずユーザ管理画面で「役割の一覧」を押下します。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/e35a5c9c-658c-23d0-5f1e-c6d7c60215c5.png  
+![image.png](/image/e35a5c9c-658c-23d0-5f1e-c6d7c60215c5.png)  
   
 修正する役割をクリックします。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/4336de65-c5ef-9e90-4cb4-f4dcd0dbd11f.png  
+![image.png](/image/4336de65-c5ef-9e90-4cb4-f4dcd0dbd11f.png)  
   
 「Assign TestCase Execution」にチェックをつけて保存します。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/6e82b3ec-78b4-51f6-7e41-17d4be4abd9c.png  
+![image.png](/image/6e82b3ec-78b4-51f6-7e41-17d4be4abd9c.png)  
   
   
 ## テストの実行  
 テストを実行するには権限のあるユーザでログインをして、テストプロジェクトとテスト計画を選択後、「テストの実施」をクリックします。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/f7827973-fc2c-022c-3c3a-00e9e80edf20.png  
+![image.png](/image/f7827973-fc2c-022c-3c3a-00e9e80edf20.png)  
   
 ツリーから実行したいテストケースを選択します。このツリーで表示されるテストケースは自分が割り当てられたものになります。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/0c74b1aa-e935-c68f-6060-e0b9845dfea8.png  
+![image.png](/image/0c74b1aa-e935-c68f-6060-e0b9845dfea8.png)  
   
 ビルドのテスト結果が表示されるので結果を入力します。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/def76705-b559-d940-1363-492ca4ed3f04.png  
+![image.png](/image/def76705-b559-d940-1363-492ca4ed3f04.png)  
   
 結果アイコンの説明：  
   
 |アイコン|説明|  
 |:------|:---|  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/98984a74-b1bc-e382-12a3-e15028de3283.png  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/a53c08b3-6acb-8e27-1b0d-ce2bc3ffde0b.png  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/14bebc51-6364-e970-38de-aef2a4f0c2cd.png  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/c994b91d-5dc5-b130-1a49-eeb9eb23bd22.png  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/80dae4ab-236a-0dda-af99-24ce061ea577.png  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/93367857-bd25-2031-73a0-bcae09bae43f.png  
+|![image.png](/image/98984a74-b1bc-e382-12a3-e15028de3283.png)|テストを成功とします|  
+|![image.png](/image/a53c08b3-6acb-8e27-1b0d-ce2bc3ffde0b.png)|テストを失敗とします|  
+|![image.png](/image/14bebc51-6364-e970-38de-aef2a4f0c2cd.png)|テストをブロックとします。これは前提条件が満たせずにテストができなかった場合に選択します|  
+|![image.png](/image/c994b91d-5dc5-b130-1a49-eeb9eb23bd22.png)|テストを成功として次のテストケースを表示します|  
+|![image.png](/image/80dae4ab-236a-0dda-af99-24ce061ea577.png)|テストを失敗として次のテストケースを表示します|  
+|![image.png](/image/93367857-bd25-2031-73a0-bcae09bae43f.png)|テストをブロックとして次のテストケースを表示します|  
   
   
 いずれかのテスト結果をクリックすると以下のように実行履歴が作成されます。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/ff908600-f9dd-dffb-bc2e-0598db150f0b.png  
+![image.png](/image/ff908600-f9dd-dffb-bc2e-0598db150f0b.png)  
 これは、テスト計画中に複数回テストを実施する可能性があることを表します。  
   
 画面キャプチャやログなどの添付ファイルを追加したい場合は「添付ファイル」アイコンをクリックします。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/a9c22967-a339-ede4-4248-00aae50e90ea.png  
+![image.png](/image/a9c22967-a339-ede4-4248-00aae50e90ea.png)  
   
 ファイルをアップロードすると添付ファイルの一覧が表示されるようになり、そのファイルは以下のように表示することもできます。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/b2af1563-ac91-70a2-6a8e-1d3649b3e311.png  
+![image.png](/image/b2af1563-ac91-70a2-6a8e-1d3649b3e311.png)  
   
 もしRedmineと連携してバグを登録したい場合は下記を参照してください。  
 https://needtec.exblog.jp/22518358/  
@@ -433,45 +433,45 @@ https://needtec.exblog.jp/22518358/
 たとえば、仕様変更でテスト仕様書が変わることもありますし、テスト仕様書が誤っていた場合にそれを修正する場合があるからです。  
   
 テスト設計者でログインしてテストケースを編集しようとすると以下のように「このバージョンは実行中なので編集できません」と表示されます。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/af990a73-b40b-9d22-47f2-1af5e88100fa.png  
+![image.png](/image/af990a73-b40b-9d22-47f2-1af5e88100fa.png)  
 これはどのバージョンのテスト仕様書で実行されたかが明確になっているからです。テストケースを修正したい場合は新しいバージョンを作成する必要があります。この場合は「新バージョン作成」を押します。  
   
 これでバージョン２が追加されました。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/d5cd7c70-cb47-7d7e-850b-a61b52d8d839.png  
+![image.png](/image/d5cd7c70-cb47-7d7e-850b-a61b52d8d839.png)  
   
 歯車のアイコンをクリックしたのち、「編集」ボタンが表示されるので押下します。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/51fe48bf-ca6e-17f5-0e5f-ce10852ba27c.png  
+![image.png](/image/51fe48bf-ca6e-17f5-0e5f-ce10852ba27c.png)  
   
 テストケースの編集で任意の変更をして保存します。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/49aac4e8-4f5e-101e-1874-3237da81acdf.png  
+![image.png](/image/49aac4e8-4f5e-101e-1874-3237da81acdf.png)  
   
 つづいて、テスト計画に紐づいているテストケースのバージョンをアップする必要があります。  
 これを行うには役割の権限で「リンク済みテストケースバージョンの更新」にチェックがある必要があります。管理者権限でおこなうか、必要なユーザの役割に該当の権限を割り当ててください。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/6fd79c52-92b7-07bf-75bc-c03c4dda6ce3.png  
+![image.png](/image/6fd79c52-92b7-07bf-75bc-c03c4dda6ce3.png)  
   
 権限のあるユーザでログインすると「テストケースの更新」というリンクがあるのでクリックをします。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/577e9e07-0854-3d22-33c9-5c0cec68b854.png  
+![image.png](/image/577e9e07-0854-3d22-33c9-5c0cec68b854.png)  
   
 「リンクされているテストケースのバージョンを更新」画面のツリーでテストスィートをクリックすると以下のようにバージョンを選択できるようになります。対象のテストケースとそのバージョンを選択後、「テスト計画を更新」を押下してください。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/02168133-cb1c-c35a-f100-d417551efc55.png  
+![image.png](/image/02168133-cb1c-c35a-f100-d417551efc55.png)  
   
 ## 指標の確認  
 テストの消化率などの指標の確認が行えます。  
 「テスト報告書と指標」または「指標メーター」のいずれかで確認することができます。  
   
 指標メーターの例：  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/2741d141-c65c-aa4e-714f-496af11cfa7e.png  
+![image.png](/image/2741d141-c65c-aa4e-714f-496af11cfa7e.png)  
   
 テスト報告書と指標の例：  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/27f7c839-7ae9-92e1-3101-e4bc12f9e416.png  
+![image.png](/image/27f7c839-7ae9-92e1-3101-e4bc12f9e416.png)  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/95d4faf0-8ab3-7cc5-4426-cb9dfca7a28d.png  
+![image.png](/image/95d4faf0-8ab3-7cc5-4426-cb9dfca7a28d.png)  
   
 このように、現在のテストの状況をわかりやすく表示するだけでなく、テスト仕様書を作成して納品物に利用することが可能です。  
   
 ### グラフレポートが文字化けする場合  
 グラフレポートが文字化けする場合があります。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/ae9c2ccb-a8f9-b64c-4258-fa257668b66a.png  
+![image.png](/image/ae9c2ccb-a8f9-b64c-4258-fa257668b66a.png)  
   
 これはTestLinkが使用しているpchartというライブラリが使用しているフォントが日本語対応していないためです。  
 これを修正するには以下のようにします。  
@@ -499,7 +499,7 @@ $tlCfg->charts_font_size = 8;
 ```  
   
 4 ページを再読み込みして直っていることを確認  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/5e73da2e-b8ae-db4a-e272-962490a3ccd6.png  
+ ![image.png](/image/5e73da2e-b8ae-db4a-e272-962490a3ccd6.png)  
   
   
 # まとめ  

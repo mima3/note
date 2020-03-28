@@ -19,7 +19,7 @@ http://www.modern.ie/ja/virtualization-tools#downloads
   
 「Select a platform from the list below:」で「VirsutlPC for Windows 7」を選択後、Windows　IE6をダウンロードする。  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/f839345b-3bc5-883f-bef8-0b961ebc22fd.png  
+![vm.png](/image/f839345b-3bc5-883f-bef8-0b961ebc22fd.png)  
   
 ３． ダウンロードしたファイルをすべて同じフォルダに配置後、Exeを実行すると、ファイルが解凍されて、以下のファイルが作成されるので実行する。  
   
@@ -38,7 +38,7 @@ https://modernievirt.blob.core.windows.net/vhd/virtualmachine_instructions_2013-
 http://blogs.wankuma.com/hatsune/archive/2010/05/13/189032.aspx  
   
 次にVirtualPCのネットワークの設定をする。  
-https://qiita-image-store.s3.amazonaws.com/0/47856/2faffda0-0e89-f576-66da-3e618a40e3af.png  
+![無題.png](/image/2faffda0-0e89-f576-66da-3e618a40e3af.png)  
   
   
 この時点で、Win7と仮想PCのXpでipconfigを行うとそれぞれに新しいネットワークアダプタとIPが割り当てられていることが確認できる。 そのIPを使って互いに通信できる。  
@@ -75,7 +75,7 @@ http://ipafont.ipa.go.jp/ipafont/download.html
 C:\WINDOWS\Fonts  
   
 (3)ウィンドウズの[Display Properties]の[Advanced Appearance]でFontを指定する。  
-https://qiita-image-store.s3.amazonaws.com/0/47856/c01a248d-111c-254e-2869-9daead82869a.png  
+![screen.png](/image/c01a248d-111c-254e-2869-9daead82869a.png)  
   
 フォントを指定する箇所は以下の通りである。  
 ・タイトルバー  
@@ -83,7 +83,7 @@ https://qiita-image-store.s3.amazonaws.com/0/47856/c01a248d-111c-254e-2869-9daea
 ・メッセージボックス  
   
 あとは、各アプリケーションの設定でフォントを指定すればよい。  
-https://qiita-image-store.s3.amazonaws.com/0/47856/663b78bc-fe48-4e37-cdad-df63c694542b.png  
+![screen.png](/image/663b78bc-fe48-4e37-cdad-df63c694542b.png)  
   
 ・キーボードが英語配列なので使いづらいし、当然、日本語入力はできない。  
 なので、文字入力はホスト側で行ってクリップボード経由で転送した方が楽である。  

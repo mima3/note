@@ -31,18 +31,18 @@ SET @to = 200
 ```  
   
 ５. スクリプトにブレークポイントを張る  
-https://qiita-image-store.s3.amazonaws.com/0/47856/832e0740-9223-b358-712a-18362be9b82f.png  
+![sql.png](/image/832e0740-9223-b358-712a-18362be9b82f.png)  
   
 ６．「デバッグ」⇒「開始」を選択  
 ALT+F5：次のブレークまで実行  
 F10:ステップオーバ... 次の行を実行。次が別のストアドの場合、ストアドの中には入らない  
 F11:ステップイン...次の行を実行。次が別のストアドならストアドの中に入る。  
-https://qiita-image-store.s3.amazonaws.com/0/47856/3f9f8da0-edea-259d-7cc9-b31d7777cb05.png  
+![sql.png](/image/3f9f8da0-edea-259d-7cc9-b31d7777cb05.png)  
   
 # 注意  
 ・リモート側またはクライアント側がHomeEditionの場合はWindows認証が上手くいかずに、デバッグが実行できない可能性がある。  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/064ce394-a034-bbd6-f98f-724ce842e883.png  
+![sql.png](/image/064ce394-a034-bbd6-f98f-724ce842e883.png)  
   
 ``  
 T-SQLデバッグを開始できません。コンピュータ'XXXX'に接続できませんでした。Visual Studio リモート デバッガーは、このWindowsエディションをサポートしていません。  

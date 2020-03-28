@@ -45,7 +45,7 @@ https://qiita.com/mima_ita/items/fdff129a8db1153c9940
   
 #### （補足：UiAutomationで代替できないか？）  
 Inspectで新EdgeのGoogle開いているページを解析したところ以下のようになります。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/9fef1e27-f084-28c5-fcf0-760302a3a7f2.png  
+![image.png](/image/9fef1e27-f084-28c5-fcf0-760302a3a7f2.png)  
 ControlTypeがちゃんと設定されているのでボタン押下ぐらいはUiAutomationで操作可能かもしれません。  
 ただ、HTMLの構造の解析は難しいと思うので基本、外部ツールなしで自動操作は厳しいと思います。  
   
@@ -83,7 +83,7 @@ ClickOnceは.NETで作成したバイナリをWebに配置しておき、ブラ�
 ## WindowsFormへの埋め込み  
 IE11ならびに旧EdgeではMicrosoft.Toolkit.Wpf.UI.Controls.WebView"や"Microsoft.Toolkit.Forms.UI.Controls.WebView"を使用することで以下のように.NETの画面にブラウザを埋め込めます。  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/aa20e37f-20dc-2644-48c2-0e743cd4de85.png  
+![image.png](/image/aa20e37f-20dc-2644-48c2-0e743cd4de85.png)  
   
 以下のページによると最近まではIEのみでEdgeは埋め込めなかったようです。  
   
@@ -128,7 +128,7 @@ https://stackoverflow.com/questions/30880709/c-sharp-native-host-with-chrome-nat
   
 今回は以下のようなEXEと通信するChromeの拡張機能が新IEでも使用できるか検証しました。  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/58f825b0-acc2-48f0-15a7-732750ebb27e.png  
+![image.png](/image/58f825b0-acc2-48f0-15a7-732750ebb27e.png)  
   
   
 ContentScriptは以下のようになります。  
@@ -221,7 +221,7 @@ https://qiita.com/tekka/items/d9f6fd2e30c1f778b5aa
 IEではXBAPを使用することでブラウザに.NETで作った画面を埋め込むことができました。  
 またセキュリティの設定によってはファイル操作でもレジストリの操作でもできました。  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/4f5c73df-1488-964c-b30b-283877af4cf8.png  
+![image.png](/image/4f5c73df-1488-964c-b30b-283877af4cf8.png)  
   
 これに関しては旧Edgeの時点でXBAPのサポートはしないと言い切っています。  
 https://stackoverflow.com/questions/31895766/xbap-support-in-ie-edge  
@@ -233,7 +233,7 @@ ClickOnceかブラウザいずれかに倒して実装するかなさそうで�
 ## HTAの使用  
 [HTA](https://docs.microsoft.com/ja-jp/previous-versions/technical-document/ms536496(v=vs.85)?redirectedfrom=MSDN)を使用するとInternetExploreの機能を利用してスタンドアローンのGUIを作成することができます。（Electronのような感じ）  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/7f0c29ca-c52c-d13e-a3f5-ac960a9f0e37.png  
+![image.png](/image/7f0c29ca-c52c-d13e-a3f5-ac960a9f0e37.png)  
   
 ```html:test.hta
 <html>

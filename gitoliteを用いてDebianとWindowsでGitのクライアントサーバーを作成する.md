@@ -20,7 +20,7 @@ MSysGitを下記からインストールする。
 http://msysgit.github.io/  
   
 Git Bashがインストールされ、そこからGitコマンドが操作可能。  
-https://qiita-image-store.s3.amazonaws.com/0/47856/8173a8da-738e-6b1a-3a82-475b6b531531.png  
+![git.png](/image/8173a8da-738e-6b1a-3a82-475b6b531531.png)  
   
 # Gitoliteのインストール  
 Gitoliteはユーザー管理やアクセス管理を行うためのツールである。  

@@ -35,7 +35,7 @@ try {
   
 # StartProcessアクティビティ  
 単純な例では以下のようなフローになります。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/55caf3e1-fa7b-8208-23a4-01702be8b4ee.png  
+![image.png](/image/55caf3e1-fa7b-8208-23a4-01702be8b4ee.png)  
   
 **プロセスを開始**  
   
@@ -83,7 +83,7 @@ Get-ChildItem
 [FileInfo](https://docs.microsoft.com/en-us/dotnet/api/system.io.fileinfo?view=netframework-4.8)と[DirectoryInfo](https://docs.microsoft.com/en-us/dotnet/api/system.io.directoryinfo?view=netframework-4.8)のコレクションが返却されます。TypeArgumentプロパティにはコレクション内の型がキャスト可能な値、すなわちベースクラスであるObjectや[FileSystemInfo](https://docs.microsoft.com/en-us/dotnet/api/system.io.filesysteminfo?view=netframework-4.8)を指定する必要があります。  
   
 もしこのことを守らないと以下のようなエラーが発生します。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/c9396691-30d5-04b5-a368-ba1b1cbc66a5.png  
+![image.png](/image/c9396691-30d5-04b5-a368-ba1b1cbc66a5.png)  
   
   
 次に、以下のようなコマンドレットを記述します。  
@@ -95,7 +95,7 @@ Get-ChildItem
   
 またスクリプトの入力にはチェックを付けてください。  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/e9f784c7-a1bc-083b-bc07-ce161909e30f.png  
+![image.png](/image/e9f784c7-a1bc-083b-bc07-ce161909e30f.png)  
   
 これを実行すると、System.Diagnostics.Processのアイテムが続いたあとに、[FileInfo](https://docs.microsoft.com/en-us/dotnet/api/system.io.fileinfo?view=netframework-4.8)と[DirectoryInfo](https://docs.microsoft.com/en-us/dotnet/api/system.io.directoryinfo?view=netframework-4.8)のアイテムが続くコレクションが返されます。  
   
@@ -104,7 +104,7 @@ https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/e9f784c7-a1bc-
 ## PowerShellのスクリプトファイルパスを指定  
 以下にlist.ps1のPowerShellのスクリプトを実行してその結果をデバッグ出力するサンプルを記載します。  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/2e71fbe9-54db-215b-585c-94936009fe23.png  
+![image.png](/image/2e71fbe9-54db-215b-585c-94936009fe23.png)  
   
 **PowerShellを呼び出し**  
   
@@ -123,7 +123,7 @@ https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/2e71fbe9-54db-
 |TypeArgument|System.IO.FileSystemInfo|  
 |コレクション値|result|  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/bef3127c-1f63-ef44-face-c912aacda04d.png  
+![image.png](/image/bef3127c-1f63-ef44-face-c912aacda04d.png)  
   
 **1行を書き込み**  
   
@@ -140,7 +140,7 @@ https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/bef3127c-1f63-
 この場合、「パラメータ」プロパティを利用してPowerShellのスクリプトのパラメータを指定することができます。  
 PowerShellのスクリプトファイルパスを指定する場合と異なり、.NETの型をそのまま渡せるメリットがあります。  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/2d945e26-fd4f-2bf0-8b26-34352d15bd2a.png  
+![image.png](/image/2d945e26-fd4f-2bf0-8b26-34352d15bd2a.png)  
   
 **テキストファイルを読み込む**  
   

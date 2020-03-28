@@ -92,10 +92,10 @@ CScript Hello.js //x
 ```  
   
 ２．下記のようなウィンドウが表示されるのでデバッグを行いたいVisualStudioのバージョンを選択して「はい」を押してください。  
-https://qiita-image-store.s3.amazonaws.com/0/47856/57318b41-20d5-61cf-1654-6de05f9e6b4d.png  
+![無題.png](/image/57318b41-20d5-61cf-1654-6de05f9e6b4d.png)  
   
 ３．あとは通常のVSのデバッグが使用できます。  
-https://qiita-image-store.s3.amazonaws.com/0/47856/d79c4c9d-4fa9-6a6c-7a00-b69b9208fa0f.png  
+![無題.png](/image/d79c4c9d-4fa9-6a6c-7a00-b69b9208fa0f.png)  
   
 # 外部のファイルを利用する方法  
   

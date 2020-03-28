@@ -1,7 +1,7 @@
 ## 概要  
 地域メッシュ統計とは，緯度・経度に基づき地域を隙間なく網の目（Mesh）の区域に分けて，統計データをそれぞれの区域に編成したものです。  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/bb9f0191-60eb-8b40-3725-309897a1d4d5.png  
+![メッシュ.png](/image/bb9f0191-60eb-8b40-3725-309897a1d4d5.png)  
 ※色が濃いほど人口が多い。  
   
 デモ：  
@@ -44,7 +44,7 @@ https://github.com/mima3/estat/blob/master/estat_db.py
 ### テーブル構成  
 estatの地域メッシュを格納するためのテーブルは以下のようになります。  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/43b7de44-900f-6ce6-0246-3499e619dd1d.png  
+![database.png](/image/43b7de44-900f-6ce6-0246-3499e619dd1d.png)  
   
   
  **Table名：Stat**   
@@ -680,7 +680,7 @@ http://needtec.sakura.ne.jp/estat/json/get_population?stat_id=T000608&attr_value
 ## GoogleMapを用いた地域メッシュの描画の例  
 ここではGoogleMapを用いた地域メッシュの描画例を記述します。  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/ec026d58-dc6e-2f97-0302-4ed8cada659f.png  
+![mesh.png](/image/ec026d58-dc6e-2f97-0302-4ed8cada659f.png)  
   
 デモ：  
 http://needtec.sakura.ne.jp/estat/population  
@@ -723,7 +723,7 @@ http://shimz.me/blog/google-map-api/3445
 ## D3.jsを用いた地域メッシュの描画の例  
 ここではD3.jsを用いてSVGによる地域メッシュの描画例を記述します。  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/243b6691-f958-52dd-8b15-ddf93c91e8a4.png  
+![メッシュ.png](/image/243b6691-f958-52dd-8b15-ddf93c91e8a4.png)  
   
 デモ：  
 http://needtec.sakura.ne.jp/tokuraku/passenger.html  

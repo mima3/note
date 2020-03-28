@@ -12,7 +12,7 @@ http://sourceforge.jp/projects/nmecab/releases/p11745
   
 今回は、NMecabをCOMでラッパーするNMecabComを作成し、そこを経由してVBA,VBScriptから形態素解析を行います。  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/df53d91d-4ed3-e1b1-20a0-9548afd4389c.png  
+![b0232065_21104163.png](/image/df53d91d-4ed3-e1b1-20a0-9548afd4389c.png)  
   
 具体的な作成方法については下記を参考の事。  
 [VBAまたはVBSからCOM経由で使用できる.NETのライブラリの作成方法](http://qiita.com/mima_ita/items/efcd1a6ea86f09047984 "VBAまたはVBSからCOM経由で使用できる.NETのライブラリの作成方法")  
@@ -42,7 +42,7 @@ http://needtec.sakura.ne.jp/release/NMeCabCom.zip
 ## Excel VBAからの使用方法  
 インストールが適切に終了していれば、参照設定にNMecabComが追加されるのでチェックを入れてください。  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/f501ff58-5826-38db-e82f-03270ac5298f.png  
+![1w04banj.png](/image/f501ff58-5826-38db-e82f-03270ac5298f.png)  
   
 その後以下のような実装をします。  
   

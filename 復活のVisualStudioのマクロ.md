@@ -8,18 +8,18 @@ VisualStudio2019でもそれっぽく動作するようです。
   
 # 導入手順  
 (1)拡張機能の管理より「Macros for Visual Studio」をインストールします  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/6161ade5-cac4-9203-22cc-5d56c3634de3.png  
+![image.png](/image/6161ade5-cac4-9203-22cc-5d56c3634de3.png)  
   
 (2)インストール後、再起動をするとツールからMacrosメニューが使用できるようになります。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/bae0147c-1767-1f77-5ed7-655edd397178.png  
+![image.png](/image/bae0147c-1767-1f77-5ed7-655edd397178.png)  
   
   
   
 (3)Macro Exploreを選択すると、Macro Exploreウィンドウが表示されます。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/f44d727f-800d-0086-0a31-db3f8dc2bf26.png  
+![image.png](/image/f44d727f-800d-0086-0a31-db3f8dc2bf26.png)  
   
 (4)JSファイルを右クリックして開くを選択することでJSの中身が編集可能になります。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/343a7f67-1e73-ceb5-5f23-2348e22f50e2.png  
+![image.png](/image/343a7f67-1e73-ceb5-5f23-2348e22f50e2.png)  
   
 なお、JSファイルをダブルクリックすることで記載したJSを実行可能です。  
   
@@ -34,7 +34,7 @@ dte.Windows.Item("{34E76E81-EE4A-11D0-AE2E-00A0C90FFFC3}").Activate();
 outputWindowPane.OutputString("display this text in the output window panel\n");
 ```  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/89f04403-af5f-c826-0ead-361547f46d99.png  
+![image.png](/image/89f04403-af5f-c826-0ead-361547f46d99.png)  
   
 ## 出力ウィンドウのクリアを行う  
   

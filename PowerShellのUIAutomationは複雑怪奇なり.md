@@ -5,7 +5,7 @@ C#やVB.NET,さらにはVBAでは動作しているのにも関わらず、こ�
 ## 動かないパターン  
 まず、Win32で作成した画面を用意します。ここでは以下のような画面を用意しました。  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/96ad797e-e448-91d2-2230-61848cb36dce.png  
+![UIAutomation1png.png](/image/96ad797e-e448-91d2-2230-61848cb36dce.png)　  
   
   
 ID1000のEditControlにテキストを入力するようにC#で実装してみます。  
@@ -134,7 +134,7 @@ ItemStatus           :
   
   
 次にInspectで該当のコントロールを確認します。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/7ec5b995-a6ac-55d8-6c03-3365e90202e2.png  
+![UIAutomation2png.png](/image/7ec5b995-a6ac-55d8-6c03-3365e90202e2.png)  
   
 LocalizedControlTypeの値がPowerShellでは「ウィンドウ」、Inspectでは「編集」になっています。  
 つまり、PowerShellの中では該当コントロールがただのウィンドウのため、ValuePatternに変換できず、エラーとなったと推測できます。  
@@ -146,19 +146,19 @@ VisualStudioでは、デバッグ中にDLLが読み込まれると出力ウィ�
 これを利用してC#で読み込まれたDLLを確認してみます。  
   
 RootElementを取得する直前の出力ウィンドウが以下の状態だとします。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/941fc0b1-ff06-6af9-cbd3-908b482aae61.png  
+![UIAutomation3png.png](/image/941fc0b1-ff06-6af9-cbd3-908b482aae61.png)  
   
   
 RootElementを取得した時点で以下のように「UIAutomationClientsideProviders.dll」が読み込まれます。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/96cb2198-9ca7-2fdd-9db1-5db2650f7648.png  
+![UIAutomation4png.png](/image/96cb2198-9ca7-2fdd-9db1-5db2650f7648.png)  
   
   
 次にFindFirstを行う前の状態は以下のようになります。変化はありません。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/122276a9-9294-c853-9b5f-796a4cdf3ee1.png  
+![UIAutomation5png.png](/image/122276a9-9294-c853-9b5f-796a4cdf3ee1.png)  
   
   
 FindFirstを実行することで「UIAutomationClientsideProviders.resources.dll」が読み込まれます。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/e9b02ab0-fcdd-eb5a-0e8f-fdcf2cb51dd6.png  
+![UIAutomation6png.png](/image/e9b02ab0-fcdd-eb5a-0e8f-fdcf2cb51dd6.png)  
   
   
 「UIAutomationClientsideProviders.resources.dll」の役割については、おそらく、LocalizedControlTypeを言語環境に合わせて設定するためのリソース情報を扱うためと思われます。  
@@ -207,7 +207,7 @@ UIAutomationClientsideProvidersが読み込まれていないことが確認で�
 UIAutomationは以下のようなアーキテクトになっています。  
 https://docs.microsoft.com/ja-jp/windows/desktop/WinAuto/architecture-and-interoperability  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/117dc7a8-a918-21cf-f952-c9a577c5f183.png  
+![UIAutomation7png.png](/image/117dc7a8-a918-21cf-f952-c9a577c5f183.png)  
   
 操作されるアプリケーション側をサーバー、アプリケーションを操作する側がクライアントとなります。  
 サーバーとクライアントはともにUIAutomationCore.dllをよみこみ、プロセス間通信をもちいてプロパティ値を検索するなどしています。  

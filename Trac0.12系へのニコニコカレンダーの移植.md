@@ -4,7 +4,7 @@
 http://www.geocities.jp/nikonikocalendar/index_ja.html  
   
 この記事ではTracのプラグインとしてニコニコカレンダーを使用できるようにします。  
-https://qiita-image-store.s3.amazonaws.com/0/47856/1a99f68e-5cda-040d-5947-39ca15b34271.png  
+![b0232065_12251021.png](/image/1a99f68e-5cda-040d-5947-39ca15b34271.png)  
   
 このプラグインはBrett Smith氏がTrac0.10系で作成したプラグインをTrac0.12系へ移植して若干の修正を行ったものです。  
   
@@ -25,7 +25,7 @@ https://github.com/mima3/nikonikoplugin
   
 (3)TracLightningをインストールしたときに作成されたスタートメニューからコマンドプロンプトを起動してください。  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/e3936672-ac4f-edfb-68dc-366c5cbebe0d.png  
+![b0232065_12341098.png](/image/e3936672-ac4f-edfb-68dc-366c5cbebe0d.png)  
   
 このメニューから起動された場合、Tracで使用している環境へのパスが通っています。  
 Pythonを複数いれている方は必ず、ここから実行しましょう。  
@@ -38,11 +38,11 @@ python setup.py install
   
 (5)Apachを再起動して、Tracの管理者権限でログインします。  
 「一般設定」の「プラグイン」を選択して「nikoniko」を探してください。  
-https://qiita-image-store.s3.amazonaws.com/0/47856/99ef586e-98a2-0391-f034-581524bd13d3.png  
+![b0232065_1240533.png](/image/99ef586e-98a2-0391-f034-581524bd13d3.png)  
   
  nikonikoプラグインをみつけたらNikoNikoComponentにチェックをつけて変更を適用してください。  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/3096161d-c3fd-6bc9-3445-3c64b2427cd6.png  
+![b0232065_12422987.png](/image/3096161d-c3fd-6bc9-3445-3c64b2427cd6.png)  
   
 適用後、ニコニコカレンダーのページに移動するとエラーがでる可能性があります。  
 これはニコニコカレンダーで使用しているテーブルが作成されていないために発生します。  
@@ -60,7 +60,7 @@ TracLightningを既定の値でインストールした場合、Sampleプロジ�
 (7)Apachを再起動して管理者権限でログインします。  
 　管理メニューの権限で「NIKONIKO_CHANGE」と「NIKONIKO＿VIEW」を任意のユーザーに付与してください。  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/76cc701d-de2e-21af-e4b1-19288c25b90b.png  
+![b0232065_12505856.png](/image/76cc701d-de2e-21af-e4b1-19288c25b90b.png)  
   
 (8)するとメニューの右はじに「二コカレ」というメニューが作成されます。  
 あとは今日のきもちにあわせて「やる夫」を選んで必要なら、なんかコメントをのこしてください。  

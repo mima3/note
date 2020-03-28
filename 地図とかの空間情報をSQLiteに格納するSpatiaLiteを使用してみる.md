@@ -26,10 +26,10 @@ https://www.gaia-gis.it/fossil/libspatialite/index
   
 ### spatialite_gui  
 GUIでspatialiteの機能が使用できます。  
-https://qiita-image-store.s3.amazonaws.com/0/47856/fc86e7d9-ee70-7f29-1a63-bcf77d14ed37.png  
+![spatialite2.png](/image/fc86e7d9-ee70-7f29-1a63-bcf77d14ed37.png)  
   
 POLYGONなどのGeometry型の列については、画像としてその内容を確認できます。  
-https://qiita-image-store.s3.amazonaws.com/0/47856/efc395eb-e88c-f9d4-846b-5e65205676e7.png  
+![spatialite.png](/image/efc395eb-e88c-f9d4-846b-5e65205676e7.png)  
   
  **バイナリの配布**   
 Windowsの場合は以下から任意のプラットフォームのバイナリが取得できます。  
@@ -107,10 +107,10 @@ http://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03.html
 spatialite_guiを起動して空のSQLiteのデータベースファイルを作成します。  
   
 [Creating a New (empty) SQLite DB]アイコンを押して、ファイル名を入力します。  
-https://qiita-image-store.s3.amazonaws.com/0/47856/1bb96499-6ac4-5423-6aa0-f0e84b564722.png  
+![spatialite001.png](/image/1bb96499-6ac4-5423-6aa0-f0e84b564722.png)  
   
 正常に作成されると、作成されたデータベースへのパスが表示されます。  
-https://qiita-image-store.s3.amazonaws.com/0/47856/a136324a-25b6-2deb-434a-4ecbc46c84cd.png  
+![spatialite002.png](/image/a136324a-25b6-2deb-434a-4ecbc46c84cd.png)  
   
 ここまでは普通のデータベースと変わりありません。  
   
@@ -119,22 +119,22 @@ https://qiita-image-store.s3.amazonaws.com/0/47856/a136324a-25b6-2deb-434a-4ecbc
   
 [Load Shape file]アイコンを押して、国土数値情報の「N03-14_140401.shp」を選択します。  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/0418627e-11a1-1db2-f549-0bc921aeac62.png  
+![spatialite003.png](/image/0418627e-11a1-1db2-f549-0bc921aeac62.png)  
   
   
 この時、エンコードを聞かれるので「CP932」を選択してください。  
-https://qiita-image-store.s3.amazonaws.com/0/47856/c6c940b7-0f7b-ae66-3c04-34ecb160899b.png  
+![spatialite004.png](/image/c6c940b7-0f7b-ae66-3c04-34ecb160899b.png)  
   
 正常に完了すると「N03-14_140401」というテーブルが作成されます。  
-https://qiita-image-store.s3.amazonaws.com/0/47856/3dbc9d6f-5cb4-ff7d-15ca-efe7bf5c796a.png  
+![spatialite005.png](/image/3dbc9d6f-5cb4-ff7d-15ca-efe7bf5c796a.png)  
   
 ### shpファイルから作成されたテーブルの確認  
 ここではshpファイルから作成されたテーブルの確認を行います。  
 作成されたテーブルの列を確認するにはテーブルを選択して、右クリックを押して「Show columns」を選択します。  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/c5d78add-2fcd-e5d3-40f9-d2cdaeb2526c.png  
+![spatialite006.png](/image/c5d78add-2fcd-e5d3-40f9-d2cdaeb2526c.png)  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/954f783c-5542-0380-70ce-cf37f13a7960.png  
+![spatialite007.png](/image/954f783c-5542-0380-70ce-cf37f13a7960.png)  
   
 N03_001～N03_004は県、区、市、N03_007にはコードが格納されているTEXT型の列です。  
 Geometryは行政区域の形がBlobとして格納されていてPOLYGONというspatiaLiteが指定した型になっています。  
@@ -159,11 +159,11 @@ CREATE TABLE "N03-14_140401" (
 SELECT * FROM "N03-14_140401" LIMIT 10;
 ```  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/1c503d9e-da00-287a-14a3-bbb3d3cad9d2.png  
+![spatialite008.png](/image/1c503d9e-da00-287a-14a3-bbb3d3cad9d2.png)  
   
 実行すると、以下のような情報が取得できます。  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/cb4294f1-3a0f-fcd6-5483-e86ef59b646d.png  
+![spatialite009.png](/image/cb4294f1-3a0f-fcd6-5483-e86ef59b646d.png)  
   
 PK_UID～N03_007はテキストでデータが表現されています。  
 しかし、GeometryはBLOBデータなので人が見て内容が確認できません。  
@@ -172,10 +172,10 @@ PK_UID～N03_007はテキストでデータが表現されています。
 １つはBLOB exploreを使用する方法です。  
 Geometryの列の任意のセルを選択して右クリックを押し「BLOB explore」を選択します。  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/58c8f516-bc86-51ba-103f-ff62362545f7.png  
+![spatialite010.png](/image/58c8f516-bc86-51ba-103f-ff62362545f7.png)  
   
 BLOB exploreではバイナリ、画像、SVG、GeoJSONなどの様々な形式でデータを表現することができます。  
-https://qiita-image-store.s3.amazonaws.com/0/47856/52019b3b-360c-06fa-a0c7-e80f41c1e557.png  
+![spatialite011.png](/image/52019b3b-360c-06fa-a0c7-e80f41c1e557.png)  
   
 BLOB exploreを使用しない方法としては、SQLでGeometryの列を任意の形式で表示する方法があります。  
   
@@ -186,7 +186,7 @@ BLOB exploreを使用しない方法としては、SQLでGeometryの列を任意
 SELECT substr(ASTEXT(Geometry), 1, 100) FROM "N03-14_140401" LIMIT 10;
 ```  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/0cedd1d4-b542-a05c-e971-8cee14033e94.png  
+![spatialite012.png](/image/0cedd1d4-b542-a05c-e971-8cee14033e94.png)  
   
 ASTEXTでPOLYGON情報を文字として表示できました。これは任意の形式で出力することが可能です。たとえば、ASGEOJSONとした場合は、GeoJSONとして出力されます。  
   
@@ -194,7 +194,7 @@ ASTEXTでPOLYGON情報を文字として表示できました。これは任意�
 SELECT substr(ASGEOJSON(Geometry), 1, 100) FROM "N03-14_140401" LIMIT 10;
 ```  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/aa019d39-461d-861b-83cb-58ea72f5a533.png  
+![spatialite013.png](/image/aa019d39-461d-861b-83cb-58ea72f5a533.png)  
   
 ASTEXTやASGEOJSONのSpatiaLiteの提供する関数は下記の「Spatial SQL functions reference guide」に記載されています。  
   
@@ -215,7 +215,7 @@ CREATE TABLE "places" (
   
 SQLを実行した後に、refreshを行うとテーブルが追加されます。  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/32608abf-7e38-e535-21a7-e4b11145cd5b.png  
+![spatialite014.png](/image/32608abf-7e38-e535-21a7-e4b11145cd5b.png)  
   
 次に、地物情報を表す列をAddGeometryColumn()を用いて作成します。  
   
@@ -225,7 +225,7 @@ Select AddGeometryColumn ('places', 'Geometry', 0, 'POINT', 'XY')
   
 SQLを実行した後に、refreshを行うと列が追加されて、テーブルに地球のアイコンがつきます。  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/45d8f832-399b-c4e4-62da-883c73c145ec.png  
+![sptialite100.png](/image/45d8f832-399b-c4e4-62da-883c73c145ec.png)  
   
   
 テーブルを作成できたら、次はデータを入力します。  
@@ -268,7 +268,7 @@ INNER JOIN places ON
 Contains関数は第一引数の範囲に第二引数の領域が含まれているか調べます。  
 この結果は次のようになります。  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/009ed694-9481-cda0-9be6-bb279248c26d.png  
+![spatialite015.png](/image/009ed694-9481-cda0-9be6-bb279248c26d.png)  
   
 都庁は新宿区にあるので期待どおりの結果といえるでしょう。  
 先の例ではテーブルに格納されているデータで検索しましたが、直接WHERE区に指定することも可能です。  
@@ -291,7 +291,7 @@ MBRはGEOMETRYのおおまかな大きさを表すものです。
   
 以下のような複雑な図形を赤い枠線の図形とみなします。  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/bec3dd45-0c8c-12ea-5061-ba571c8aac2f.png  
+![spatialite016.png](/image/bec3dd45-0c8c-12ea-5061-ba571c8aac2f.png)  
   
 これにより、不正確ではあるが、早い検索が行えます。  
 GEOMETRYからMBRを取得するには Envelope()を用います。  
@@ -305,7 +305,7 @@ LIMIT 10
 ```  
   
 この結果は以下のように単純な図形になります。  
-https://qiita-image-store.s3.amazonaws.com/0/47856/a0ae8048-3435-1f9c-e489-18e0550541df.png  
+![spatialite017.png](/image/a0ae8048-3435-1f9c-e489-18e0550541df.png)  
   
 では、先ほどと同じ都庁を含む座標をMBRを利用して検索してみましょう。  
   
@@ -320,7 +320,7 @@ WHERE
   
 検索速度が向上したかわりに以下のように、不要なデータも抽出されてしまっています。  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/6bd04ff4-7498-d95a-089b-746b6f5a0914.png  
+![spatialite018.png](/image/6bd04ff4-7498-d95a-089b-746b6f5a0914.png)  
   
 ### RTreeインデックスを利用した検索  
 通常、DBを扱う場合、インデックスを利用することで検索速度が向上します。  
@@ -343,9 +343,9 @@ SELECT CreateSpatialIndex("N03-14_140401", "Geometry") ;
 ```  
   
 正常に作成できた場合は、1が返り、refresh後にSpatialIndexに新しいテーブルが表示されることが確認できます。  
-https://qiita-image-store.s3.amazonaws.com/0/47856/69b33707-10f5-2918-c61b-71e6d05acafc.png  
+![spatialite019.png](/image/69b33707-10f5-2918-c61b-71e6d05acafc.png)  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/affa8866-87f3-5cb6-0908-5fd4a0d4177a.png  
+![spatialite020.png](/image/affa8866-87f3-5cb6-0908-5fd4a0d4177a.png)  
   
   
 RTreeインデックスを作成することにより、以下の４つのテーブルが作成されます。  
@@ -366,7 +366,7 @@ SELECT * FROM "idx_N03-14_140401_Geometry" LIMIT 10;
 ```  
   
 このように各レコードのMRBが格納されています。  
-https://qiita-image-store.s3.amazonaws.com/0/47856/a463a883-5e38-8fd9-2c3e-80f0f9b3874f.png  
+![spatialite021.png](/image/a463a883-5e38-8fd9-2c3e-80f0f9b3874f.png)  
   
 ユーザはこのテーブルを利用することで、大量のデータの中からデータをフィルターをし、結果を求めることができます。  
   
@@ -419,7 +419,7 @@ SELECT DisableSpatialIndex("N03-14_140401", "Geometry") ;
 ```  
   
 refreshを実行するとSpatial Indexが削除されていることが確認できます。  
-https://qiita-image-store.s3.amazonaws.com/0/47856/9c3b455c-792d-669a-3bc3-64fe1f6c1f07.png  
+![spatialite022.png](/image/9c3b455c-792d-669a-3bc3-64fe1f6c1f07.png)  
   
 ## pythonからの利用  
 pythonからSpatiaLiteを使用する場合、SQLiteが適切に利用できる状況なら簡単に利用できます。  

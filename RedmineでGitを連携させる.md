@@ -65,11 +65,11 @@ To http://debian/git/test
 # Redmineとリポジトリの関連  
 ## プロジェクトにリポジトリの追加  
 任意のプロジェクトで「設定」を選択して「リポジトリ」タブを選ぶ。  
-https://qiita-image-store.s3.amazonaws.com/0/47856/f73c009c-9cd7-30cf-9849-48b6e8601a78.png  
+![redminegit1.png](/image/f73c009c-9cd7-30cf-9849-48b6e8601a78.png)  
   
 「新しいリポジトリ」を押下すると次の画面が表示される。  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/c12df7c7-d4fa-e7e6-800c-257b3204f1ed.png  
+![redminegit2.png](/image/c12df7c7-d4fa-e7e6-800c-257b3204f1ed.png)  
   
 下記のように設定をする。  
   
@@ -84,12 +84,12 @@ https://qiita-image-store.s3.amazonaws.com/0/47856/c12df7c7-d4fa-e7e6-800c-257b3
   
 ここまで行うと、もしリポジトリにコミットが存在すれば、各プロジェクトのリポジトリ画面には下記のように表示される。  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/894c9b46-782b-97ed-9cdb-f9e60f9f558a.png  
+![redminegit3.png](/image/894c9b46-782b-97ed-9cdb-f9e60f9f558a.png)  
   
 ## チケットとの連携  
 「管理」→「設定」のリポジトリタブを選択する。  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/4ca536ef-fe8f-879f-abf2-fb86a70457a9.png  
+![redminegit4.png](/image/4ca536ef-fe8f-879f-abf2-fb86a70457a9.png)  
   
 ここで以下の設定を行う。  
   
@@ -114,7 +114,7 @@ wget  http://localhost/redmine/sys/fetch_changesets?key=作成したAPIキー
   
   
 以降、クライアントからpushを行った場合に、「refs #123」「fixes #123」等のコミットログが存在していれば下記のようにチケットとリポジトリが関連づく  
-https://qiita-image-store.s3.amazonaws.com/0/47856/284865db-bbae-6197-2ac0-c9d556cfcdb1.png  
+![redminegit4.png](/image/284865db-bbae-6197-2ac0-c9d556cfcdb1.png)  
   
 ## チケット番号のないpushを拒否するようにする。  
 下記のupdateフックスクリプトを利用する。  
@@ -123,7 +123,7 @@ https://github.com/bleis-tift/Git-Hooks
 このupdateスクリプトは、push時のコミットで、一行目がチケット番号でないものがあったら、拒否するようになっている。  
   
 以下はTortoiseGITでpushが失敗した例である。  
-https://qiita-image-store.s3.amazonaws.com/0/47856/f1e9c739-0960-68be-c296-f0b8ffee6009.png  
+![redminegit3.png](/image/f1e9c739-0960-68be-c296-f0b8ffee6009.png)  
   
   
 ### コミットログの修正方法  
@@ -144,10 +144,10 @@ git rebase -i HEAD~2 -i
 ```  
   
 次のような画面が表示される。  
-https://qiita-image-store.s3.amazonaws.com/0/47856/d5b361ed-c136-89f1-eab1-a949c6baf6e4.png  
+![redminegit3.png](/image/d5b361ed-c136-89f1-eab1-a949c6baf6e4.png)  
   
 修正したいコミットのpickをeditに変更する。  
-https://qiita-image-store.s3.amazonaws.com/0/47856/7b5e581c-75d0-7f19-b4e2-4ccdb98ae06d.png  
+![redminegit3.png](/image/7b5e581c-75d0-7f19-b4e2-4ccdb98ae06d.png)  
   
 以下のコマンドを実行してコミットをし直し、rebaseを続ける。  
   

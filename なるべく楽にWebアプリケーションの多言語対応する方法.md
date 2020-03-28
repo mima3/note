@@ -36,7 +36,7 @@ http://togetter.com/li/288496
 これに対応するためにアプリケーションが直接、MicrosoftTranslatorで翻訳を行うのでなく、データベースを経由するようにします。  
   
 ## データベースを利用した機械翻訳の利用  
-https://qiita-image-store.s3.amazonaws.com/0/47856/f7d6f5c6-39e6-90e7-cbe8-5e4ef443de7d.png  
+![翻訳の仕組み.png](/image/f7d6f5c6-39e6-90e7-cbe8-5e4ef443de7d.png)  
   
 翻訳結果をデータベースに保存することで外部APIへのアクセスを減らしパフォーマンスを向上させるのと同時に、人による翻訳の修正もしくは、あらかじめ翻訳結果を登録しておくことができます。  
   

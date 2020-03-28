@@ -2,7 +2,7 @@ LiquidFunは流体とか軟体を扱うためのライブラリで、Box2dをベ
 基本的にC++で実装されていますが、JavaまたはJavaScriptからも使用できます。  
 今回はAndroidからJavaでLiquidFunを利用する方法について説明します。  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/9b02cacd-ad4b-edac-5b04-cb125f978b55.png  
+![device-2015-03-26-191808.png](/image/9b02cacd-ad4b-edac-5b04-cb125f978b55.png)  
   
  **LiquidFunTest**  
 https://www.youtube.com/watch?v=kAaiJtDYa9Q  
@@ -242,7 +242,7 @@ https://github.com/mima3/LiquidFunTest/blob/master/app/src/main/java/jp/ne/needt
 実行するプラットフォームごとに異なるapkを使用することに注意してください。  
 たとえば、VMPalyer + Android-x86を使用している場合は「Build Variants」で「x86Debug」を選択して実行します。  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/fae6d590-ad46-5066-d82e-ab35b9247c09.png  
+![AndroidExe1.png](/image/fae6d590-ad46-5066-d82e-ab35b9247c09.png)  
   
 あるいは、SO-02G XPERIAで実行する場合は、「Build Variants」で「armeabiDebug」を選択して実行します。  
   

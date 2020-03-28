@@ -13,23 +13,23 @@ JavaScript Object NotationはJavaScriptから派生したものですが、2019�
   
 ## JSON values  
 JSONの値はobject, array, number, string, true, false, null となります。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/2be41691-e325-69ca-55a9-2b9aa02a0961.png  
+![image.png](/image/2be41691-e325-69ca-55a9-2b9aa02a0961.png)  
   
 ## Object  
 objectは0個以上の名前/値のペアを囲む、一対のトークンとして表せられます。名前はstringになります。名前の後に「:」とトークンが続き、名前と値を分けます。単一の「,」は値を次の名前から分離します。  
 名前と値のペアの順序に重要性はありませんし、**名前文字列が一意であることを要求するものではありませんし、複数あった場合の挙動は定義されていません。**  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/0d6d06c7-1f19-189b-92ce-d0203f7b58cb.png  
+![image.png](/image/0d6d06c7-1f19-189b-92ce-d0203f7b58cb.png)  
   
 ## Array  
 arrayは0個以上の値を囲む角括弧トークンです。値は「,」で区切ります。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/e6d4393d-df38-5547-0a75-9ee0868758fa.png  
+![image.png](/image/e6d4393d-df38-5547-0a75-9ee0868758fa.png)  
   
 ## Number  
 numberは余分の先頭0が存在しない10進数です。  
 マイナス記号、小数点、eまたはEが付与される場合があります。  
 数字として表すことのできないNaNやInfinityは許可されません。  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/0929f143-e7f1-cc98-0a1d-5a90e0ec8008.png  
+![image.png](/image/0929f143-e7f1-cc98-0a1d-5a90e0ec8008.png)  
   
 10 → Numberとみなす  
 -10 → Numberとみなす  
@@ -44,7 +44,7 @@ NaN  →　Numberとみなさない
 ## String  
 stringは「\」によるエスケープシーケンス記法を含む、「"」でくくった文字列です。  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/a3b902c2-c16c-db71-ac62-890ef31db6cc.png  
+![image.png](/image/a3b902c2-c16c-db71-ac62-890ef31db6cc.png)  
   
 **\u4 hexadecimal digits**の例は以下のようになります。  
 ・"\u3041"→"ぁ"となります。  
@@ -579,7 +579,7 @@ https://www.newtonsoft.com/json
 ASP.NETで開発した人は、おそらく良く見るライブラリかと思います。  
   
 NuGetで以下のパッケージをインストールしてください。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/bcbf2326-25f4-19fc-da0d-8f5172df0cad.png  
+![image.png](/image/bcbf2326-25f4-19fc-da0d-8f5172df0cad.png)  
   
 #### 型を指定しない使用方法  
 JsonConvert.DeserializeObjectに型を指定しないでJSONデータを読み込むことができます。これにより、あらかじめJSONの形に合わせたクラスを用意する必要がなくなります。  
@@ -990,7 +990,7 @@ End Sub
 ```  
   
 **配列の操作ができない**  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/c4a51a78-83a0-2b5f-2436-e4fc349574ff.png  
+![image.png](/image/c4a51a78-83a0-2b5f-2436-e4fc349574ff.png)  
   
 ウォッチ式を見る限り配列として取得されているようだが、配列の操作が一切できない。  
   

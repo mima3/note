@@ -50,7 +50,7 @@ cやc++で作成した実行ファイルと異なり、作成したHelloWorld.cl
   
 HelloWorld.classの中身は以下のようなバイナリになっています。  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/fafa1dd7-23c9-d531-c966-9bfb0bf93f1a.png  
+![image.png](/image/fafa1dd7-23c9-d531-c966-9bfb0bf93f1a.png)  
   
 このバイナリファイルを読み解くには、「The Java® Virtual Machine Specification」を読む必要があります。  
 https://docs.oracle.com/javase/specs/jvms/se8/html/index.html  
@@ -423,19 +423,19 @@ struct Code_attribute {
 https://github.com/devil-tamachan/binaryeditorbz/blob/master/Bz/BZFormVw.cpp  
   
 BZEditor起動後、「表示」＞「構造体表示」をチェックすることで構造体表示用の子ウィンドウが表示されます。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/80e621b8-5de5-a78e-efb8-e34e7a4fc688.png  
+![image.png](/image/80e621b8-5de5-a78e-efb8-e34e7a4fc688.png)  
   
 アドレスをダブルクリックすることで、そのアドレスを始点とした構造体情報を表示します。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/2b5b0fc1-81c5-b0cf-63e5-13708bf40f05.png  
+![image.png](/image/2b5b0fc1-81c5-b0cf-63e5-13708bf40f05.png)  
   
 ##### バイトの並びの変更  
 classファイルを解析するときはMotorolaを選択します。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/800b692f-4005-7193-1b6a-f03c8c20f0db.png  
+![image.png](/image/800b692f-4005-7193-1b6a-f03c8c20f0db.png)  
   
 ### BZEditorによるclassファイルの解析  
 では先頭からClassFileの解析をしていきます。  
 #### 先頭～constant_pool_countまで  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/4e4aacb7-142b-864e-4808-f55ce4f2834d.png  
+![image.png](/image/4e4aacb7-142b-864e-4808-f55ce4f2834d.png)  
   
 magicは「0xCAFEBABE」が表示されています。  
 minor versionは0  
@@ -444,151 +444,151 @@ constant_pool_countは26になり、次のバイトからconstant_poolのエン�
   
 #### constant_pool[]の解析  
 ##### constant_pool[1]  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/3b3ab07e-3909-39b3-da16-cf91336848ce.png  
+![image.png](/image/3b3ab07e-3909-39b3-da16-cf91336848ce.png)  
 1バイト目が0x0A=10なので、このconstant_poolのエントリは[CONSTANT_Methodref](#constant_methodref)になります。  
 class_indexは6、name_and_type_indexは12です。  
 これらのインデックスが実際になにを指示しているかはconstant_poolを全て見終わった後に確認します。  
   
 ##### constant_pool[2]  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/d421ef50-6258-cf6f-b4c5-7586ae791c22.png  
+![image.png](/image/d421ef50-6258-cf6f-b4c5-7586ae791c22.png)  
 1バイト目が0x09なので、このconstant_poolのエントリは[CONSTANT_Fieldref](#constant_fieldref)になります。  
 class_indexは13、name_and_type_indexは14です。  
   
 ##### constant_pool[3]  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/50ac88d6-3fa5-8282-da68-948da1b87ce5.png  
+![image.png](/image/50ac88d6-3fa5-8282-da68-948da1b87ce5.png)  
   
 1バイト目が0x08なので、のconstant_poolのエントリは[CONSTANT_String](#constant_string)になります。  
 indexは15となります。  
   
 ##### constant_pool[4]  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/3a12e656-7035-a01f-1732-c2f2cdfd4a56.png  
+![image.png](/image/3a12e656-7035-a01f-1732-c2f2cdfd4a56.png)  
   
 1バイト目が0x0A=10なので、このconstant_poolのエントリは[CONSTANT_Methodref](#constant_methodref)になります。  
 class_indexは16、name_and_type_indexは17です。  
   
 ##### constant_pool[5]  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/e76e86cb-c6c8-951c-387d-3ed15be4776d.png  
+![image.png](/image/e76e86cb-c6c8-951c-387d-3ed15be4776d.png)  
   
 1バイト目が0x07なので、このconstant_poolのエントリは[CONSTANT_Class](#constant_class)になります。  
 indexは18になります。  
   
 ##### constant_pool[6]  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/c2614a42-15aa-d90c-5c1a-8c8e70d26cf1.png  
+![image.png](/image/c2614a42-15aa-d90c-5c1a-8c8e70d26cf1.png)  
   
 1バイト目が0x07なので、このconstant_poolのエントリは[CONSTANT_Class](#constant_class)になります。  
 indexは19になります。  
   
 ##### constant_pool[7]  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/ff42b5d4-9a9a-ab97-b7cc-a19122cea82b.png  
+![image.png](/image/ff42b5d4-9a9a-ab97-b7cc-a19122cea82b.png)  
   
 1バイト目が0x01なので、このconstant_poolのエントリは[CONSTANT_Utf8](#constant_utf8)になります。  
 lengthは6となり、そのあとの6バイトで「\<init\>」という文字を格納しています。  
   
 ##### constant_pool[8]  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/704293d6-9ce8-ade9-b5b8-42f64f0686cc.png  
+![image.png](/image/704293d6-9ce8-ade9-b5b8-42f64f0686cc.png)  
   
 1バイト目が0x01なので、このconstant_poolのエントリは[CONSTANT_Utf8](#constant_utf8)になります。  
 lengthは3となり、そのあとの3バイトで「()V」という文字を格納しています。  
   
 ##### constant_pool[9]  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/7bab758b-baed-f94e-0cd1-3d4abbe7970d.png  
+![image.png](/image/7bab758b-baed-f94e-0cd1-3d4abbe7970d.png)  
   
 1バイト目が0x01なので、このconstant_poolのエントリは[CONSTANT_Utf8](#constant_utf8)になります。  
 lengthは4となり、そのあとの4バイトで「Code」という文字を格納しています。  
   
   
 ##### constant_pool[10]  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/a420c3cc-650d-f12c-815d-22d1326e0734.png  
+![image.png](/image/a420c3cc-650d-f12c-815d-22d1326e0734.png)  
   
 1バイト目が0x01なので、このconstant_poolのエントリは[CONSTANT_Utf8](#constant_utf8)になります。  
 lengthは4となり、そのあとの4バイトで「main」という文字を格納しています。  
   
 ##### constant_pool[11]  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/63d0917c-a9bd-94b9-55b8-91fe1952c098.png  
+![image.png](/image/63d0917c-a9bd-94b9-55b8-91fe1952c098.png)  
   
 1バイト目が0x01なので、このconstant_poolのエントリは[CONSTANT_Utf8](#constant_utf8)になります。  
 lengthは22となり、そのあとの22バイトで「([Ljava/lang/String;)V」という文字を格納しています。  
   
 ##### constant_pool[12]  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/8f35a0c7-2b18-1af7-8d4e-48483268f8f6.png  
+![image.png](/image/8f35a0c7-2b18-1af7-8d4e-48483268f8f6.png)  
   
 1バイトめが0x0C=12なので、このconstant_poolのエントリは[CONSTANT_NameAndType_info構造体](#constant_nameandtype)になります。  
 name_indexは7,descriptor_indexは8になります。  
   
 ##### constant_pool[13]  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/326d752f-82a3-bbbd-414b-a8f7ec8d92c6.png  
+![image.png](/image/326d752f-82a3-bbbd-414b-a8f7ec8d92c6.png)  
   
 1バイト目が0x07なので、このconstant_poolのエントリは[CONSTANT_Class](#constant_class)になります。  
 indexは20になります。  
   
 ##### constant_pool[14]  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/17db2876-7f5e-271d-9e50-07d7feeafca5.png  
+![image.png](/image/17db2876-7f5e-271d-9e50-07d7feeafca5.png)  
   
 1バイトめが0x0C=12なので、このconstant_poolのエントリは[CONSTANT_NameAndType_info構造体](#constant_nameandtype)になります。  
 name_indexは21,descriptor_indexは22になります。  
   
 ##### constant_pool[15]  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/65749f2f-791b-d50f-54e1-19b634ad00cd.png  
+![image.png](/image/65749f2f-791b-d50f-54e1-19b634ad00cd.png)  
   
 1バイト目が0x01なので、このconstant_poolのエントリは[CONSTANT_Utf8](#constant_utf8)になります。  
 lengthは11となり、そのあとの11バイトで「Hello World」という文字を格納しています。  
   
 ##### constant_pool[16]  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/48ff8f4a-ac9e-aecf-09b9-48fd5049651c.png  
+![image.png](/image/48ff8f4a-ac9e-aecf-09b9-48fd5049651c.png)  
   
 1バイト目が0x07なので、このconstant_poolのエントリは[CONSTANT_Class](#constant_class)になります。  
 indexは23になります。  
   
 ##### constant_pool[17]  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/1ac71435-beff-9404-6bcf-6ca577db50d8.png  
+![image.png](/image/1ac71435-beff-9404-6bcf-6ca577db50d8.png)  
   
 1バイトめが0x0C=12なので、このconstant_poolのエントリは[CONSTANT_NameAndType_info構造体](#constant_nameandtype)になります。  
 name_indexは24,descriptor_indexは25になります。  
   
 ##### constant_pool[18]  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/bccecb5d-cea9-068b-360f-1783dbd7a324.png  
+![image.png](/image/bccecb5d-cea9-068b-360f-1783dbd7a324.png)  
   
 1バイト目が0x01なので、このconstant_poolのエントリは[CONSTANT_Utf8](#constant_utf8)になります。  
 lengthは10となり、そのあとの10バイトで「HelloWorld」という文字を格納しています。  
   
 ##### constant_pool[19]  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/a1e0c489-1ad2-955e-ef4c-9e52e3940998.png  
+![image.png](/image/a1e0c489-1ad2-955e-ef4c-9e52e3940998.png)  
   
 1バイト目が0x01なので、このconstant_poolのエントリは[CONSTANT_Utf8](#constant_utf8)になります。  
 lengthは16となり、そのあとの16バイトで「java/lang/Object」という文字を格納しています。  
   
 ##### constant_pool[20]  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/ae07d056-af02-3acc-93b9-38b6c7905a81.png  
+![image.png](/image/ae07d056-af02-3acc-93b9-38b6c7905a81.png)  
   
 1バイト目が0x01なので、このconstant_poolのエントリは[CONSTANT_Utf8](#constant_utf8)になります。  
 lengthは16となり、そのあとの16バイトで「java/lang/System」という文字を格納しています。  
   
 ##### constant_pool[21]  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/391f4bf0-7087-f972-4ca5-3ddd5d1b4d06.png  
+![image.png](/image/391f4bf0-7087-f972-4ca5-3ddd5d1b4d06.png)  
   
 1バイト目が0x01なので、このconstant_poolのエントリは[CONSTANT_Utf8](#constant_utf8)になります。  
 lengthは3となり、そのあとの3バイトで「out」という文字を格納しています。  
   
   
 ##### constant_pool[22]  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/3569941d-fa83-658f-e1f5-401b02d9f311.png  
+![image.png](/image/3569941d-fa83-658f-e1f5-401b02d9f311.png)  
 1バイト目が0x01なので、このconstant_poolのエントリは[CONSTANT_Utf8](#constant_utf8)になります。  
 lengthは21となり、そのあとの21バイトで「Ljava/io/PrintStream;」という文字を格納しています。  
   
 ##### constant_pool[23]  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/56f61e0b-2a79-c185-76f9-a9c28bfb5b5c.png  
+![image.png](/image/56f61e0b-2a79-c185-76f9-a9c28bfb5b5c.png)  
   
 1バイト目が0x01なので、このconstant_poolのエントリは[CONSTANT_Utf8](#constant_utf8)になります。  
 lengthは19となり、そのあとの19バイトで「java/io/PrintStream」という文字を格納しています。  
   
 ##### constant_pool[24]  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/00068857-54eb-caeb-6f3d-51c78e6c630c.png  
+![image.png](/image/00068857-54eb-caeb-6f3d-51c78e6c630c.png)  
   
 1バイト目が0x01なので、このconstant_poolのエントリは[CONSTANT_Utf8](#constant_utf8)になります。  
 lengthは7となり、そのあとの7バイトで「println」という文字を格納しています。  
   
 #####  constant_pool[25]  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/b842760d-cf8a-b6f4-03ac-279d67c914f3.png  
+![image.png](/image/b842760d-cf8a-b6f4-03ac-279d67c914f3.png)  
   
 1バイト目が0x01なので、このconstant_poolのエントリは[CONSTANT_Utf8](#constant_utf8)になります。  
 lengthは21となり、そのあとの21バイトで「(Ljava/lang/String;)V」という文字を格納しています。  
@@ -625,7 +625,7 @@ constant_poolをまとめると以下のようになります。
 |25|[CONSTANT_Utf8](#constant_utf8)|「(Ljava/lang/String;)V」という文字列です|  
   
 ### access_flags～interfaces[]まで  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/a5c8b9f7-d1c7-74ed-95a3-13d55b32e884.png  
+![image.png](/image/a5c8b9f7-d1c7-74ed-95a3-13d55b32e884.png)  
   
 ・access_flagsは0x0021。つまりACC_SUPER(0x20) と ACC_PUBLIC(0x01)となります。  
   
@@ -636,17 +636,17 @@ https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/a5c8b9f7-d1c7-
 ・interfaces_countは0で、次に続くinterfaces[]は存在しません。  
   
 ### fields_count～fileds[]まで  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/1bcc2d5c-c64c-a3e5-af2b-6cf7a2111ae3.png  
+![image.png](/image/1bcc2d5c-c64c-a3e5-af2b-6cf7a2111ae3.png)  
   
 fields_countが0のため、次に続くfiledsは存在しません。  
   
 ### methods_count～methods[]  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/77d8fbf6-a0e0-0b69-d292-f4fc32c4fadc.png  
+![image.png](/image/77d8fbf6-a0e0-0b69-d292-f4fc32c4fadc.png)  
   
 methods_countは0x0002のため2件、method_info構造体が続きます。  
   
 #### method_info[0]  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/40344840-1ed8-647f-41ee-acc117af078a.png  
+![image.png](/image/40344840-1ed8-647f-41ee-acc117af078a.png)  
   
 ・access_flagsは0x0001。つまりACC_PUBLIC(0x01)となります。  
   
@@ -658,7 +658,7 @@ https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/40344840-1ed8-
 ・attributes_countは1となり、attributes構造体が1つ存在します。  
   
 ##### method_info[0].attributes[0]  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/dae5ff61-abb7-50b4-0beb-7e6a75eff270.png  
+![image.png](/image/dae5ff61-abb7-50b4-0beb-7e6a75eff270.png)  
   
   
 attribute_name_indexはconstant_pool[9]の「Code」になるため、この構造体は[Code_attribute構造体](#code_attribute構造体)になります。  
@@ -679,7 +679,7 @@ code_lengthは5となり次の「0x 2A B7 00 01 B1」がバイトコードであ
 exception_table_length, attributes_countはともに0になります。  
   
 #### method_info[1]  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/0a279447-5601-66cf-b96f-08d1942d9e7b.png  
+![image.png](/image/0a279447-5601-66cf-b96f-08d1942d9e7b.png)  
   
 ・access_flagsは0x0009。つまりACC_PUBLIC(0x01)とACC_STATIC(0x08)となります。  
   
@@ -690,7 +690,7 @@ https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/0a279447-5601-
 ・attributes_countは1となり、attributes構造体が1つ存在します。  
   
 ##### method_info[1].attributes[0]  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/2b69c6b7-02ad-1360-3d4b-364ecb1a0032.png  
+![image.png](/image/2b69c6b7-02ad-1360-3d4b-364ecb1a0032.png)  
   
 attribute_name_indexはconstant_pool[9]の「Code」になるため、この構造体は[Code_attribute構造体](#code_attribute構造体)になります。  
   
@@ -718,7 +718,7 @@ code_lengthは9となり次の「0x B2 00 02 12 03 B6 00 04 B1」がバイトコ
 exception_table_length, attributes_countはともに0になります。  
   
 ### ClassFile のattributes_count、attributes[]  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/616861f5-edaa-8882-419f-9ded39a0d0de.png  
+![image.png](/image/616861f5-edaa-8882-419f-9ded39a0d0de.png)  
   
 attributes_countが0なのでattributesのデータは存在しません。  
   
@@ -796,7 +796,7 @@ Constant pool:
 よくJavaは複数回コンパイルされる場合があるといわれますが、どういうことでしょうか。  
 これについてはTobias Hartmann氏が記述した[The Java HotSpot VM](https://www.ethz.ch/content/dam/ethz/special-interest/infk/inst-cs/lst-dam/documents/Education/Classes/Spring2018/210_Compiler_Design/Slides/2018-Compiler-Design-Guest-Talk.pdf)に記載があります。  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/666dc1d8-7fd9-0b2b-a94d-eba65c864282.png  
+![image.png](/image/666dc1d8-7fd9-0b2b-a94d-eba65c864282.png)  
   
 上記の図のように作成されたバイトコードはC1またはC2でコンパイルされたマシンコードで実行されるか、インタプリタで実行されるかのいずれかになります。  
 また、Java8ではインタプリタで動作していたものが途中からC1でコンパイルしたものに変わったり、インタプリタ→C1→C2と段階的にコンパイルしていく場合があります。  
@@ -984,9 +984,9 @@ RIP: 0x2d008a0 Code size: 0x000001f0
 この場合、JitWatchで閲覧するとよいでしょう。  
 https://github.com/AdoptOpenJDK/jitwatch/  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/49e1e9f8-75aa-e7ca-93b9-ef6a0f8e4009.png  
+![image.png](/image/49e1e9f8-75aa-e7ca-93b9-ef6a0f8e4009.png)  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/a227227e-5ef0-b5d9-9930-f1654c99b3fc.png  
+![image.png](/image/a227227e-5ef0-b5d9-9930-f1654c99b3fc.png)  
   
   
 詳しい使い方は以下を参照してください。  

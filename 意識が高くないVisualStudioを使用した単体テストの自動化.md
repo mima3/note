@@ -146,15 +146,15 @@ VisualStudo2013のPremium以上もしくはVisualStudio2015のEnterpriseのエ�
 これにより、どの機能がテストコードにより実行されていないか調べることが可能です。  
   
 (1)[テスト]→[コードカバレッジの分析]→[すべてのテスト]を選択  
-https://qiita-image-store.s3.amazonaws.com/0/47856/f494d371-e283-40e1-8ff4-7f9a0b95e4ae.png  
+![vs002.png](/image/f494d371-e283-40e1-8ff4-7f9a0b95e4ae.png)  
   
 (2)コードカバレッジの結果が以下のように表示される。  
-https://qiita-image-store.s3.amazonaws.com/0/47856/ffb4f205-b27c-d1e5-276e-5149c80ed5f2.png  
+![vs003.png](/image/ffb4f205-b27c-d1e5-276e-5149c80ed5f2.png)  
   
 関数単位で未カバー（実行していない）箇所が出力される。  
   
 (3)結果の関数をクリックすると実行済みの行は青、未実行の行は赤で表示される。  
-https://qiita-image-store.s3.amazonaws.com/0/47856/9e2b0c5e-bd79-9b5d-0ca3-4ee64a7a3344.png  
+![vs004.png](/image/9e2b0c5e-bd79-9b5d-0ca3-4ee64a7a3344.png)  
   
 これらの機能を利用して、未実行の行を探して、そこを通るようにテストコードを書いていきます。  
   
@@ -236,10 +236,10 @@ https://ja.wikipedia.org/wiki/%E5%BE%AA%E7%92%B0%E7%9A%84%E8%A4%87%E9%9B%91%E5%B
 VisualStudioでは以下のようにサイクロマティック複雑度を計測します。  
   
 (1)[分析]→[ソリューションのコードメトリックスを計算]  
-https://qiita-image-store.s3.amazonaws.com/0/47856/affba65f-4fca-4284-b12e-94ab0ddf3365.png  
+![vs005.png](/image/affba65f-4fca-4284-b12e-94ab0ddf3365.png)  
   
 (2)コードメトリックスの結果が表示される。  
-https://qiita-image-store.s3.amazonaws.com/0/47856/2f68814c-96c5-04e6-7e80-d3047900ad9c.png  
+![vs006.png](/image/2f68814c-96c5-04e6-7e80-d3047900ad9c.png)  
   
   
 サイクロマティック複雑度は25未満に抑えるように実装するのが筋ですが、直せない場合は、これを超える箇所を集中的にテストコードを記述しましょう。  

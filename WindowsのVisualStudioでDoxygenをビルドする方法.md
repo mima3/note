@@ -23,7 +23,7 @@ http://sourceforge.net/projects/winflexbison/
 win_bison.exe→bison.exe  
 win_flex.exe→flex.exe  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/ff4fa4fd-d663-9822-0f9d-9d575ef32fd3.png  
+![doxygen2.png](/image/ff4fa4fd-d663-9822-0f9d-9d575ef32fd3.png)  
   
 ## Doxygenプロジェクトのみをビルド  
 VisualStudioでソリューションを開いてDoxygenプロジェクトのみをビルドする。  
@@ -41,11 +41,11 @@ VisualStudioはBOMなしのUTF-8の挙動が怪しい場合がある。
 この場合は、プロジェクトで右クリックを押して、プロパティーを表示する。  
 そして、「Language」にて「Use English Only」を選択すればよい。  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/a63367c1-2fa0-1494-98e7-9e8fddb5fe7b.png  
+![doxygen.png](/image/a63367c1-2fa0-1494-98e7-9e8fddb5fe7b.png)  
   
 Unicodeが必要な言語を全て排除できるので、円滑にデバッグを開始できる。  
   
 ## デバッグ実行  
 デバッグ実行時にコマンドライン引数が与えられるので、問題のdoxyfileを指定してやれば、デバッグが可能になる。  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/aa6b98a6-91b3-0898-fb4b-a0ef2f881f43.png  
+![doxygen3.png](/image/aa6b98a6-91b3-0898-fb4b-a0ef2f881f43.png)  

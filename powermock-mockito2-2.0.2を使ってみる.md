@@ -345,7 +345,7 @@ finalメソッドのモック化を有効するには下記のファイルを作
 mock-maker-inline
 ```  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/e3623510-c41b-e932-a8be-2e1bda76425b.png  
+![image.png](/image/e3623510-c41b-e932-a8be-2e1bda76425b.png)  
   
   
 ```java

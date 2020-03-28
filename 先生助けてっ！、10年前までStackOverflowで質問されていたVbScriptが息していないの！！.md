@@ -237,7 +237,7 @@ python stackoverflow_hist.py javascript 2008-6-1 2019-5-31 12
 ## 色々集計してみる  
 2008年6月～2019年5月に作成されたデータを基に色々集計してみます。  
 対象はjavascript,python,vba,vbscript,wsh,powershellでやってみます。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/46a69484-1af4-73e8-2746-cb39bdcc1395.png  
+![image.png](/image/46a69484-1af4-73e8-2746-cb39bdcc1395.png)  
   
 ||javascript|python|vba|vbscript|wsh|powershell|c#|java|  
 |:--|:--|:--|:--|:--|:--|:--|:--|:--|  
@@ -259,7 +259,7 @@ https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/46a69484-1af4-
   
 次に「（前年-当年）/前年 × 100」で成長率を表示してみます。  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/c9f3ce61-140b-0eee-4d43-aaa1c52e65bb.png  
+![image.png](/image/c9f3ce61-140b-0eee-4d43-aaa1c52e65bb.png)  
   
   
 ||javascript|python|vba|vbscript|wsh|powershell|c#|java|  
@@ -283,7 +283,7 @@ https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/c9f3ce61-140b-
 vbaは直近1年がマイナスなだけで、総数は少ないものの意外と元気です。  
   
 wshとvbscriptは10%以上のマイナス成長を続けています。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/ce0f7ed4-8e33-4fae-9fbe-a0cf427fe47d.png  
+![image.png](/image/ce0f7ed4-8e33-4fae-9fbe-a0cf427fe47d.png)  
 ~~10年前から人気がないとか言ってはいけない~~  
 今やるならPowerShellをやったほうがいいでしょう。  
   
@@ -302,7 +302,7 @@ https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/ce0f7ed4-8e33-
 |2017-06|233279|  
 |2018-06|226486|  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/72bbd71e-18cf-616e-1167-93a47e1ff2a4.png  
+![image.png](/image/72bbd71e-18cf-616e-1167-93a47e1ff2a4.png)  
   
 2015年～2016年をピークに頭打ちですが、いまでも一年で20万件は検索されています。  
 前半部はjavascriptの人気があがったというより、StackOverflowの人気が上がったということだと思います。  
@@ -363,7 +363,7 @@ select name, count(name) as cnt from tagrelations group by name order by cnt des
 |2017-06|200035|  
 |2018-06|242475|  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/2bb136b0-1f1a-0b05-97fc-1b34e00bd45e.png  
+![image.png](/image/2bb136b0-1f1a-0b05-97fc-1b34e00bd45e.png)  
   
 質問数が右肩上がりです。  
 2018～2019でついにJavaScript越えを果たしました。  
@@ -418,7 +418,7 @@ https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/2bb136b0-1f1a-
 |2017-06|24897|  
 |2018-06|23581|  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/d16358bd-541f-fa53-09f7-44076aea9b40.png  
+![image.png](/image/d16358bd-541f-fa53-09f7-44076aea9b40.png)  
   
 javascriptの10分の1程度の質問数であるのは想定通りとして、質問数の年毎の遷移が余り変わっていないということです。  
 つまり、**まだだ、まだVBAはたおれんよ！**  
@@ -473,7 +473,7 @@ javascriptの10分の1程度の質問数であるのは想定通りとして、�
 |2017-06|1520|  
 |2018-06|1105|  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/f660a0b3-cdf8-e249-774b-eb5b262313f7.png  
+![image.png](/image/f660a0b3-cdf8-e249-774b-eb5b262313f7.png)  
   
 いやいや・・・WSHでタグ付けされている可能性もあるですし・・・  
   
@@ -526,7 +526,7 @@ https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/f660a0b3-cdf8-
 |2017-06|57|  
 |2018-06|37|  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/9cc85a0c-a4c6-b504-ebdd-4ac359222461.png  
+![image.png](/image/9cc85a0c-a4c6-b504-ebdd-4ac359222461.png)  
   
 2008年より下回っているじゃないかたまげたなぁ。  
   
@@ -579,7 +579,7 @@ https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/9cc85a0c-a4c6-
 |2017-06|11417|  
 |2018-06|12488|  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/53707efd-4c37-4a87-4bef-660a183ab8e9.png  
+![image.png](/image/53707efd-4c37-4a87-4bef-660a183ab8e9.png)  
   
 総数的にはVBAには届かないものの、右肩上がりなので成長性はあると思います。vbscriptなんていらんかったんや。。。  
   
@@ -631,7 +631,7 @@ https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/53707efd-4c37-
 |Jun-17|120097|  
 |Jun-18|120278|  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/11dedf9c-d904-6ac9-0cf8-8cb22e2bbaba.png  
+![image.png](/image/11dedf9c-d904-6ac9-0cf8-8cb22e2bbaba.png)  
   
 傾向としてはjavascriptと同じような動きをしています。  
 あと、他のタグとの関連性にasp.net-mvcが上位に食い込んできたのは意外でした。  
@@ -685,7 +685,7 @@ https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/11dedf9c-d904-
 |Jun-17|161678|  
 |Jun-18|160181|  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/333902e3-9d73-61af-1cbd-080e461c768f.png  
+![image.png](/image/333902e3-9d73-61af-1cbd-080e461c768f.png)  
   
 このグラフの形はコピペミスかとビビる。C#と同じ傾向っすね。  
 ただ、他のタグとの関連としてandroidが圧倒的な一位ということは他の言語でandroid開発が可能になってきた後どうなるかは気になります。  

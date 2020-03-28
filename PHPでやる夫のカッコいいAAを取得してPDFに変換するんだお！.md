@@ -1,4 +1,4 @@
-https://qiita-image-store.s3.amazonaws.com/0/47856/329e8a2a-fb75-82cd-f60e-865b1a380aa5.png  
+![yaruo2.png](/image/329e8a2a-fb75-82cd-f60e-865b1a380aa5.png)  
   
   
  **やるおスレをPDF化するお！**  

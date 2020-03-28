@@ -47,7 +47,7 @@ pylintの結果をJenkinsで集計するためにはViolationsプラグインを
 https://wiki.jenkins.io/display/JENKINS/Violations  
   
 (1)プラグインマネージャー画面でViolationsをインストールします。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/bae1a2ed-8e26-4fe3-b978-ac937f5eaa05.png  
+![image.png](/image/bae1a2ed-8e26-4fe3-b978-ac937f5eaa05.png)  
   
 (2)ジョブを追加してビルドに以下のようなスクリプトを追加する。  
   
@@ -60,12 +60,12 @@ https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/bae1a2ed-8e26-
 ```  
   
 (3)ビルド後の処理に「Report Violations」を追加し、「pylint」に出力ファイルを指定します  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/0c8e7f39-e8c9-06ec-1056-8c674eba3141.png  
+![image.png](/image/0c8e7f39-e8c9-06ec-1056-8c674eba3141.png)  
   
 (4)ビルド後にレポートが作成されます。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/22407bcf-25e9-1721-a195-259ad77bd5a4.png  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/91071748-4bd6-4ad3-ba8a-e0ff13e9e46f.png  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/fe81bd2d-b55c-60a8-c13a-6f4418dd6f6c.png  
+![image.png](/image/22407bcf-25e9-1721-a195-259ad77bd5a4.png)  
+![image.png](/image/91071748-4bd6-4ad3-ba8a-e0ff13e9e46f.png)  
+![image.png](/image/fe81bd2d-b55c-60a8-c13a-6f4418dd6f6c.png)  
   
 ## flake8でPEP8を含めたエラーや複雑度をチェックする  
 pylintと同様によく使われる静的解析ツールにflax8があります。  
@@ -128,10 +128,10 @@ bandit -f xml  -r . -o test.xml
 ```  
   
 (2)JUnitテスト結果の集計で、作成したXMLを指定します。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/a00ffb30-2154-f0f1-2952-4b50b628bff6.png  
+![image.png](/image/a00ffb30-2154-f0f1-2952-4b50b628bff6.png)  
   
 (3)banditで出力されたセキュリティの問題はJUnitのテストで失敗したものと同様に出力されます。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/e2f0d2e5-86fe-bb2e-f28c-7cfc5f736005.png  
+![image.png](/image/e2f0d2e5-86fe-bb2e-f28c-7cfc5f736005.png)  
   
 **参考：**  
 https://vdwaa.nl/openstack-bandit-jenkins-integration.html  
@@ -218,7 +218,7 @@ class MyClass:
 VSCodeなどを使用している場合、このドキュメント文字が表示されるようになります。  
 以下のように、関数をマウスオーバーすることで表示されます。  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/fb81325a-b1d8-0b00-a26d-13418685f1df.png  
+![image.png](/image/fb81325a-b1d8-0b00-a26d-13418685f1df.png)  
   
   
 ## ドキュメント文字列のチェック  
@@ -409,11 +409,11 @@ sphinx-build -b html ./docs ./docs/_build
 ```  
   
 これにより「docs/_build」中にHTMLドキュメントが作成されます。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/c628c4f4-5503-a5e1-5471-182e44cf586b.png  
+![image.png](/image/c628c4f4-5503-a5e1-5471-182e44cf586b.png)  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/fdd4dc55-925b-a7cf-aab2-18a3615b11cb.png  
+![image.png](/image/fdd4dc55-925b-a7cf-aab2-18a3615b11cb.png)  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/0e7f966d-0b48-d722-ba31-e30525eaaf18.png  
+![image.png](/image/0e7f966d-0b48-d722-ba31-e30525eaaf18.png)  
   
 # ユニットテスト  
 Effective Python の項目56に「unittestですべてをテストする」とあります。  
@@ -624,12 +624,12 @@ coverage run unittest_runner.py
 ```  
   
 (2)ビルド後の処理に「JUnitテスト結果の集計」を追加します。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/bd17e73a-cfb4-f580-15d4-5c8eb5343c4c.png  
+![image.png](/image/bd17e73a-cfb4-f580-15d4-5c8eb5343c4c.png)  
   
 (3)ビルド後にテスト結果としてレポートされます。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/fa24f427-6634-c8a4-af95-1f7862adc6fa.png  
+![image.png](/image/fa24f427-6634-c8a4-af95-1f7862adc6fa.png)  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/974ac68a-ff9b-04b5-74d6-9e1040c85927.png  
+![image.png](/image/974ac68a-ff9b-04b5-74d6-9e1040c85927.png)  
   
   
   
@@ -670,9 +670,9 @@ coverage html
 ```  
   
 カレントディレクトリにhtmlcovフォルダが作成されてカバレッジのレポートが作成されます。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/a3721930-b7f3-7114-b82d-eb7d9312a7cf.png  
+![image.png](/image/a3721930-b7f3-7114-b82d-eb7d9312a7cf.png)  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/981a1038-b389-70dd-3a9f-269c5bb97abb.png  
+![image.png](/image/981a1038-b389-70dd-3a9f-269c5bb97abb.png)  
   
 ### Jenkinsでの集計方法  
 (1)Cobertura PluginをJenkinsのプラグインマネージャでインストールします。  
@@ -688,10 +688,10 @@ coverage erase
 ```  
   
 (3)ビルド後の処理として「Coberturaカバレッジレポートの集計」を追加します。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/7304f135-6519-3bae-945f-87d5987e9c31.png  
+![image.png](/image/7304f135-6519-3bae-945f-87d5987e9c31.png)  
   
 (4)ビルド後にコードカバレッジのレポートが作成されます。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/8b222d24-5d09-2602-77f1-1b82b2a7ca20.png  
+![image.png](/image/8b222d24-5d09-2602-77f1-1b82b2a7ca20.png)  
   
 # まとめ  
 Effective Pythonを読んで気になったコードスタイル、ドキュメンテーション、テストの分野を調べてみました。  

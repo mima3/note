@@ -349,7 +349,7 @@ if __name__ == '__main__':
 ```  
   
 これを実行すると次のような家系図が生成されます。  
-https://qiita-image-store.s3.amazonaws.com/0/47856/11b14ac1-755c-2acd-079b-c55389b0676a.png  
+![example2_graph.png](/image/11b14ac1-755c-2acd-079b-c55389b0676a.png)  
   
 同じような文体で記述すれば、多分、いろんな家系図が作成できまます。  
   

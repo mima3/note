@@ -4,7 +4,7 @@ LiquidFunは流体とか軟体を扱うためのライブラリで、Box2dをベ
   
   
  **Liquidで表現したゆっくり**   
-https://qiita-image-store.s3.amazonaws.com/0/47856/b05fdd22-6020-c6da-8e94-dc8f77e5513b.gif  
+![yukkuri.gif](/image/b05fdd22-6020-c6da-8e94-dc8f77e5513b.gif)  
 http://needtec.sakura.ne.jp/box2d_yunyaa/yukkuri.html  
   
   
@@ -61,7 +61,7 @@ JavaScriptでは剛体と剛体の接触しかイベントがコールされな�
   
 この場合、以下の手順でC++のコードをJavaScriptから利用できるようにする必要があります。  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/b3d9760f-5ca6-24fb-b891-c68f080df3fd.png  
+![作成までの流れ.png](/image/b3d9760f-5ca6-24fb-b891-c68f080df3fd.png)  
   
 まず、emscriptenを用いてC++のコードをJavaScriptのコードに変換します。  
 次に、複数のJavaScriptのファイルをClosureCompilerを用いて、１つのファイルに圧縮します。  

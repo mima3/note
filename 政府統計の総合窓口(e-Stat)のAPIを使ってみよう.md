@@ -12,14 +12,14 @@ https://www.e-stat.go.jp/api/apiuser/php/index.php?action=login
   
 https://www.e-stat.go.jp/api/apiuser/php/index.php?action=login  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/83ec14fa-692d-f7d0-cb6c-da4080481569.png  
+![disp1.png](/image/83ec14fa-692d-f7d0-cb6c-da4080481569.png)  
   
 利用者情報変更では、登録時に指定したデータを変更することができます。  
   
 ４．appIDの発行を行う。  
 「アプリケーションIDの取得」画面で名称とURLを入力して、「発行」ボタンを押すとappIDが取得できます。  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/41dd56a1-841b-8e98-3607-89dfa31cb156.png  
+![disp2.png](/image/41dd56a1-841b-8e98-3607-89dfa31cb156.png)  
   
 urlは存在しない場合は「http://localhost/」等を入力してください。  
 appIDは3個まで発行できます。  
@@ -27,10 +27,10 @@ appIDは3個まで発行できます。
 ５．開発支援画面より各APIのテストを行います。  
 「機能概要」より「開発支援情報」を選択します。  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/01d4b9ba-e228-93b6-b393-434756ab4455.png  
+![disp3.png](/image/01d4b9ba-e228-93b6-b393-434756ab4455.png)  
   
 これにより、「API機能テストフォーム」や「サンプル」が利用できます。  
-https://qiita-image-store.s3.amazonaws.com/0/47856/107e45cb-97fa-f9fd-c41f-5b3035ee629b.png  
+![disp4.png](/image/107e45cb-97fa-f9fd-c41f-5b3035ee629b.png)  
   
 ## APIの概要  
 API機能テストフォームで各APIの機能を確認できます。  
@@ -427,7 +427,7 @@ python export_csv.py API_KEY 0003059047 output.csv
 地域メッシュ統計とは，緯度・経度に基づき地域を隙間なく網の目（Mesh）の区域に分けて，統計データをそれぞれの区域に編成したものです。  
 以下のような図になります。  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/abec1d36-1d82-9cda-8772-71e8d8548a14.png  
+![image_log10.png](/image/abec1d36-1d82-9cda-8772-71e8d8548a14.png)  
   
 サンプルコード:  
   

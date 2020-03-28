@@ -31,10 +31,10 @@ $ easy_install python-redmine
   
 Redmine側の設定として、「管理」→「設定」画面におけるAPIタブで「REST APIによるWebサービスを有効にする」にチェックをいれておくこと。  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/ea42ef5c-36a8-582f-782e-b342cc41f85c.png  
+![image.png](/image/ea42ef5c-36a8-582f-782e-b342cc41f85c.png)  
   
 ここでAPIを有効にすると個人設定画面でAPIキーを確認できる。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/e7827fdb-1bf2-8c7c-4edb-4e517ed7909e.png  
+![image.png](/image/e7827fdb-1bf2-8c7c-4edb-4e517ed7909e.png)  
   
   
 ## サンプル  
@@ -254,7 +254,7 @@ https://github.com/redmine/redmine/blob/9746ab7e5be2db5e2d233ee37365cf21ba4b893a
 この実装をみれば、どのようなoperators が定義されているか確認できる。  
 ただし、全ての項目で全てのオペレータが使用できるわけではない。  
 たとえばsubjectでは「\*:すべて」「!\*:なし」「~:含む」は使用できるが「^:～ではじまる」は使用できない。これが使用できるかどうかは下記のフィルタ設定画面でしていできる条件と同じである。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/2139e867-2d41-1230-363c-50acb46a55a3.png  
+![image.png](/image/2139e867-2d41-1230-363c-50acb46a55a3.png)  
   
   
   

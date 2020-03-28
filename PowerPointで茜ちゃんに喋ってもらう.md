@@ -6,7 +6,7 @@
 今回は、令和の時代になったので、ゆっくりさんには卒業してもらって、VOICEROIDE2の茜ちゃんにやっていただくこととします。  
   
 # 仕組み  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/a5a83de0-689d-3b1e-f320-dca091c9b4b1.png  
+![image.png](/image/a5a83de0-689d-3b1e-f320-dca091c9b4b1.png)  
 PowerPointの各スライドのページに記載された文字をVOICEROIDE2を用いてWavファイルの作成を行います。その作成したWavファイルをスライドに埋め込みます。  
   
 スライドショーを実行することで、スライドを切り替え後、マウスクリックをすることで、茜ちゃんがしゃべってくれます。  
@@ -22,12 +22,12 @@ VOICEROIDE2
 https://github.com/mima3/akanechan_powerpoint  
   
 (2)スライドのノートに喋らせたい文字を入力します。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/ea401747-fb97-3e57-cc7c-d9134e9939ce.png  
+![image.png](/image/ea401747-fb97-3e57-cc7c-d9134e9939ce.png)  
   
 (3) VOICEROID2を起動します。  
   
 (4)「AddSoftTalk」マクロを実行します。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/b805e5a0-2753-3f3f-d999-04740d48c326.png  
+![image.png](/image/b805e5a0-2753-3f3f-d999-04740d48c326.png)  
   
 これにより以下の処理が行われます。  
   
@@ -35,7 +35,7 @@ https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/b805e5a0-2753-
  - 作成したWavファイルを各スライドに埋め込みます。  
   
 (5)マクロが終了するとすべてのスライドに以下のような音声が埋め込まれていることが確認できます。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/2b92ac88-eaa9-6465-5552-fb0b1ef023c5.png  
+![image.png](/image/2b92ac88-eaa9-6465-5552-fb0b1ef023c5.png)  
   
    
 (6)スライドショーの記録を行います。この過程で埋め込んだ音声が再生されます。  

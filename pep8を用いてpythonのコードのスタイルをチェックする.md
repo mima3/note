@@ -79,7 +79,7 @@ print ret.total_errors
 # Jenkinsからの利用  
 Jenkinsのプラグインである、Violationsを使用すれば集計が可能である。  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/df3ba6ef-e494-f96c-54fe-bf4e3084aa91.png  
+![pep8_2.png](/image/df3ba6ef-e494-f96c-54fe-bf4e3084aa91.png)  
   
   
 シェルスクリプトから実行する場合は次のように先頭に「#!/bin/sh」を記述するのと最後にエラーコードを返さない処理を行う必要がある。  
@@ -94,7 +94,7 @@ echo "....finished"
 [Jenkinsのシェルの実行について](http://qiita.com/mechamogera/items/f689b95670127d5bf046 "Jenkinsのシェルの実行について")  
 Violationsの設定は下記の通り。  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/4e6d8492-359f-873c-5cdd-640fa296d1b5.png  
+![pep8_1.png](/image/4e6d8492-359f-873c-5cdd-640fa296d1b5.png)  
   
 XMLで出力する必要はない。  
   

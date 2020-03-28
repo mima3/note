@@ -11,7 +11,7 @@ http://needtec.sakura.ne.jp/threemap/mesh3d_example.html
  **ソースコード**  
 https://github.com/mima3/threemap  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/61f38d87-abf0-b71a-dd7e-fe031bd78ad1.png  
+![3dmesh.png](/image/61f38d87-abf0-b71a-dd7e-fe031bd78ad1.png)  
   
   
 ## 指定範囲のデータをJSONで取得できるようにする。  

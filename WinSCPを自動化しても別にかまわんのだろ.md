@@ -20,7 +20,7 @@ or
   
 以下のようなコンソールが起動して対話ベースでWinSCPの操作が行えます。  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/6959f80a-0f44-93f4-6245-b2e0f790ec2d.png  
+![image.png](/image/6959f80a-0f44-93f4-6245-b2e0f790ec2d.png)  
   
 使用できるコマンドは下記の通りです。help \<command\>でその詳細を確認できます。  
 5.15.3で使用できるコマンドは下記の通りです。  

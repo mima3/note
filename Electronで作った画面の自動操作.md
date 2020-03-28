@@ -4,7 +4,7 @@ Electronを使用することでnode.jsを使用してマルチプラットフ�
   
 # テスト用の画面を作成  
 以下のようなファイルを作成します。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/652a91b7-15ee-7f8b-8f4d-1a92cb32f046.png  
+![image.png](/image/652a91b7-15ee-7f8b-8f4d-1a92cb32f046.png)  
   
   
 ```json:package.json
@@ -78,17 +78,17 @@ btnCtrl.onclick = function(element) {
 https://web-dev.hatenablog.com/entry/web/js/electron/run-app-and-create-exe  
   
 作成されたExeは以下のようになります。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/1629af06-95b4-0cf3-1eee-09023bc153f3.png  
+![image.png](/image/1629af06-95b4-0cf3-1eee-09023bc153f3.png)  
   
 ボタンを押すとテキストで入力した文字をポップアップ表示します。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/9ebde1ef-1a64-bec0-3ec2-204a6febd84e.png  
+![image.png](/image/9ebde1ef-1a64-bec0-3ec2-204a6febd84e.png)  
   
 # Seleniumでの自動操作方法  
 結局はChromeと同じなのでSeleniumが使用できます。  
 ただし使用するWebDriverはElectronのものを使用します。  
 使用したElectronのバージョンにあったWebDriverを入手してください。  
 https://github.com/electron/electron/releases  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/128a031d-e862-2679-b119-27d42656ba89.png  
+![image.png](/image/128a031d-e862-2679-b119-27d42656ba89.png)  
   
   
 ## Pythonの例  
@@ -142,7 +142,7 @@ chrome.setDefaultService(service);
 ```  
   
 ## 結果  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/39a22d7e-484d-2d51-014e-37e070bacb5d.gif  
+![auto7.gif](/image/39a22d7e-484d-2d51-014e-37e070bacb5d.gif)  
   
 # UiPathでの操作の場合  
 Chromeを操作する場合はブラウザの拡張機能と連携して操作していましたが、Electronの場合、そのブラウザの拡張機能機能は使用できません。  

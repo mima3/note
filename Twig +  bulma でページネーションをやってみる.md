@@ -1,20 +1,20 @@
 # 目的  
 PHPのテンプレートフレームワークである[Twig](https://twig.symfony.com/)とCSSのフレームワークである[Bulma](https://bulma.io/)でページネーションをやってみる  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/6717907d-e77c-f24d-5da3-a3697c6e622b.png  
+![image.png](/image/6717907d-e77c-f24d-5da3-a3697c6e622b.png)  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/fac445ea-3cc0-b8ae-62d2-1ae2bf53ec26.png  
+![image.png](/image/fac445ea-3cc0-b8ae-62d2-1ae2bf53ec26.png)  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/aa4ff01d-0c32-3661-8868-aa5c661539d9.png  
+![image.png](/image/aa4ff01d-0c32-3661-8868-aa5c661539d9.png)  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/5bdffc15-ca1f-4ec5-39ca-ee7cc14a2141.png  
+![image.png](/image/5bdffc15-ca1f-4ec5-39ca-ee7cc14a2141.png)  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/1a439f93-928c-657e-f341-aeb82fb6ed23.png  
+![image.png](/image/1a439f93-928c-657e-f341-aeb82fb6ed23.png)  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/e04b0af9-55ba-8e33-8199-d299c71fba70.png  
+![image.png](/image/e04b0af9-55ba-8e33-8199-d299c71fba70.png)  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/4a82e298-fb17-af2d-5955-435c382e6c0c.png  
+![image.png](/image/4a82e298-fb17-af2d-5955-435c382e6c0c.png)  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/08d4c82b-9e53-1d0c-3125-17a0e37f9334.png  
+![image.png](/image/08d4c82b-9e53-1d0c-3125-17a0e37f9334.png)  
   
 ## コード  
 PHPでテンプレートを使用する際に下記のデータを指定してください。  

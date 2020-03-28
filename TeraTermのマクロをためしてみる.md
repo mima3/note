@@ -95,7 +95,7 @@ end
 ```  
   
 受信時は以下のダイアログが表示される。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/9fb9dd55-c095-cc0d-1ceb-eb681cb909fe.png  
+![image.png](/image/9fb9dd55-c095-cc0d-1ceb-eb681cb909fe.png)  
   
   
   

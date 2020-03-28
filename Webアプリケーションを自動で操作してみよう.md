@@ -35,17 +35,17 @@ Windowsの場合、ブラウザを操作して自動化する方法も大きく�
 どのような方法でブラウザを操作するとしても、HTMLがどのような要素で構成されているかを調べる必要があります。  
 ここではChromeでGoogleで検索する場合を例として画面上の要素を調べる方法を説明します。  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/d8904265-20ce-119d-2dbf-130c6b9003c0.png  
+![image.png](/image/d8904265-20ce-119d-2dbf-130c6b9003c0.png)  
   
 １．ChromeにてF12キーを押下して開発者ツールを開きます。その後、「Elements」タブを選択してください。  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/ab20fede-c93a-fffc-0afb-973ceac2b5e7.png  
+![image.png](/image/ab20fede-c93a-fffc-0afb-973ceac2b5e7.png)  
   
 ２．[CTRL]+[Shift]+[C]を押下するか、下記のアイコンをクリックします。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/516d2b95-82c6-bd48-f9ec-e4bcd24a019d.png  
+![image.png](/image/516d2b95-82c6-bd48-f9ec-e4bcd24a019d.png)  
   
 ３．調べたい要素にマウスを移動させます。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/aa3e92e2-7139-b075-a7cc-5009dc18d1b4.png  
+![image.png](/image/aa3e92e2-7139-b075-a7cc-5009dc18d1b4.png)  
   
 ４．Elementsタブに選択した要素の内容が表示されます。今回の場合、以下のような内容が表示されます。  
   
@@ -80,7 +80,7 @@ inputタグの属性が以下のようになっていることがわかります
 IE11でもF12キーを押すことで開発者ツールが表示されます。  
 そこで「DOM Explore」タブを開いて要素の選択を行うことで要素の属性を調べることが可能です。  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/2c011407-27b8-c591-e3a3-b3563d99c7f7.png  
+![image.png](/image/2c011407-27b8-c591-e3a3-b3563d99c7f7.png)  
   
 ### Edgeの場合  
 Edgeは将来Chromeベースのものに置き換わる可能性があります。  
@@ -90,19 +90,19 @@ Edgeは将来Chromeベースのものに置き換わる可能性があります�
 F12キーで開発者ツールが表示されます。  
 そこで「要素」タブを開いて要素の選択を行うことで要素の属性を調べることが可能です。  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/ac850ea1-7e24-c5ae-072d-89b072974018.png  
+![image.png](/image/ac850ea1-7e24-c5ae-072d-89b072974018.png)  
   
 #### 新Edge  
 2019年10月時点でベータ版としてリリースされているEdgeの場合、F12キーで開発者ツールが表示されます。  
 Chromeと同様の操作で要素の属性を調べることが可能です。  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/42036d9b-373c-2644-edf5-3455fa839320.png  
+![image.png](/image/42036d9b-373c-2644-edf5-3455fa839320.png)  
   
 ### Firefoxの場合  
 F12キーで開発者ツールが表示されます。  
 そこで「インスペクター」タブを開いて要素の選択を行うことで要素の属性を調べることが可能です。  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/79741a0b-3376-360d-5760-fd45718d063f.png  
+![image.png](/image/79741a0b-3376-360d-5760-fd45718d063f.png)  
   
 ### HTMLの要素を調べる方のまとめ  
 多くのブラウザは開発者ツールをサポートしており、要素の属性を調べることが可能です。  
@@ -181,9 +181,9 @@ ie.Quit
 ```
 
 このエラーがでた場合は表示対象ページのプロパティを確認してみてください。
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/f9d65178-f0f6-54bb-32dd-d538eb9fff02.png
+![image.png](/image/f9d65178-f0f6-54bb-32dd-d538eb9fff02.png)
 
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/49f10d41-c7f1-8e6f-524d-bf214b3bb61a.png
+![image.png](/image/49f10d41-c7f1-8e6f-524d-bf214b3bb61a.png)
 
 保護モードが無効になっているかと思います。
 
@@ -649,7 +649,7 @@ https://qiita.com/mima_ita/items/fdff129a8db1153c9940
 .NET経由になるのでCOMの解放処理を入れる必要があります。
 
 (1)参照マネージャーのCOMタブでMicrosoft HTML Object Libraryを追加します。
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/39525911-75d6-2dcb-7e13-183638402e77.png
+![image.png](/image/39525911-75d6-2dcb-7e13-183638402e77.png)
 
 これにより「Interop.MSHTML.dll」が作成されます。
 Interop～.dllは[tlbImpコマンド](https://docs.microsoft.com/en-us/dotnet/framework/interop/how-to-generate-interop-assemblies-from-type-libraries)を使用することでコマンドラインで作成できますが、VisualStudioなどの開発ツールをインストールしていないと使えないと思います。
@@ -970,7 +970,7 @@ Webアプリケーションをブラウザ操作で自動化する場合、も�
 
 以下はGoogle検索の操作をキャプチャした例になります。
 
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/ed3262e8-84b7-732e-f25e-2abcd10144c3.gif
+![auto.gif](/image/ed3262e8-84b7-732e-f25e-2abcd10144c3.gif)
 
 SeleniumIDEはChromeまたはFirefoxの拡張機能として提供されています。
 
@@ -983,34 +983,34 @@ https://www.valtes.co.jp/qbookplus/509
 (1)[Chrome用のSeleniumIDE](https://chrome.google.com/webstore/detail/selenium-ide/mooikfkahbdckldjjndioackbalphokd)を拡張機能として追加します。
 
 (2)ブラウザの上部にSeleniumIDEのアイコンが表示されるのでクリックします。
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/dc05f0e5-ef0e-ea35-d5ab-e854f0bffc97.png
+![image.png](/image/dc05f0e5-ef0e-ea35-d5ab-e854f0bffc97.png)
 
 (3)SeleniumIDEのポップアップが表示されるので「Record a new test in new project」を選択します。
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/7d8c8966-f6cc-01ba-440e-4157b5a45104.png
+![image.png](/image/7d8c8966-f6cc-01ba-440e-4157b5a45104.png)
 
 (4)「Name your new project」ダイアログが表示されるので任意のプロジェクト名を入力して「OK」ボタンを押します。
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/4a2058b6-eb8e-0396-b9ed-f3fafcd7c320.png
+![image.png](/image/4a2058b6-eb8e-0396-b9ed-f3fafcd7c320.png)
 
 (5)「Set your projects's base URL」ダイアログが表示されるので操作元になるURLを入力します。たとえばGoogle検索をする例だと「[https://www.google.com](https://www.google.com)」を入力して「START RECORDING」ボタンを押下します。
 
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/650993ef-cefe-3a1e-1b9f-450fdcfc0be4.png
+![image.png](/image/650993ef-cefe-3a1e-1b9f-450fdcfc0be4.png)
 
 (6)操作の記録が始まると右下に「Selenium IDE is recording...」と書かれた新しいブラウザが開きます。
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/6c3edfac-3588-3946-720a-85b9cc489b1b.png
+![image.png](/image/6c3edfac-3588-3946-720a-85b9cc489b1b.png)
 このブラウザを使用して記録したい任意の操作を行います。
 
 (7)操作の記録を終了したい場合、「Selenium IDE」ウィンドウの右上の「Stop recording」アイコンを押します。
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/3dd8367a-8a33-a9cf-f95b-8f4af8fff180.png
+![image.png](/image/3dd8367a-8a33-a9cf-f95b-8f4af8fff180.png)
 
 (8)「Name your new test」ポップアップが表示されるので任意のテスト名を入力して「OK」を押します。
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/5fde2544-5c6b-9ff7-c60c-55f2712274a4.png
+![image.png](/image/5fde2544-5c6b-9ff7-c60c-55f2712274a4.png)
 
 
 (9)SeleniumIDE ウィンドウに今回操作した内容がスクリプトとして記録されます。
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/b596fef0-152c-6c72-92d5-9b5ff8ac320b.png
+![image.png](/image/b596fef0-152c-6c72-92d5-9b5ff8ac320b.png)
 
 (10)記録したスクリプトは「Run Current Test」アイコンを押すことで再実行可能です。
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/8808248c-4769-f72d-47b8-d2d2c6150c5f.png
+![image.png](/image/8808248c-4769-f72d-47b8-d2d2c6150c5f.png)
 
 また、JUnit や pytest、 JavaScript Mochaといった他のプログラミング言語のユニットテストとしてエクスポートすることが可能です。
 
@@ -1020,7 +1020,7 @@ https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/8808248c-4769-
 
 ただし、記録される操作はFirefoxとChromeで差異があります。
 Firefoxの場合、ブラウザのスクロール操作が記録されていましたが、Chromeでは記録されていませんでした。
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/f0e109c2-cbdc-342c-a9c2-52e8ef621449.png
+![image.png](/image/f0e109c2-cbdc-342c-a9c2-52e8ef621449.png)
 
 なお、手で同じコマンドを追加すると、再生はChromeでも動作しました。
 
@@ -1028,9 +1028,9 @@ https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/f0e109c2-cbdc-
 #### C#の場合
 まず、NuGetでSelenium.WebDriverとSelenium.Supportに加えて操作したいブラウザのDriverを入手します。今回はChromeを操作したいので、Selenium.Chrome.WebDriverを入手します。
 
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/72c841af-5b03-d6a3-e110-ec0289f5a43f.png
+![image.png](/image/72c841af-5b03-d6a3-e110-ec0289f5a43f.png)
 
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/24c7d9fc-c97a-70f1-f2ee-6bb5bffea816.png
+![image.png](/image/24c7d9fc-c97a-70f1-f2ee-6bb5bffea816.png)
 
 C#でのSeleniumの操作例は以下のようになります。
 
@@ -1100,9 +1100,9 @@ PowerShellでもC#と同様な実装が可能です。
 
 https://www.seleniumhq.org/download/
 
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/61f80dfc-be45-eabd-1269-f6db15b3cd79.png
+![image.png](/image/61f80dfc-be45-eabd-1269-f6db15b3cd79.png)
 
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/7c411ab4-8e4c-56e3-f6ad-22fae35e9802.png
+![image.png](/image/7c411ab4-8e4c-56e3-f6ad-22fae35e9802.png)
 
 クライアントをダウンロードすると以下のようなファイルが入っています。
 
@@ -1341,13 +1341,13 @@ https://developer.mozilla.org/ja/docs/Mozilla/Add-ons/WebExtensions/Your_first_W
 
 以下はChromeの拡張機能を使用してページを自動操作後、操作結果をメッセージボックスで表示しています。
 
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/3f0b24c8-533d-c08c-b4e1-0d72ab48160d.gif
+![auto2.gif](/image/3f0b24c8-533d-c08c-b4e1-0d72ab48160d.gif)
 
 **操作対象のページ**
 http://needtec.sakura.ne.jp/auto_demo/form1.html
 
 拡張機能を使った自動操作の仕組みは下記の通りです。
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/5536e030-d427-504a-3fa2-8f6630e8403f.png
+![image.png](/image/5536e030-d427-504a-3fa2-8f6630e8403f.png)
 
 default_popupからcontent_scriptsに対して自動操作の開始指示をメッセージを使用して行います。
 入力ページのcontent_scriptsは項目の入力とボタンの押下を行います。
@@ -1437,10 +1437,10 @@ ChromeをUiPathで操作する場合、Chromeの拡張機能をインストー�
 https://docs.uipath.com/studio/lang-ja/docs/installing-the-chrome-extension
 
 (1)UIPathで新規プロジェクトを作成します。言語はC#を選択します。
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/65d75f18-5d34-d17a-0519-fdfb0a4f7c87.png
+![image.png](/image/65d75f18-5d34-d17a-0519-fdfb0a4f7c87.png)
 
 (2)「ブラウザを開く」アクティビティを追加します。
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/cdd293dc-6fd6-96be-7102-a90950d2ff56.png
+![image.png](/image/cdd293dc-6fd6-96be-7102-a90950d2ff56.png)
 
 |プロパティ|値|
 |:---------|:----------|
@@ -1449,17 +1449,17 @@ https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/cdd293dc-6fd6-
 
 (3)「文字を入力」アクティビティを追加して「画面上で指定」でブラウザ上のテキスト入力項目を指定します。
 
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/c6a9feff-b815-135d-da36-d3c34adb281f.png
+![image.png](/image/c6a9feff-b815-135d-da36-d3c34adb281f.png)
 
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/9b51d660-ae95-88f9-a294-f9408d55abf2.png
+![image.png](/image/9b51d660-ae95-88f9-a294-f9408d55abf2.png)
 
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/5ccec345-a813-c46a-430a-fe2f57c0d2c6.png
+![image.png](/image/5ccec345-a813-c46a-430a-fe2f57c0d2c6.png)
 
 (4)「文字を入力」アクティビティのプロパティを設定します。
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/3b9123aa-b99a-0fe8-f240-d6acc05c110e.png
+![image.png](/image/3b9123aa-b99a-0fe8-f240-d6acc05c110e.png)
 
 (5)(3)～(4)を繰り返して「名前：」、「メールアドレス：」、「コメント：」を入力します。
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/16eae779-b88c-da88-dae4-72d4e1baaff2.png
+![image.png](/image/16eae779-b88c-da88-dae4-72d4e1baaff2.png)
 
 |プロパティ|値|
 |:---------|:----------|
@@ -1487,17 +1487,17 @@ https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/16eae779-b88c-
 
 
 (6)「クリック」アクティビティを追加して「画面上で指定」でブラウザ上のクリックが必要な項目をを指定します。
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/473f4db9-49cc-ceea-65a8-71246ecacb51.png
+![image.png](/image/473f4db9-49cc-ceea-65a8-71246ecacb51.png)
 
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/eec62f86-8f3c-7c5c-dc81-52eb1119da8f.png
+![image.png](/image/eec62f86-8f3c-7c5c-dc81-52eb1119da8f.png)
 
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/69d5abf8-8245-0b76-c381-e47a85da29e5.png
+![image.png](/image/69d5abf8-8245-0b76-c381-e47a85da29e5.png)
 
 (7)「クリック」アクティビティのプロパティを設定します。
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/4227821f-810a-d51a-73e8-b47d4c245586.png
+![image.png](/image/4227821f-810a-d51a-73e8-b47d4c245586.png)
 
 (8)(5)～(6)を繰り返して「その1」、「その3」、「そば」をクリックします。
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/8b50bca6-fa55-69eb-fe4c-3f172bbaf8c8.png
+![image.png](/image/8b50bca6-fa55-69eb-fe4c-3f172bbaf8c8.png)
 
 |プロパティ|値|
 |:---------|:----------|
@@ -1518,7 +1518,7 @@ https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/8b50bca6-fa55-
 |入力をシミュレート|OFF|
 
 (9)リストを複数選択するために「JSスクリプトを挿入」アクティビティを追加します。
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/4a56143f-5f4d-120e-377b-4625c3d41dfd.png
+![image.png](/image/4a56143f-5f4d-120e-377b-4625c3d41dfd.png)
 
 選択したJSスクリプトは下記の通りです。
 
@@ -1549,10 +1549,10 @@ https://forum.uipath.com/t/web/113531/9
 また、ここで指定したJavaScript中で日本語やハングルは使用しないでください。文字化けします。日本語などが必要な場合は引数で渡すようにしてください。
 たとえば「alert("千鶴さん");」とかいうコードを埋め込むと以下のようになります。
 
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/e778ed30-a9e5-faf9-d0e3-343df2a8b5c8.png
+![image.png](/image/e778ed30-a9e5-faf9-d0e3-343df2a8b5c8.png)
 
 (10)登録ボタンを押下するために「クリック」アクティビティを追加します。
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/6cb8f313-e779-4cec-3aea-2830c05bfcb3.png
+![image.png](/image/6cb8f313-e779-4cec-3aea-2830c05bfcb3.png)
 
 |プロパティ|値|
 |:---------|:----------|
@@ -1562,7 +1562,7 @@ https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/6cb8f313-e779-
 
 (11)登録ボタン押下後の確認メッセージを閉じるために「画像をクリック」アクティビティを追加します。
 
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/949ba59b-9407-0b90-ac78-45ff92681fd6.png
+![image.png](/image/949ba59b-9407-0b90-ac78-45ff92681fd6.png)
 
 なお、「select_multi.js」に以下のコードを追加してconfirm関数を上書きして確認メッセージを表示させないことも可能です。
 
@@ -1576,45 +1576,45 @@ https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/949ba59b-9407-
 (12)登録後のページのデータを取得するために「データスクレイピング」を行います。
 
 **「データスクレイピング」アイコンを押下します。**
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/bff4d42b-642c-6db6-ed16-7e5f82035706.png
+![image.png](/image/bff4d42b-642c-6db6-ed16-7e5f82035706.png)
 
 **「取得ウィザード」で「次へ」ボタンを押下します。**
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/d793f8da-d3d9-914e-de8b-61001419f4be.png
+![image.png](/image/d793f8da-d3d9-914e-de8b-61001419f4be.png)
 
 **要素の選択が可能になるのでテーブルのセルを選択します。**
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/eeac4f2e-3887-1ee6-c756-310f805077de.png
+![image.png](/image/eeac4f2e-3887-1ee6-c756-310f805077de.png)
 
 **「表全体からデータを抽出しますか？」の確認メッセージには「はい」を選択します。**
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/8e733b2c-99cb-0b9f-5615-3d6150a49183.png
+![image.png](/image/8e733b2c-99cb-0b9f-5615-3d6150a49183.png)
 
 
 **「取得ウィザード」で「終了」ボタンを押下します。**
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/60071a2f-293f-2aa2-8cff-8f25af187efd.png
+![image.png](/image/60071a2f-293f-2aa2-8cff-8f25af187efd.png)
 
 
 **「次へのリンクを指定」の確認メッセージには「いいえ」を選択します。**
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/b682adba-93ef-5c84-e1ee-b21942b08508.png
+![image.png](/image/b682adba-93ef-5c84-e1ee-b21942b08508.png)
 
 **「データスクレイピング用のアクティビティが追加されます。**
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/31fd62c2-f764-df3a-1c1a-4d7cadc08070.png
+![image.png](/image/31fd62c2-f764-df3a-1c1a-4d7cadc08070.png)
 
 (13)「構造化データを抽出」アクティビティの「出力」プロパティに対してCTRL+Kを押下してresult変数を追加します
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/d1345e95-da3e-28e3-e2f2-80314c22a9b9.png
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/df45f824-a78a-8dce-3d67-62fe348854af.png
+![image.png](/image/d1345e95-da3e-28e3-e2f2-80314c22a9b9.png)
+![image.png](/image/df45f824-a78a-8dce-3d67-62fe348854af.png)
 
 (14)「繰り返し（各行）」アクティビティを追加します。この際、コレクションには「result」変数を指定してください。
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/84aafb6e-a409-a117-1948-65a3e4c74e1d.png
+![image.png](/image/84aafb6e-a409-a117-1948-65a3e4c74e1d.png)
 
 (15)「繰り返し（各行）」アクティビティに「一行を書き込み」アクティビティを追加します。
 
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/a4a2049b-b505-3152-1c34-770b7050c074.png
+![image.png](/image/a4a2049b-b505-3152-1c34-770b7050c074.png)
 
 |プロパティ|値|
 |:---------|:----------|
 |Text|row[0].ToString() + " " + row[1].ToString()|
 
 (16)これまでの操作を再生すると以下のようになります。
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/188c0f1d-366a-d717-e164-30ea47a421ee.gif
+![auto3.gif](/image/188c0f1d-366a-d717-e164-30ea47a421ee.gif)
 
 
 ### UiPathでのブラウザの自動操作のまとめ
@@ -1630,7 +1630,7 @@ UiPathを使用したメリットは以下の通りです。
 ・なれないとハマるポイントが多い。
 ・UiPathの操作でDOMの要素を変更したりしているのでシステム試験等で使用する場合、妥当性を考える必要がある。
 例：UiPathで操作した要素には以下のように「uipath_custom_id」という属性が追加されている。
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/15ba6734-9227-a088-106a-53de6a32a1ef.png
+![image.png](/image/15ba6734-9227-a088-106a-53de6a32a1ef.png)
 
 UiPathは外部プログラムを呼び出す機能やPowerShellの実行が可能なのでブラウザの操作は別の手法で行うことも可能です。
 
@@ -1696,70 +1696,70 @@ http://needtec.sakura.ne.jp/auto_demo/form1.html
 
 ### Chromeでの送受信データの確認方法
 (1)F12で開発者ツールを開き、「Network」タブを選択します。
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/15507c7d-8cd1-d9be-1d6f-4dd6736043ea.png
+![image.png](/image/15507c7d-8cd1-d9be-1d6f-4dd6736043ea.png)
 
 (2)画面上で入力操作を行い「登録する」ボタンを押します。しばらくすると受信ファイルの一覧が表示されます。
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/9b42edb9-3185-4d5e-4c5a-6b7fdda8b054.gif
+![net1.gif](/image/9b42edb9-3185-4d5e-4c5a-6b7fdda8b054.gif)
 
 (3)「regist1.php」などの受信ファイルを選択後に、Headersタブを選択すると送信データが確認できます。
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/4d467b8b-0250-0eb7-2ff3-8ef8bae8ab6d.png
+![image.png](/image/4d467b8b-0250-0eb7-2ff3-8ef8bae8ab6d.png)
 
 
 (4)Responseタブを選択すると受信内容が確認できます。
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/a84dee84-ed3a-cf16-2875-e18ffb5b915d.png
+![image.png](/image/a84dee84-ed3a-cf16-2875-e18ffb5b915d.png)
 
 ### Firefoxでの送受信データの確認方法
 (1)F12で開発者ツールを開き、「ネットワーク」タブを選択します。
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/43273a1b-90ac-1812-ad0a-1182739afd3d.png
+![image.png](/image/43273a1b-90ac-1812-ad0a-1182739afd3d.png)
 
 (2)画面上で入力操作を行い「登録する」ボタンを押します。しばらくすると受信ファイルの一覧が表示されます。
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/32a644dd-b2e5-151b-5aa9-18dffcf64fdc.png
+![image.png](/image/32a644dd-b2e5-151b-5aa9-18dffcf64fdc.png)
 
 (3)「regist1.php」などの受信ファイルを選択します。
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/a829ed9d-7968-8bd3-a7e9-839bb29ddbd7.png
+![image.png](/image/a829ed9d-7968-8bd3-a7e9-839bb29ddbd7.png)
 
 (4)パラメータタブでFormの送信情報を確認できます。
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/90e7d715-6c91-59bb-75c9-0a9f824a35b6.png
+![image.png](/image/90e7d715-6c91-59bb-75c9-0a9f824a35b6.png)
 
 (5)応答タブでサーバーからのレスポンスデータを確認できます。
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/cf4dec61-3dc6-cba0-6c63-10d2e028d2dd.png
+![image.png](/image/cf4dec61-3dc6-cba0-6c63-10d2e028d2dd.png)
 
 ### IE11での送受信データの確認方法
 (1)F12で開発者ツールを開き、「ネットワーク」タブを選択します。
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/25b4bfde-7e44-fab7-5b7b-cfa285f7ca16.png
+![image.png](/image/25b4bfde-7e44-fab7-5b7b-cfa285f7ca16.png)
 
 (2)画面上で入力操作を行い「登録する」ボタンを押します。しばらくすると受信ファイルの一覧が表示されます。
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/3761684f-c688-f6f9-0d40-3520b825f2f3.png
+![image.png](/image/3761684f-c688-f6f9-0d40-3520b825f2f3.png)
 
 (3)「regist1.php」などの受信ファイルを選択します
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/42722618-cf31-c93c-ac69-9c3adf4e1ca2.png
+![image.png](/image/42722618-cf31-c93c-ac69-9c3adf4e1ca2.png)
 
 (4)本文タブを選択し、さらに「要求本文」タブを選択するとFormの送信情報を確認できます。
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/fd102b1f-98b8-ea22-0206-ef1db789e9fa.png
+![image.png](/image/fd102b1f-98b8-ea22-0206-ef1db789e9fa.png)
 
 
 (5)本文タブを選択し、さらに「応答本文」タブを選択するとサーバーからのレスポンスデータを確認できます。
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/3c278474-df84-0892-faba-a48cf35d02b5.png
+![image.png](/image/3c278474-df84-0892-faba-a48cf35d02b5.png)
 
 ### 旧Edgeでの送受信データの確認方法
 (1)F12で開発者ツールを開き、「ネットワーク」タブを選択します。
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/4c07b923-faa5-72f8-7c0c-d6694b36206e.png
+![image.png](/image/4c07b923-faa5-72f8-7c0c-d6694b36206e.png)
 
 (2)画面上で入力操作を行い「登録する」ボタンを押します。しばらくすると受信ファイルの一覧が表示されます。
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/ca368486-e502-b0d5-ec83-9ec640e5613c.png
+![image.png](/image/ca368486-e502-b0d5-ec83-9ec640e5613c.png)
 
 (3)「regist1.php」などの受信ファイルを選択します
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/372ebbee-def6-5fb1-d210-af6c45adc80e.png
+![image.png](/image/372ebbee-def6-5fb1-d210-af6c45adc80e.png)
 
 (4)本文タブを選択し、さらに「要求本文」タブを選択するとFormの送信情報を確認できます。
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/aae35af1-5e5c-836d-92dc-08fa98771969.png
+![image.png](/image/aae35af1-5e5c-836d-92dc-08fa98771969.png)
 
 (5)本文タブを選択し、さらに「応答本文」タブを選択するとサーバーからのレスポンスデータを確認できます。
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/b31569dc-4e74-258f-fe18-c34fc47a2e9d.png
+![image.png](/image/b31569dc-4e74-258f-fe18-c34fc47a2e9d.png)
 
 ### 新Edgeでの送受信データの確認方法
 Chromeと同じです。
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/783ea38d-3afb-9c24-c0b7-a0de87f46a12.png
+![image.png](/image/783ea38d-3afb-9c24-c0b7-a0de87f46a12.png)
 
 ## 単純なFormデータの送信例
 下記のページのような単純なフォームのデータの送信例を説明します。
@@ -2380,10 +2380,10 @@ print(soup.title)
 これまでにRedmineでチケット登録を行うサンプルをいくつか記述しました、Redmineが提供しているAPIを利用することでシンプルに実装することができます。
 
 まずRedmineの管理画面でRESTAPIを有効にしてください。
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/f9df4c72-ef7e-0a5d-3245-b8645b077fb5.png
+![image.png](/image/f9df4c72-ef7e-0a5d-3245-b8645b077fb5.png)
 
 すると個人設定画面でAPIキーが表示されます。このAPIを使用してRedmineを操作します。
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/aa44ef01-3e1a-41c4-826f-5365812d472e.png
+![image.png](/image/aa44ef01-3e1a-41c4-826f-5365812d472e.png)
 
 
 ### PowerShellの例

@@ -837,7 +837,7 @@ d.log                                                                    d.txt
 Get-ChildItem | Out-GridView
 ```  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/03bcd0b2-71e3-cf98-6802-40d8209aee28.png  
+![image.png](/image/03bcd0b2-71e3-cf98-6802-40d8209aee28.png)  
   
 LinuxやMacなどのWindows以外のプラットフォームにおいて標準では使用できません。  
 しかし、Microsoft.PowerShell.GraphicalToolsモジュールをインストールすると使用できるようです（未検証）  
@@ -924,15 +924,15 @@ Get-ChildItem . -Filter *.txt -Recurse | Remove-Item -WhatIf
 -LiteralPathと-Pathオプションには削除対象のパスをコンマ区切りで複数指定可能です。  
   
 読み取り専用のファイルを削除する場合、以下のようなエラーとなります。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/ef819f0a-3c6f-cca8-5a4b-7e2e299fecf8.png  
+![image.png](/image/ef819f0a-3c6f-cca8-5a4b-7e2e299fecf8.png)  
 この場合は-Forceオプションを付与することで削除がおこなえます。  
   
 -WhatIfオプションを付与して実行することで、削除を行わず、削除対象のみを表示します。これはワイルドカードを使用した際に事前に影響を調べるのに有効です。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/7c77e468-6a98-ba65-39bd-4015cfe7f301.png  
+![image.png](/image/7c77e468-6a98-ba65-39bd-4015cfe7f301.png)  
   
   
 -Confirmオプションを付与して実行することで各ファイルの削除確認を行いながら削除を進めることが可能になります。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/4f8c5685-ebdd-e6b9-3364-27be8c9e630a.png  
+![image.png](/image/4f8c5685-ebdd-e6b9-3364-27be8c9e630a.png)  
   
 [ファイルの一覧表示](#ファイルの一覧表示)のGet-ChildItemで出てきた-Filterオプションと-Includeオプションを利用して削除するファイルを絞りこむこともできます。  
   
@@ -970,7 +970,7 @@ Remove-Item lsfiltertest -Recurse
   
 削除するフォルダにファイルが存在する場合、下記の確認メッセージが表示されます。  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/f99bccc1-b2fc-2c43-4cf7-0c517eb48fed.png  
+![image.png](/image/f99bccc1-b2fc-2c43-4cf7-0c517eb48fed.png)  
   
 この確認メッセージを出さないで削除するには-Recurseオプションを利用します。  
   
@@ -1032,10 +1032,10 @@ Copy-Item * xxxx -Exclude t* -WhatIf
 この場合、-Forceオプションを付与してコピーします。  
   
 -WhatIfオプションを使用することで事前に変更されるパスの確認も可能です。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/3ee4b1b9-ea1a-0588-7756-dd3ccadd32c5.png  
+![image.png](/image/3ee4b1b9-ea1a-0588-7756-dd3ccadd32c5.png)  
   
 -Confirmオプションで確認メッセージが表示されます。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/e815a219-b7a6-5ddf-bec0-06fcaaed68aa.png  
+![image.png](/image/e815a219-b7a6-5ddf-bec0-06fcaaed68aa.png)  
   
 [ファイルの一覧表示](#ファイルの一覧表示)のGet-ChildItemで出てきた-Filter,-Include-Excludeオプションを利用して削除するファイルを絞りこむこともできます。  
   
@@ -1323,7 +1323,7 @@ Out-File c.txt -InputObject '私はかもめ' -Encoding Utf8
   
 -LiteralPath,-FilePathオプションには更新対象のファイルパスを指定します。  
 -FilePathには[ワイルドカード](https://qiita.com/mima_ita/items/486566b717743e9d2626#%E3%83%91%E3%83%A9%E3%83%A1%E3%83%BC%E3%82%BF%E3%81%AE%E3%83%AF%E3%82%A4%E3%83%AB%E3%83%89%E3%82%AB%E3%83%BC%E3%83%89)による指定が可能ですが、複数更新対象がある場合以下のエラーとなります。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/86e7c7e5-244e-c3cd-0813-b60b3d38e418.png  
+![image.png](/image/86e7c7e5-244e-c3cd-0813-b60b3d38e418.png)  
 また、ドキュメントにも「Accept wildcard characters: False」とあるので指定できてもやめときましょう。  
   
   

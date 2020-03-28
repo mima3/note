@@ -3,7 +3,7 @@
 ## XBAPのファイルをどう配置すべきか？  
 XBAPは別プロジェクトにする。  
 ASP.NET MVCのプロジェクトはXBAPのプロジェクトに依存させる。  
-https://qiita-image-store.s3.amazonaws.com/0/47856/37328a2f-44a7-049c-e1bc-41fb48b4437d.png  
+![xbap001.png](/image/37328a2f-44a7-049c-e1bc-41fb48b4437d.png)  
   
 ASP.NET MVCのxabapフォルダを対象にxbapを発行するようにしとけばいい。  
 VisualStudioからXBAPプロジェクトを選んで一々発行するのもいいが、以下のようにASP.NET MVCプロジェクトのビルド前イベントにバッチを組むといい。  
@@ -66,10 +66,10 @@ http://stackoverflow.com/questions/1919625/msbuild-doesnt-respect-publishurl-pro
   
 ### クエリーストリングを使う方法  
 1.XBAPプロジェクトのプロパティで「発行」のオプションを押す  
-https://qiita-image-store.s3.amazonaws.com/0/47856/9c0e6947-006e-28a1-543b-63a53fa537ec.png  
+![xbap002.png](/image/9c0e6947-006e-28a1-543b-63a53fa537ec.png)  
   
 2.マニフェストで「URLパラメータをアプリケーションに渡すことを許可する」  
-https://qiita-image-store.s3.amazonaws.com/0/47856/34e4e078-9865-3fca-a8a5-5d919387818a.png  
+![xbap003.png](/image/34e4e078-9865-3fca-a8a5-5d919387818a.png)  
   
 3.XBAPプロジェクトに「System.Deployment」を参照設定する。  
   

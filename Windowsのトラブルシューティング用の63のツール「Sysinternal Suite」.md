@@ -77,7 +77,7 @@ APIのOutputDebugStringで指定した文字列を表示するデバッグ用の
 VisualStudioなどをインストールせずに、実行環境でトレースログを出力することができる。  
 Releaseビルドでも出力されるので、通常のDebug実行などで再現できない不具合を追跡するのに使用する。  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/da64b890-f9aa-9e88-92e3-e8dd158e8ea7.png  
+![DebugView.png](/image/da64b890-f9aa-9e88-92e3-e8dd158e8ea7.png)  
    
  __VC++__   
   
@@ -119,7 +119,7 @@ End Sub
 ## Process Monitor  
 Process Monitorはリアルタイムで、プロセスのファイルやレジストリに対するアクセスを表示する。  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/0d6a13d3-b326-b7e6-4781-0d640c4897fe.png  
+![pmon.png](/image/0d6a13d3-b326-b7e6-4781-0d640c4897fe.png)  
   
 Procmon.exeを管理者権限で動作させる必要がある。  
   
@@ -129,10 +129,10 @@ Procmon.exeを管理者権限で動作させる必要がある。
   
 ## Process Explorer  
 タスクマネージャの上位互換。  
-https://qiita-image-store.s3.amazonaws.com/0/47856/e28885e3-17a5-11b2-ca96-9410519dd4b0.png  
+![ProcessExp.png](/image/e28885e3-17a5-11b2-ca96-9410519dd4b0.png)  
   
 呼び出したプロセスによってツリーを構築している。  
-https://qiita-image-store.s3.amazonaws.com/0/47856/fe614fa9-42af-916a-4795-f0a97af67e89.png  
+![ProcessExp.png](/image/fe614fa9-42af-916a-4795-f0a97af67e89.png)アイコンを選択後、ウィンドウズを選択すると、そのウィンドウの所属するプロセスを表示する機能も有している。  
   
 ## PendMovesとMoveFile  
 このツールの説明の前にリブート時の移動について説明する。  

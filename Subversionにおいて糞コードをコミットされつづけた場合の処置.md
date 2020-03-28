@@ -7,10 +7,10 @@
 その場合、リポジトリの管理者の権限においてもとにリポジトリを正常化します。  
   
 1.コミットログを表示して、該当のコミットを選択します。  
-https://qiita-image-store.s3.amazonaws.com/0/47856/083755c7-0e2f-f4fb-9e04-2298268cc881.png  
+![svn001.png](/image/083755c7-0e2f-f4fb-9e04-2298268cc881.png)  
   
 2.ワークスペースの内容が該当コミットの変更を排除したものになるので、それをコミットします。  
-https://qiita-image-store.s3.amazonaws.com/0/47856/d2a0a997-62d5-8fe1-ead5-177a04da60b0.png  
+![svn002.png](/image/d2a0a997-62d5-8fe1-ead5-177a04da60b0.png)  
   
 作業者の場合、2のコミットを行わなければ、とりあずは動くバージョンになるかと思います。  
   

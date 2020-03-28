@@ -1,9 +1,9 @@
 LMQ(Lightweight Message Queue)はErlangで実装したHTTP経由で使用できるメッセージキューです。  
 以下のようにLMQが動作している端末に別の端末からHTTP POSTによりメッセージを追加、別の端末でHTTP-GETによりキューのデータを取得することができます。  
-https://qiita-image-store.s3.amazonaws.com/0/47856/8a4b2fbe-532b-4d5f-1566-b28438742f09.png  
+![lmq.png](/image/8a4b2fbe-532b-4d5f-1566-b28438742f09.png)  
   
 また、次のように、2つ以上のLMQをしようして冗長化が可能です。  
-https://qiita-image-store.s3.amazonaws.com/0/47856/7075f4c9-31ce-0070-1e59-697395fd3aa0.png  
+![lmq.png](/image/7075f4c9-31ce-0070-1e59-697395fd3aa0.png)  
   
 このLMQにより、HTTPプロトコルを用いたプロセス間通信や、端末間の通信を容易に分散化させることが可能になります。つまり、設計しだいで、スケーリングが可能なシステムを構築することが容易になると期待できます。  
   
@@ -150,7 +150,7 @@ http://msysgit.github.io/
   
 このページの下の方のDownloadを選択すること。（上の方だとGit for WindowsでGit以外のmakeなどができない）  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/e5525f4e-3290-99b3-445d-cb1f4e589a58.png  
+![lmq.png](/image/e5525f4e-3290-99b3-445d-cb1f4e589a58.png)  
   
 もし、インストール中にmsgfmtでエラーが出たら、「LOCALE=C」を実行後、再度、「make install」を行う  
 https://groups.google.com/forum/#!msg/msysgit/noypkk5XzAI/ol1o2oK1wqsJ  

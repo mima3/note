@@ -18,10 +18,10 @@ Jinja2    2.10.3
 まずプラグインとして[Application Password](https://ja.wordpress.org/plugins/application-passwords/)をWordPressにインストールします。  
   
 「ユーザ管理」→「あなたのプロフィール」画面で「Application Passwords」の項目が存在することを確認して投稿者権限を有するユーザ名を入力後、「Add User」ボタンを押下します。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/3a6b29b8-0e1f-c548-424c-ae50e8fb8927.png  
+![image.png](/image/3a6b29b8-0e1f-c548-424c-ae50e8fb8927.png)  
   
 パスワードが生成されるので控えておきます。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/39eea8ab-59c4-e7ae-469d-dba8cf83c23f.png  
+![image.png](/image/39eea8ab-59c4-e7ae-469d-dba8cf83c23f.png)  
   
   
 このユーザとパスワードの組み合わせでRESTAPIは動作しますが、ユーザ管理画面にはログインできません。  
@@ -184,13 +184,13 @@ except WordPressError as ex:
 ```  
   
 上記のプログラムを実行するとメディアに２つ画像が追加されます。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/393ec66f-1c65-6cda-1e84-db789137ea63.png  
+![image.png](/image/393ec66f-1c65-6cda-1e84-db789137ea63.png)  
   
 また投稿一覧に記事が１つ追加されます。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/fe1f05dd-3167-6112-5116-7585b743da39.png  
+![image.png](/image/fe1f05dd-3167-6112-5116-7585b743da39.png)  
   
 記事のプレビューは下記の通りです。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/9389544f-3ea3-b658-b352-a13cbd834030.png  
+![image.png](/image/9389544f-3ea3-b658-b352-a13cbd834030.png)  
   
   
   

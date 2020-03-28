@@ -18,20 +18,20 @@ https://qiita.com/mima_ita/items/c56d6e2657cc836af7ac
   
 # マクロの登録方法  
 １．[ツール]→[マクロ]→[マクロエクスプローラ]を選択する。  
-https://qiita-image-store.s3.amazonaws.com/0/47856/f783cf4e-ebc9-999e-d87b-c05a33f37fc9.png  
+![macro.png](/image/f783cf4e-ebc9-999e-d87b-c05a33f37fc9.png)  
   
 ２．マクロエクスプローラにて新規にモジュールを追加する。  
-https://qiita-image-store.s3.amazonaws.com/0/47856/464069d1-19f8-469a-4969-69d5b56ca769.png  
+![macro.png](/image/464069d1-19f8-469a-4969-69d5b56ca769.png)  
   
 ３．モジュール追加のダイアログで任意の名前でモジュールを追加する。  
-https://qiita-image-store.s3.amazonaws.com/0/47856/1bda2060-7fca-7763-1890-8402f3b74c96.png  
+![macro.png](/image/1bda2060-7fca-7763-1890-8402f3b74c96.png)  
   
 ４．マクロエクスプローラで追加したモジュールを選択して編集を行う  
-https://qiita-image-store.s3.amazonaws.com/0/47856/b8a89810-e687-9023-c2da-58180c90b624.png  
+![macro.png](/image/b8a89810-e687-9023-c2da-58180c90b624.png)  
   
 ５．MicrosoftVisual Studio Macrosが起動するので以後、そこでマクロを記述する。  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/01daae6d-7d8e-8b21-df6d-c27cbadf5307.png  
+![macro.png](/image/01daae6d-7d8e-8b21-df6d-c27cbadf5307.png)  
   
 # 選択中の項目にDoxygenコメントを記述するコード  
   
@@ -211,11 +211,11 @@ sel.Text = "XXXXXXXXXXXXXXX"
 # マクロの実行方法  
 １．ソースコードの任意の箇所を選択。  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/2518d47f-6b7b-1ab1-f08e-b69021419e30.png  
+![macro.png](/image/2518d47f-6b7b-1ab1-f08e-b69021419e30.png)  
   
 ２．マクロエクスプローラの「CreateHeaderComment()」をダブルクリックする。  
 ３．マクロが実行されると以下のようにDoxygenコメントが付与される。  
-https://qiita-image-store.s3.amazonaws.com/0/47856/bb74bd03-27e1-0c6b-e321-489e02de85ac.png  
+![macro.png](/image/bb74bd03-27e1-0c6b-e321-489e02de85ac.png)  
   
 ## ショートカットの登録  
 作成したマクロはショートカットキーに割り当てることができる。  
@@ -223,7 +223,7 @@ https://qiita-image-store.s3.amazonaws.com/0/47856/bb74bd03-27e1-0c6b-e321-489e0
 １． [ツール] メニューの [オプション] をクリックして、[オプション] ダイアログ ボックスを表示する。  
 ２．[環境] フォルダーの [キーボード] をクリックする。  
 ３．[以下の文字列を含むコマンドを表示] ボックスにマクロ名を入力して絞りこみ、選択する。  
-https://qiita-image-store.s3.amazonaws.com/0/47856/18501c4b-6c9f-4dfb-61ed-2325a16f63cc.png  
+![macro.png](/image/18501c4b-6c9f-4dfb-61ed-2325a16f63cc.png)  
   
 ４．[ショートカット キー] ボックスをクリックし、特定のキーの組み合わせ押し「割り当て」ボタンをクリックする  
   

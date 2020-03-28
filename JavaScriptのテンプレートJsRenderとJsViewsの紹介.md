@@ -518,7 +518,7 @@ $(function () {
 ```  
   
 出力例：  
-https://qiita-image-store.s3.amazonaws.com/0/47856/8f6bc854-3d11-e358-5823-8eb10717609a.png  
+![無題.png](/image/8f6bc854-3d11-e358-5823-8eb10717609a.png)  
   
   
 このプログラムを実際動作させると、Addボタンでアイテムの追加、ｘボタンでアイテムの削除、Updateボタンで年齢の更新が行われることがわかるだろう。つまり、ある種の操作により、表示の内容が更新されていることが確認できる。  
@@ -615,7 +615,7 @@ $(function () {
 
 ```  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/f31a6f8c-874d-d72f-dd7b-9f6f9079014d.png  
+![無題.png](/image/f31a6f8c-874d-d72f-dd7b-9f6f9079014d.png)  
   
 このサンプルを実行すると、INPUTの内容を変更すると、表示しているデータはもちろん、データとして渡したJSONの内容も変更されていることが確認できる。  
   

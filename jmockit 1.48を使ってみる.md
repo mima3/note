@@ -19,7 +19,7 @@ JUnit4
   
 # jmockitとは  
 xUnitを使用して単体テストを行う場合、依存する部品が問題になってテストが困難な場合があります。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/e45ace66-7f22-8d37-37d2-627af6f58f12.png  
+![image.png](/image/e45ace66-7f22-8d37-37d2-627af6f58f12.png)  
   
 たとえば、以下のようなケースです。  
 ・依存する部品で任意の内容をテスト対象に返すのが困難な場合  
@@ -31,7 +31,7 @@ https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/e45ace66-7f22-
   
 こういったケースの場合に、依存する部品の代わりにjmockitで作成したメソッドを利用することで単体テストを容易にします。  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/4e8e549b-3615-6a2a-a100-2781a428c2ab.png  
+![image.png](/image/4e8e549b-3615-6a2a-a100-2781a428c2ab.png)  
   
 jmockitを使用することで、依存する部品の代わりにテストに都合のいい値をテスト対象に渡したり、依存する部品がどのようにテスト対象から呼び出されたかを記録し、検証することが可能になります。  
   
@@ -82,9 +82,9 @@ public class SimpleTest {
 ```  
   
 (3)junit実行時の実行構成にて、VM引数に「-javaagent:jmockit-1.48.jar」を付与して実行する。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/15f06a4d-3daa-532d-e547-50fbb6da7038.png  
+![image.png](/image/15f06a4d-3daa-532d-e547-50fbb6da7038.png)  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/4235cbf0-758b-1118-0cba-c04dfb5a65e9.png  
+![image.png](/image/4235cbf0-758b-1118-0cba-c04dfb5a65e9.png)  
   
 実行方法の詳細は下記を参照：  
 http://jmockit.github.io/tutorial/Introduction.html#runningTests  
@@ -93,7 +93,7 @@ http://jmockit.github.io/tutorial/Introduction.html#runningTests
 ## トラブルシュート  
 ### initializationErrorが発生する場合  
 **事象**  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/2ebe8221-b48d-94c9-8053-9766e9e113bf.png  
+![image.png](/image/2ebe8221-b48d-94c9-8053-9766e9e113bf.png)  
   
 **エラートレース**  
   
@@ -1622,11 +1622,11 @@ Fakeメソッドの最初のパラメータに[Invocation](#invocationの使用)
 -Dcoverage-output=html -Dcoverage-srcDirs=..\SampleProject\src
 ```  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/b55cd26c-6bef-b7af-484d-ec6135e02324.png  
+![image.png](/image/b55cd26c-6bef-b7af-484d-ec6135e02324.png)  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/e2f4a6bb-3ac8-aaf1-ea0a-962adbe2383a.png  
+![image.png](/image/e2f4a6bb-3ac8-aaf1-ea0a-962adbe2383a.png)  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/d10a9acc-94bc-d9e7-fc1d-eeca29fc1641.png  
+![image.png](/image/d10a9acc-94bc-d9e7-fc1d-eeca29fc1641.png)  
   
   
 その他引数は下記を参照してください。  

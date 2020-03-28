@@ -28,7 +28,7 @@ http://msdn.microsoft.com/ja-jp/vstudio/ms788708.aspx
 今後はVisualBasic6.0の開発要員を確保しづらくなることが予想されます。  
 以下の図は2012/4/27にIPA独立法人情報処理推進機構が発表した、ソフトウェア産業の実態把握に関する調査の結果です。  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/df8c40b5-323b-73f6-ef24-5d39c29671f3.png  
+![vb6.png](/image/df8c40b5-323b-73f6-ef24-5d39c29671f3.png)  
   
 これは新規で人手で作成したプログラミング言語の比率をあらわします。  
 VB6はCOBOLの0.4％以下のその他に分類されています。  
@@ -75,7 +75,7 @@ http://qiita.com/mima_ita/items/efcd1a6ea86f09047984
   
 もし、フォームやコントロールを作成する必要がある場合、Microsoftより提供されているInterop　Forms Toolkit を利用すれば、.NETで作成したコントロールやフォームをCOM経由でVBから使用することが簡単になるでしょう。  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/9131b241-0b26-797e-6f02-d7c5963fafb9.png  
+![vb6.png](/image/9131b241-0b26-797e-6f02-d7c5963fafb9.png)  
   
 Interop　Forms Toolkit 2.0 Tutorial  
 http://www.codeproject.com/Articles/18954/Interop-Forms-Toolkit-2-0-Tutorial  
@@ -90,19 +90,19 @@ http://www.microsoft.com/en-us/download/details.aspx?id=3264
 １．Interop Forms Toolkitをインストールして、管理者権限としてVisualStudioを起動します。これはCOMの登録に管理者権限が必要だからです。  
   
 ２．新規プロジェクトで[VB6 Interop UserControl]のテンプレートを選択します。  
-https://qiita-image-store.s3.amazonaws.com/0/47856/542e9bd6-69e4-1188-1287-a5ca62234b99.png  
+![vb6.png](/image/542e9bd6-69e4-1188-1287-a5ca62234b99.png)  
   
 ３．テンプレートを選択してプロジェクトを作成すると、VBB.NETでCOMのコントロールやインターフェイスを実装できるようになります。  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/2b87c1ed-9d09-2a16-9e38-963433356b41.png  
+![vb6.png](/image/2b87c1ed-9d09-2a16-9e38-963433356b41.png)  
   
 ４．VB6から使用したい機能をCOM参照可能なクラスのCOM参照可能なパブリックプロシージャとして実装してください。  
-https://qiita-image-store.s3.amazonaws.com/0/47856/9b931afb-60d1-d447-ad05-aa9f26109995.png  
+![vb6.png](/image/9b931afb-60d1-d447-ad05-aa9f26109995.png)  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/7b40aa16-65b0-284e-2fea-099cc01d8b49.png  
+![vb6.png](/image/7b40aa16-65b0-284e-2fea-099cc01d8b49.png)  
   
 ５．実装が終わり、ビルドを行う時に、COMとして登録されるように、プロジェクトの設定で「COM相互運用機能の登録」を選択してください。  
-https://qiita-image-store.s3.amazonaws.com/0/47856/3aa05e98-8930-2736-e9db-8ec4cf7670ca.png  
+![vb6.png](/image/3aa05e98-8930-2736-e9db-8ec4cf7670ca.png)  
   
 もし、VisualStudioのない環境でCOMを登録するにはRegasmコマンドを使用します。  
   
@@ -116,25 +116,25 @@ http://support.microsoft.com/kb/817248/ja
 １．VB6やVBAでCOMを使用するには「参照設定」で作成したDLLを選択します。  
 コントロールとして使いたい場合は、ツールボックスから、その他のコントロールで追加できます。  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/6c8d3496-ade2-da98-d09e-6beb5d7edf06.png  
+![vb6.png](/image/6c8d3496-ade2-da98-d09e-6beb5d7edf06.png)  
   
   
 ２．VB6やVBA側でオブジェクトを作成して使用することが可能になります。  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/65572227-716e-490a-c5df-55b54fdf9674.png  
+![vb6.png](/image/65572227-716e-490a-c5df-55b54fdf9674.png)  
   
   
 #### デバッグの方法  
 デバッグの方法としてはCOMを実装したソリューションにテストようのプロジェクトを追加してそこで単体テストをすると楽です。  
 同じソリューションであれば、ブレイクやウォッチが使用できてデバッグが楽です。  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/08ca7f6b-0539-2bec-b38e-03753fcd692d.png  
+![vb6.png](/image/08ca7f6b-0539-2bec-b38e-03753fcd692d.png)  
   
   
 あるいは、VisualStudioでVB6.0で作成したプロセスにアタッチすることで、.NETで作成したCOMのデバッグが行えます。  
 VB6.0側と.NET側のどちらにバグの原因があるかわからない場合はこの方法がよいでしょう。  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/d482415d-88bc-f012-c364-dac715034227.png  
+![vb6.png](/image/d482415d-88bc-f012-c364-dac715034227.png)  
   
 #### 注意点  
 Interop Forms Toolkit2.1を動かした際に気になった点を以下に示します。  

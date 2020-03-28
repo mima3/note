@@ -6,12 +6,12 @@ http://dc-js.github.io/dc.js/
   
 たとえば次のようなグラフを描画したとします。  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/e6f79d2f-17aa-3c11-b3c1-6aee224cc699.png  
+![dc001.png](/image/e6f79d2f-17aa-3c11-b3c1-6aee224cc699.png)  
   
 dc.jsを使えば、グラフ上の項目をクリックすることで任意の項目のフィルタリングが行えます。  
 下記の例では「艦種」が「戦艦」かつ「速度」が「低」の艦を抽出しています。  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/c10ee316-50b8-393a-4d50-0afb32a48be0.png  
+![dc002.png](/image/c10ee316-50b8-393a-4d50-0afb32a48be0.png)  
   
 特定の項目をフィルタリングすることにより、全てのグラフが連動して変化していることが確認できます。これによりに、様々な角度でデータを表現することが可能になります。  
   
@@ -52,7 +52,7 @@ http://qiita.com/mima_ita/items/ba194a2d086c1f67aa7d
 ### PieChartによる円グラフの例  
 PieChartは以下のように円でデータの割合を表すグラフです。  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/3e7e8750-007f-88b4-81ff-2efdeeb383d6.png  
+![dc003.png](/image/3e7e8750-007f-88b4-81ff-2efdeeb383d6.png)  
   
 このサンプルコードは以下のようになります。  
   
@@ -191,12 +191,12 @@ chartType.render();
 |:--------|:---|  
 |width,heigth|描画領域の大きさを指定します|  
 |cx,cy|円の中心座標を指定します|  
-https://qiita-image-store.s3.amazonaws.com/0/47856/e8e5ddc3-64fc-20e7-f26b-1fbacd9ffa80.png  
+|innerRadius|内部の円の半径を指定します。<BR>![dc005.png](/image/e8e5ddc3-64fc-20e7-f26b-1fbacd9ffa80.png)|  
 |dimension|グラフに関連付けるcrossfilterのdimentionを指定します|  
 |group|グラフに関連付けるcrossfilterのgroupを指定します|  
 |ordering|要素の並び順を指定する関数を指定します|  
 |slicesCap|グラフに表示する項目の上限を指定します。この上限を超えた場合、Othersに分類されます。|  
-https://qiita-image-store.s3.amazonaws.com/0/47856/e23f655c-ff04-7acb-f2f4-536ed94434d6.png  
+|legend|次のようなサンプルを表示します。<BR>![dc004.png](/image/e23f655c-ff04-7acb-f2f4-536ed94434d6.png)<BR>ここで指定できるlegendオブジェクトについては下記を参考にしてください.<BR>https://github.com/dc-js/dc.js/blob/master/web/docs/api-latest.md#legend|  
   
 #### グラフ中のラベルの変更方法  
 labelプロパティに描画用の関数を指定します。  
@@ -209,7 +209,7 @@ chartType.label(function(d) {
 });
 ```  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/9b57d753-e5c3-9de6-832d-e9b4bfa7ccd4.png  
+![dc006.png](/image/9b57d753-e5c3-9de6-832d-e9b4bfa7ccd4.png)  
   
   
 なお、引数には以下のようなデータが渡されます。  
@@ -231,7 +231,7 @@ chartType.title(function(d) {
 });
 ```  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/6e85181d-387e-a18e-bab1-c0b61dcbb859.png  
+![dc007.png](/image/6e85181d-387e-a18e-bab1-c0b61dcbb859.png)  
   
   
 #### 色の変更方法  
@@ -251,7 +251,7 @@ chartType.colors(function(keyName) {
 });
 ```  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/2ff85feb-20d5-a1a0-31fe-6b7178c0ec5f.png  
+![dc008.png](/image/2ff85feb-20d5-a1a0-31fe-6b7178c0ec5f.png)  
   
 その他、色に関する詳細は下記を参考にしてください。  
 https://github.com/dc-js/dc.js/blob/master/web/docs/api-latest.md#color-mixin  
@@ -259,7 +259,7 @@ https://github.com/dc-js/dc.js/blob/master/web/docs/api-latest.md#color-mixin
 ### RowChartによる棒グラフの例  
 RowChartは以下のようにデータを表現します。  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/4c50ed19-599c-a42d-ac9b-8d4a1855549f.png  
+![dc009.png](/image/4c50ed19-599c-a42d-ac9b-8d4a1855549f.png)  
   
 ```html
 <!DOCTYPE html>

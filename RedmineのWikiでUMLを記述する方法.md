@@ -61,7 +61,7 @@ chmod go+w /var/lib/redmine/public/plugin_assets/
 　　管理＞プラグイン＞Wiki External Filter Plugin　の設定  
   
 　　「Cache expiration time 」に十分大きな数値を入力  
-https://qiita-image-store.s3.amazonaws.com/0/47856/5eae8eeb-0b82-54ae-7467-969e3928628a.png  
+![b0232065_03141636.png](/image/5eae8eeb-0b82-54ae-7467-969e3928628a.png)  
   
 １１. 下記のような文章をWikiに記述する  
   
@@ -73,7 +73,7 @@ https://qiita-image-store.s3.amazonaws.com/0/47856/5eae8eeb-0b82-54ae-7467-969e3
 }}
 ```  
   
-https://qiita-image-store.s3.amazonaws.com/0/47856/4e1dfdb0-17d5-43e4-1bb6-db08f6164987.png  
+![b0232065_03143326.png](/image/4e1dfdb0-17d5-43e4-1bb6-db08f6164987.png)  
   
 # その他メモ  
 ・下記のページに一般的なRedmineのプラグインのインストール方法が記載されている。  

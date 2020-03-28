@@ -8,14 +8,14 @@ https://github.com/quilljs/quill
   
 **Demo**  
 https://quilljs.com/  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/43809db5-3c34-c035-6a5b-8bbe758cdb93.png  
+![image.png](/image/43809db5-3c34-c035-6a5b-8bbe758cdb93.png)  
   
 ・テーブルの作成はできないようです(ver2.x用にテーブル追加のプラグインはある）  
 ・クリップボードを経由して画像のアップロードが可能です。  
 ・[highlight.jsを使用してコードブロックのハイライトが可能のようです](https://quilljs.com/docs/modules/syntax/)  
   
 **対象ブラウザ**  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/db7e19c5-f96b-ac27-2fb6-2a388bcb840a.png  
+![image.png](/image/db7e19c5-f96b-ac27-2fb6-2a388bcb840a.png)  
 IEは非推奨のようです。  
   
 **ライセンス**  
@@ -106,7 +106,7 @@ quill.root.addEventListener("paste", function (t) {
 quill-image-drop-and-paste  
 https://github.com/chenjuneking/quill-image-drop-and-paste  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/97ba3475-efe9-e837-110f-942969bb686f.png  
+![image.png](/image/97ba3475-efe9-e837-110f-942969bb686f.png)  
   
 quill-image-drop-and-pasteはどうも以下のように修正しないと動作しないようです。  
 export.ImageDropAndPasteを使用しているが、設定していないので替わりにImageDropAndPasteを設定する。  
@@ -160,7 +160,7 @@ document.getElementById('btnContent').addEventListener('click', function() {
 quilljs-table  
 https://github.com/dost/quilljs-table  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/aa4153da-1716-bca4-01e0-107aaa13ef92.png  
+![image.png](/image/aa4153da-1716-bca4-01e0-107aaa13ef92.png)  
   
 サンプルを見る限り、テーブルの削除や列、行の削除がGUIからできそうにないです。  
 最終コミット日が2017年。  
@@ -173,7 +173,7 @@ quilljs v2.0.0-dev.3が必要になります。
 最終更新日は2019年10月25日です。  
   
 テーブルの操作は以下のようなイメージになります。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/70a027d5-0272-4d55-76e7-a9ef0087da54.png  
+![image.png](/image/70a027d5-0272-4d55-76e7-a9ef0087da54.png)  
   
 ```html
 <!doctype html>
@@ -241,7 +241,7 @@ https://github.com/basecamp/trix
   
 **Demo**  
 https://trix-editor.org/  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/e47104e2-c484-0437-d4ff-862c44de8279.png  
+![image.png](/image/e47104e2-c484-0437-d4ff-862c44de8279.png)  
   
   
 **対象ブラウザ**  
@@ -327,7 +327,7 @@ addEventListener("trix-change", function(event) {
 https://github.com/basecamp/trix/issues/539  
   
 コードブロックはあるが強調表示はサポートしていない。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/75a9bafe-3163-6102-5b14-909c5d45397b.png  
+![image.png](/image/75a9bafe-3163-6102-5b14-909c5d45397b.png)  
   
 拡張とかはできなさそう。  
   
@@ -339,13 +339,13 @@ https://github.com/yabwe/medium-editor
   
 **Demo**  
 http : //yabwe.github.io/medium-editor/  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/3fc8c278-f5ea-45ec-438d-4e6b4bb01082.png  
+![image.png](/image/3fc8c278-f5ea-45ec-438d-4e6b4bb01082.png)  
   
 画像の貼り付けやコードブロックはなさそう。  
   
   
 **対象ブラウザ**  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/800d1a22-d64d-040f-3019-01645ad4c0e3.png  
+![image.png](/image/800d1a22-d64d-040f-3019-01645ad4c0e3.png)  
 IEをサポートしている  
   
   
@@ -420,7 +420,7 @@ https://github.com/yabwe/medium-editor-tables
 **demo**  
 https://yabwe.github.io/medium-editor-tables/  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/5c79efaa-50f0-efd5-cba4-460819b2e0a2.gif  
+![tablemedium.gif](/image/5c79efaa-50f0-efd5-cba4-460819b2e0a2.gif)  
   
 ```html
 <!doctype html>
@@ -472,7 +472,7 @@ https://github.com/orthes/medium-editor-insert-plugin
 https://linkesch.com/medium-editor-insert-plugin/  
   
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/376ea51b-5739-0e70-6ac8-ce4b9d62fea9.gif  
+![tablemedium3.gif](/image/376ea51b-5739-0e70-6ac8-ce4b9d62fea9.gif)  
   
   
   
@@ -549,11 +549,11 @@ https://jaredreich.com/pell/
 画像はURL指定して表示。  
 Link等でダイアログを表示する際はブラウザのメッセージボックスを使用している  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/9a05f333-921d-14a1-9624-8d357571727c.png  
+![image.png](/image/9a05f333-921d-14a1-9624-8d357571727c.png)  
   
   
 **対象ブラウザ**  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/58879047-7f02-d94f-8d4a-e22f9f529607.png  
+![image.png](/image/58879047-7f02-d94f-8d4a-e22f9f529607.png)  
 かなり古いブラウザでも動作するようです。  
   
 **ライセンス**  
@@ -571,13 +571,13 @@ https://github.com/codex-team/editor.js
 **Demo**  
 https://editorjs.io/  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/2577b404-db57-3cc5-5e64-e97c5dfda7e1.png  
+![image.png](/image/2577b404-db57-3cc5-5e64-e97c5dfda7e1.png)  
   
 ・表、画像のアップロードをサポートしている。  
 ・ツールバーは表示されずに、必要な時にポップアップが出る  
   
 **対象ブラウザ**  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/0f7d5381-4eb8-a970-f0a9-8efafb1c6170.png  
+![image.png](/image/0f7d5381-4eb8-a970-f0a9-8efafb1c6170.png)  
   
 IEは対象外の模様  
 ※すくなくともデモサイトはIE11で動作しない  

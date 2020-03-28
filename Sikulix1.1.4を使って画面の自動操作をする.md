@@ -9,7 +9,7 @@ http://sikulix.com/
   
 ## 現在のリリース状況  
 2019/10時点のリリースの状況は以下の通りになっています。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/79ab68fa-5ad6-16ae-2536-1e7a19266873.png  
+![image.png](/image/79ab68fa-5ad6-16ae-2536-1e7a19266873.png)  
   
 https://launchpad.net/sikuli/+series  
   
@@ -94,22 +94,22 @@ app.open()
   
 メモ帳の場合は以下のようになります。  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/25d6036e-04f7-5740-f0e1-b854b3e695d2.png  
+![image.png](/image/25d6036e-04f7-5740-f0e1-b854b3e695d2.png)  
   
 （２）メモ帳が起動するまでまつ  
 以下のようなメモ帳が起動するまで待機するにはどうしたらいいでしょうか？  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/f25a9b01-1b75-5e7a-9547-19527df46e3b.png  
+![image.png](/image/f25a9b01-1b75-5e7a-9547-19527df46e3b.png)  
   
 まず、「スクリーンショットを撮る」をクリックします。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/58b32e85-91e9-e1e3-696b-579c0ad28fe6.png  
+![image.png](/image/58b32e85-91e9-e1e3-696b-579c0ad28fe6.png)  
   
 ディスクトップ上で矩形を選択できるようになりますのでメモ帳タイトルバーが入るように矩形を選択すると、IDEに以下のような画像が表示されます。  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/a7bf0713-d466-b159-f478-c0442219be15.png  
+![image.png](/image/a7bf0713-d466-b159-f478-c0442219be15.png)  
   
 選択した画像が表示されるまで待つために「wait()」コマンドを以下のように使用します。  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/5f217621-3606-d697-f9ed-bb74135f0968.png  
+![image.png](/image/5f217621-3606-d697-f9ed-bb74135f0968.png)  
   
 なお、昔のバージョンではコマンドリストなるものが存在したそうですが、1.1.4では消えたので、おとなしく手でコマンドを入力してください。  
   
@@ -117,37 +117,37 @@ https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/5f217621-3606-
 画像の位置をクリックするには「click()」コマンドを使用します。  
 waitと同じように以下のように記載します。  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/014266e8-316d-ca00-33e5-15476c33f776.png  
+![image.png](/image/014266e8-316d-ca00-33e5-15476c33f776.png)  
   
 これで画像をクリックするようになりましたが、クリックする位置はデフォルトで中央になっています。これを変更するには、click()中の画像をクリックしてください。  
   
 パターン設定というポップアップが表示されると思います。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/7c8d0683-9257-09ba-c844-f56357fb1d94.png  
+![image.png](/image/7c8d0683-9257-09ba-c844-f56357fb1d94.png)  
   
 ここで、「ターゲットオフセット」タブを選択してください。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/2958c891-3b30-4c33-6f5f-6740152d9d71.png  
+![image.png](/image/2958c891-3b30-4c33-6f5f-6740152d9d71.png)  
   
 この画面でクリック位置を設定できます。  
 マウスホイールで拡大、縮小ができ、画像上を押下して、自動操作中にクリックしたい位置を指定できます。  
 「ターゲットオフセット」画面では、クリック位置を十字カーソルで表現しています。現在は「書式」メニューあたりをクリックするようになっているので、以下のようにテキストエリアをクリックしてみましょう。  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/0096e3be-d12e-961c-263d-5136a6308735.png  
+![image.png](/image/0096e3be-d12e-961c-263d-5136a6308735.png)  
   
 クリック位置を変更すると、画面下部のターゲットオフセットの値が０から変化したと思います。  
 クリック位置を確定するために「OK」ボタンを押下してください。  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/d8b211bc-2e17-07f3-83f2-bf23adb5ffc1.png  
+![image.png](/image/d8b211bc-2e17-07f3-83f2-bf23adb5ffc1.png)  
 IDE上の画像にクリック位置が赤いカーソルで表現されるようになりました。  
   
 （４）「はろーわるど！」と入力する。  
 キーボード入力には「type」コマンドと「paste」コマンドの２種類が存在します。  
 日本語入力を行いたい場合は「paste」コマンドを利用します。「paste(u'はろーわーるど！')」とIDEに入力します。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/e622a15c-79c5-4325-418b-9834aed5d98f.png  
+![image.png](/image/e622a15c-79c5-4325-418b-9834aed5d98f.png)  
   
 では、記載したスクリプトを起動して確認してみましょう。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/68286367-1dcc-766e-9888-2a0888cc8697.png  
+スクリプトを起動するには![image.png](/image/68286367-1dcc-766e-9888-2a0888cc8697.png)をクリックします。  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/e67486ce-dcce-65b5-d869-ea266158b5bb.png  
+![image.png](/image/e67486ce-dcce-65b5-d869-ea266158b5bb.png)  
   
 「Run Immediately」または「Save all and Run」が表示されます。保存しないですぐ実行するか、保存してから実行するかを選択できますが、今回は保存しないで実行するために「Run Immediately」を選択します。  
   
@@ -159,17 +159,17 @@ https://sikulix-2014.readthedocs.io/en/latest/index.html#tutorials
 # IDEの使い方  
   
 ## ファイル  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/6678aa0f-d940-beac-51b3-87c2d9a6cad2.png  
+![image.png](/image/6678aa0f-d940-beac-51b3-87c2d9a6cad2.png)  
   
   
 ### 新規作成  
 新規にファイルを作成します。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/c4234c9f-c56f-1d9b-5f20-822d47676b0e.png  
+![image.png](/image/c4234c9f-c56f-1d9b-5f20-822d47676b0e.png)  
   
 この時点では、「C:\Users\ユーザ名\AppData\Local\Temp\」以下に一時フォルダが作成されており、保存時にその内容を移動することになります。  
   
 ### 開く  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/50a5feb8-bf81-5efc-4c56-f6bad48c6961.png  
+![image.png](/image/50a5feb8-bf81-5efc-4c56-f6bad48c6961.png)  
   
 以下のファイルを開きます。  
   
@@ -179,7 +179,7 @@ https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/50a5feb8-bf81-
   
 ・sikuli拡張子のフォルダはスクリプトファイルとスクリプトで用いる画像ファイルが格納されているフォルダです。  
 以下はさきほどのHelloWorldで作成した内容を保存したsikuli拡張子フォルダの中身になります。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/915c051f-8bab-6abd-aee6-b4e51e23b043.png  
+![image.png](/image/915c051f-8bab-6abd-aee6-b4e51e23b043.png)  
   
   
 ・py拡張子ファイルはpythonのファイルを選択します。このファイルも実行が可能です。  
@@ -245,7 +245,7 @@ https://answers.dogfood.paddev.net/sikuli/+question/678016
 なお、2019/4リリース時点で動作しません。  
   
 GitHub版のコードをコンパイルして実行すると以下のような画面が表示されます。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/b8ea0f46-24dc-a40b-b7c9-67f37f7aa60a.png  
+![image.png](/image/b8ea0f46-24dc-a40b-b7c9-67f37f7aa60a.png)  
   
 |No |Name|Path|  
 |:--|:----|:---|  
@@ -318,27 +318,27 @@ IDEを再起動します。
   
 ## 環境設定  
 ### 「画面キャプチャ」タブ  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/f00b3e38-a36b-5073-dd6b-fa18aafcc1fb.png  
+![image.png](/image/f00b3e38-a36b-5073-dd6b-fa18aafcc1fb.png)  
   
   
 画面キャプチャの設定を変更できます。  
 「スクリーンショットを撮る」を実行した場合、デフォルトではタイムスタンプのファイルが作成されますが、ここを「オフ（手動入力）」とすることで「スクリーンショットを撮る」を実行する度に以下のような画面が表示されて任意のファイル名を設定できるようになります。  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/d88a701d-01b7-0f28-8bee-23f344e965c2.png  
+![image.png](/image/d88a701d-01b7-0f28-8bee-23f344e965c2.png)  
   
 ### 「テキスト編集」タブ  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/e3eb2e55-6a98-11ae-d244-2c6ebfd9da9c.png  
+![image.png](/image/e3eb2e55-6a98-11ae-d244-2c6ebfd9da9c.png)  
   
 テキストのタブ数やフォントを変更できます。  
   
 ### 「全般」タブ  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/ac150a27-5232-c421-f197-0bf5c8b2dd4a.png  
+![image.png](/image/ac150a27-5232-c421-f197-0bf5c8b2dd4a.png)  
   
 自動更新は未実装。  
 Languageは言語を変更できます。  
   
 ### more options  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/26ff88d8-fd2b-a62d-a285-9e385afd71ab.png  
+![image.png](/image/26ff88d8-fd2b-a62d-a285-9e385afd71ab.png)  
   
 メッセージの表示レベルや、実行時に自動保存を行うか否かとかの設定ができます。  
   
@@ -346,35 +346,35 @@ https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/26ff88d8-fd2b-
 IDE上でスクリプトを実行するためには以下の３つの方法があります。  
   
 (1)ツールバーのボタンから実行する  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/767b1542-0c9f-078d-0fcf-0ef6e70885fd.png  
+![image.png](/image/767b1542-0c9f-078d-0fcf-0ef6e70885fd.png)  
   
 (2)実行メニューから実行する  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/90546044-36a9-9242-5327-be712573ac82.png  
+![image.png](/image/90546044-36a9-9242-5327-be712573ac82.png)  
   
 (3)スクリプトの行番号を右クリックして、コンテキストメニューから実行する  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/296a228b-bad9-253e-658c-8f987c66c020.png  
+![image.png](/image/296a228b-bad9-253e-658c-8f987c66c020.png)  
   
 |メニュー|説明|  
 |:------|:---|  
 |実行   |スクリプトを先頭から実行する。スクリプトに変更がある場合は保存を要求される。|  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/e446b71e-2c6f-800d-c839-60b94cef2f55.png  
+|スローモーションで実行|クリック時にSettings.SlowMotionDelayで指定した秒（デフォルト2秒)の時間をかけてゆっくり移動する。移動先にはマーカ![image.png](/image/e446b71e-2c6f-800d-c839-60b94cef2f55.png)が表示される。ただし1.1.4(2019/05)時点では[バグ](https://bugs.launchpad.net/sikuli/+bug/1816298)のため動作しない模様。GitHubの最新では期待通り動作する。|  
 |run selection|選択しているコードのみを実行する。スクリプトに変更があっても保存を要求されない。|  
 |run line|カーソルのある行のみ実行する。スクリプトに変更があっても保存を要求されない。|  
 |run from line|カーソルのある行から実行する。スクリプトに変更があっても保存を要求されない。|  
 |run to line|カーソルのあるところまで実行する。スクリプトに変更があっても保存を要求されない。|  
   
 ## ドキュメントタブのコンテキストメニュー  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/7e18262e-88b5-f3f6-9070-d3205ba4d26d.png  
+![image.png](/image/7e18262e-88b5-f3f6-9070-d3205ba4d26d.png)  
   
 ### About  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/ac4181e9-7a05-0670-f483-26453df8c6bf.png  
+![image.png](/image/ac4181e9-7a05-0670-f483-26453df8c6bf.png)  
   
 ドキュメントの保存場所が表示されます。  
   
 ### Set Type  
 使用する言語を選択できます。  
 選択後は、ドキュメントの内容はクリアされるので、新規作成の直後に選ぶとよいでしょう。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/0176e7d0-0532-c359-3402-178bcb2154d0.png  
+![image.png](/image/0176e7d0-0532-c359-3402-178bcb2154d0.png)  
   
 以下の内容が選択できます。  
 ・jython  
@@ -384,10 +384,10 @@ https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/0176e7d0-0532-
   
 ### Insert Path  
 以下のダイアログを表示してファイルのパスを選択できます。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/36b3586a-35ec-0dd7-3858-7037ed58a4a5.png  
+![image.png](/image/36b3586a-35ec-0dd7-3858-7037ed58a4a5.png)  
   
 選択後はIDEに以下のようにパスが表示されます。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/0d2a5f6e-3d77-b984-bb05-ddf677f34e92.png  
+![image.png](/image/0d2a5f6e-3d77-b984-bb05-ddf677f34e92.png)  
   
 ただし、Windowsの場合、「\」はエスケープ文字なので「\\\\」としてあげないと、正常なパスになりません。  
   
@@ -396,16 +396,16 @@ https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/0d2a5f6e-3d77-
 タブの位置を移動します。  
   
 (1)移動するタブを選択して「Move Tab」を選択  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/b9b65458-90f0-053e-0777-7fca6521ddb3.png  
+![image.png](/image/b9b65458-90f0-053e-0777-7fca6521ddb3.png)  
   
 (2)タブが消えます。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/e4e137ab-8cc6-a0fc-f521-0afe78db9374.png  
+![image.png](/image/e4e137ab-8cc6-a0fc-f521-0afe78db9374.png)  
   
 (3)移動させたい場所のタブを選択して、コンテキストメニューを開き「Insert Right」または「Insert Left」を入力する。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/5962ca95-9604-6f92-c6a3-bbdf2a1a8a13.png  
+![image.png](/image/5962ca95-9604-6f92-c6a3-bbdf2a1a8a13.png)  
   
 Insert Leftを選択した例：選択したタブの左側に移動する  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/e655b9d5-5278-8e62-5773-fe7d48141f9d.png  
+![image.png](/image/e655b9d5-5278-8e62-5773-fe7d48141f9d.png)  
   
 ### Reset  
 メッセージや実行中の変数をリセットします。  
@@ -423,11 +423,11 @@ x = 1
 ・「Reset」を実行することで初期状態にもどり1行目を「run line」するとNameErrorになります。  
   
 ## ツールバー  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/638e4275-1767-3b54-afa3-889b68caf7bc.png  
+![image.png](/image/638e4275-1767-3b54-afa3-889b68caf7bc.png)  
   
 ### スクリーンショットを撮る（CTRL+SHIFT+2）  
 全てのスクリーンが以下のようなマスクがかかり範囲を選択できるようになります。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/b34908cd-3778-bade-4345-ac5c505d3462.png  
+![image.png](/image/b34908cd-3778-bade-4345-ac5c505d3462.png)  
   
 範囲を選択した箇所は画像として保存されて、IDEに表示されます。  
 ファイル名は環境設定により、手動で入力するか、自動で設定するかを選択可能です。  
@@ -436,20 +436,20 @@ https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/b34908cd-3778-
 「スクリーンショットを撮る」で作成した画像はPatternオブジェクトに変換可能です。  
 IDE上の画像をクリックすると下記の画面が表示されます。  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/0f997740-9b38-d00c-68d3-66b98bfa3fc6.png  
+![image.png](/image/0f997740-9b38-d00c-68d3-66b98bfa3fc6.png)  
   
 ・ファイルタブはファイルのパス情報が記載されています。  
 ・マッチングプレビューは類似度を設定できます。  
 ・ターゲットオフセットは画像のどこをターゲットにするかを指定できます。  
   
 以下の画像をマッチングプレビューを使用して類似度を変更してみます。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/c9fc2b82-e2bd-3c47-669c-61651cd6ecba.png  
+![image.png](/image/c9fc2b82-e2bd-3c47-669c-61651cd6ecba.png)  
   
 0.7の場合は類似の画像が2つ検知されます。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/4f0aff9b-abc8-9e9a-93ce-a02f9cc00078.png  
+![image.png](/image/4f0aff9b-abc8-9e9a-93ce-a02f9cc00078.png)  
   
 0.98にあげると1つのみとなります。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/f354ac41-ff91-0b18-739a-509854a5ec65.png  
+![image.png](/image/f354ac41-ff91-0b18-739a-509854a5ec65.png)  
   
 このように類似度を実際の画面を確認しながら選択することができます。  
 パターン設定画面で設定したファイルは以下のようにPatternオブジェクトとして扱われるようになります。  
@@ -472,13 +472,13 @@ https://github.com/RaiMan/SikuliX1/blob/08eb817c70afafdabff87d46cadb372255a66ad7
 ### Region  
 スクリーン上の範囲を選択できます。  
 IDE上は以下のように表示されます。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/554a6874-fa8c-4d21-f574-b1745794837c.png  
+![image.png](/image/554a6874-fa8c-4d21-f574-b1745794837c.png)  
 ※左下の赤い領域が選択した箇所  
   
 IDE上は先ほどの「スクリーンショットを撮る」と「画像を挿入する」と同じような見え方をしますが、実際のコード上は異なります。  
 メニューの「表示」→「Toggle Thumnails」のチェックをOFFにすると実際のコードが表示されます。  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/b2534826-a926-9938-a3a5-cac504707874.png  
+![image.png](/image/b2534826-a926-9938-a3a5-cac504707874.png)  
   
 RegionのfindメソッドやfindTextメソッドを用いて領域範囲内の画像やテキストの検索を行います。  
   
@@ -493,7 +493,7 @@ Locationはスクリーン上の一点の位置（x、y）を取り扱います�
 LocationをクリックするとRegionと同様にスクリーン上の範囲を選択できるようになります。  
   
 Locationの座標として採用されるのは赤い十字の中心となります。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/cb76896f-017e-8dc7-ebba-e534a77eca35.png  
+![image.png](/image/cb76896f-017e-8dc7-ebba-e534a77eca35.png)  
   
 作成したLocationについては以下のように使用します。  
   
@@ -520,13 +520,13 @@ Offsetの目的については以下に説明が記載されています。
 https://answers.launchpad.net/sikuli/+question/446476  
   
 たとえば以下のような画面があり、「含まれるテキスト」項目に入力をする必要がある場合を考えましょう。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/41cf0193-0af2-521d-425b-8a0244f80118.png  
+![image.png](/image/41cf0193-0af2-521d-425b-8a0244f80118.png)  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/9c8b98ce-3a71-3435-a8fe-69fed467698f.png  
+この場合、![image.png](/image/9c8b98ce-3a71-3435-a8fe-69fed467698f.png)という画像から下に一定量はなれた箇所をクリックする必要があります。  
 この際にOffsetを使用します。  
   
 実際のコードにすると以下のようになります。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/78f86726-3636-af20-05cd-5d52e6524c27.png  
+![image.png](/image/78f86726-3636-af20-05cd-5d52e6524c27.png)  
   
 Offsetのコードは以下になります。  
 https://github.com/RaiMan/SikuliX1/blob/08eb817c70afafdabff87d46cadb372255a66ad7/API/src/main/java/org/sikuli/script/Offset.java  
@@ -535,7 +535,7 @@ https://github.com/RaiMan/SikuliX1/blob/08eb817c70afafdabff87d46cadb372255a66ad7
 ### Show  
 カーソルのある行のRegion,ファイル名,Patternの画像がスクリーン全体のどこにあるかを検索して強調表示します。  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/0be6791d-2a81-1fe0-7145-8f1bdab91e83.png  
+![image.png](/image/0be6791d-2a81-1fe0-7145-8f1bdab91e83.png)  
   
 ### ShowIn  
 基本的にShowと同じ使い方です。  
@@ -639,7 +639,7 @@ r.stopObserver()
 ```  
   
 この例では、チェックボックスを付けたりして画面が変更した箇所が強調表示されます。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/6efcf29f-304b-85df-6e67-e8d0c90f6f04.png  
+![image.png](/image/6efcf29f-304b-85df-6e67-e8d0c90f6f04.png)  
   
   
   
@@ -661,37 +661,37 @@ exit()
 画像検索では透過画像またはマスクを利用して画像の一部を無視して検索が行えます。  
   
 検索範囲：  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/6aa2228a-ebe1-e843-fb03-14d9c250d17b.png  
+![image.png](/image/6aa2228a-ebe1-e843-fb03-14d9c250d17b.png)  
   
 #### 透過画像を利用する例  
 検索画像：  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/fadcf80e-7b3d-8923-65a0-96af6015ffee.png  
+![image.png](/image/fadcf80e-7b3d-8923-65a0-96af6015ffee.png)  
   
 コード：  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/0def0272-5b22-393f-daba-426a01785cd8.png  
+![image.png](/image/0def0272-5b22-393f-daba-426a01785cd8.png)  
   
 findAllでマッチした画像を検索して、そのスコアを表示します。  
 この例だと以下のようになります。  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/6011cc6d-f48f-d542-1bd0-e50e4ac61b02.png  
+![image.png](/image/6011cc6d-f48f-d542-1bd0-e50e4ac61b02.png)  
   
 #### 黒をマスクとして利用する  
 検索画像  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/f6a4cf06-9daa-9c33-8b42-92b87014b976.png  
+![image.png](/image/f6a4cf06-9daa-9c33-8b42-92b87014b976.png)  
   
   
 コード：  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/51c77b15-c36c-75dc-c966-5f443888ee5b.png  
+![image.png](/image/51c77b15-c36c-75dc-c966-5f443888ee5b.png)  
   
 今回は「Pattern("masktest_black.png").exact().mask()」と「exact()」を利用して類似度を0.99まで上げています。  
 この例での結果は透過の場合と同じで2件、類似度が1.0で取得できました。  
   
 #### マスク画像の合成  
 検索画像１　masktest1.png  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/d8a1f419-eb8e-2598-c8c7-d415ac150ef6.png  
+![image.png](/image/d8a1f419-eb8e-2598-c8c7-d415ac150ef6.png)  
   
 マスク画像　masktest1mask.png  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/7b22a33b-1375-edaf-7bd6-f9ebe8144dd0.png  
+![image.png](/image/7b22a33b-1375-edaf-7bd6-f9ebe8144dd0.png)  
   
 コード  
   
@@ -872,16 +872,16 @@ exit(1)
 
 ```  
 findWord(u'He')  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/93e903b3-a71c-dbef-9c47-9a70e084b731.png  
+![image.png](/image/93e903b3-a71c-dbef-9c47-9a70e084b731.png)  
   
 findLine(u'He')  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/cab7bad9-5a07-70c4-d488-b38a29aeda0c.png  
+![image.png](/image/cab7bad9-5a07-70c4-d488-b38a29aeda0c.png)  
   
 findWord(u'彼')  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/3bcb4723-57f0-91ed-29ce-6ca8fb5b64b9.png  
+![image.png](/image/3bcb4723-57f0-91ed-29ce-6ca8fb5b64b9.png)  
   
 findLine(u'彼')  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/a9d93420-e4e0-5e01-c0f0-5aa10e62a497.png  
+![image.png](/image/a9d93420-e4e0-5e01-c0f0-5aa10e62a497.png)  
   
 ## 画面操作  
   
@@ -951,19 +951,19 @@ PSMRLにはPattern、string,match, region, locationが指定できます。
 modifiersは省略可能な引数で１つ以上のキーボード操作を指定できます。  
   
 操作対象の領域  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/9c36548f-4259-2ac1-5124-dfe7fb156f10.png  
+![image.png](/image/9c36548f-4259-2ac1-5124-dfe7fb156f10.png)  
   
   
 コード  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/9629e3d1-5dd6-99e5-bdea-1cfbe8b2dbe1.png  
+![image.png](/image/9629e3d1-5dd6-99e5-bdea-1cfbe8b2dbe1.png)  
   
 実行結果  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/22f0a163-4a73-cff7-de15-5d33adf9ea33.png  
+![image.png](/image/22f0a163-4a73-cff7-de15-5d33adf9ea33.png)  
   
 ※あくまでテストです。実際にエクスプローラーの操作を画像認識でやると苦労します。  
 たとえば、フォルダは以下のように中にファイルがあるかどうかでアイコンが変わったりします。  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/51ea88b1-84e9-4643-22ab-6ddf939c52db.png  
+![image.png](/image/51ea88b1-84e9-4643-22ab-6ddf939c52db.png)  
   
   
 ### type([PSMRL, ]text[, modifiers])  
@@ -987,13 +987,13 @@ PSMRLにはPattern、string,match, region, locationが指定できます。
 textには貼り付けたい文字を指定します。  
   
 コード：  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/d2857593-8e2c-d255-3728-62b71da26805.png  
+![image.png](/image/d2857593-8e2c-d255-3728-62b71da26805.png)  
   
 実行前：  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/9dfdfc66-31df-d8a9-0076-a90d69eebc05.png  
+![image.png](/image/9dfdfc66-31df-d8a9-0076-a90d69eebc05.png)  
   
 実行後：  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/dc2fdbfe-198d-8e5a-68e0-ae56103dea06.png  
+![image.png](/image/dc2fdbfe-198d-8e5a-68e0-ae56103dea06.png)  
   
   
 ### その他操作、低レベルの画面操作  
@@ -1003,15 +1003,15 @@ https://sikulix-2014.readthedocs.io/en/latest/region.html#low-level-mouse-and-ke
 # プライマリー以外のスクリーンの操作  
 ## マルチディスプレイでの操作  
 以下のようなマルチディスプレイ環境だとします。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/69b13b08-ef26-397c-8443-6acc47936d9c.png  
+![image.png](/image/69b13b08-ef26-397c-8443-6acc47936d9c.png)  
   
 ・getNumberScreens()コマンドでディスプレイが幾つあるか取得します。  
 ・３のディスプレイを操作する場合は「Screen(3).click(...)」と記述します。  
 ・座標の関係は以下のようになります。（[参照](https://sikulix-2014.readthedocs.io/en/latest/screen.html?highlight=Screen#multi-monitor-environments))  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/63a92942-4bb8-e1ac-33e3-12ea72aeb724.png  
+![image.png](/image/63a92942-4bb8-e1ac-33e3-12ea72aeb724.png)  
   
 マルチディスプレイ環境での実装例：  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/20139621-f47d-1672-6ae4-06186e1c0caa.png  
+![image.png](/image/20139621-f47d-1672-6ae4-06186e1c0caa.png)  
 この例では、全てのスクリーンに対して指定の画像が存在するかを調べて、存在すれば操作をするような動きになります。  
   
 ## VNC経由の操作  
@@ -1049,17 +1049,17 @@ set sikulixadb=C:\Program Files (x86)\Android\android-sdk\platform-tools\adb.exe
 （１）AndroidをUSBでつなげて「menuToolAndroid」を選択します  
   
 （２）ポップアップが表示されるので「Default Android」を選択します。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/7866e4b1-be56-386c-c397-dafd9a138b5a.png  
+![image.png](/image/7866e4b1-be56-386c-c397-dafd9a138b5a.png)  
   
   
 （３）「スクリーンショットを撮る」を実行するとAndroidからキャプチャを撮るか聞かれるので「はい」を選択します  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/26910984-26d7-49fe-5a8b-f565b01f1aae.png  
+![image.png](/image/26910984-26d7-49fe-5a8b-f565b01f1aae.png)  
   
 （４）PC上にAndroidのキャプチャが表示されるので範囲を選択します。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/563f9649-1758-92bb-fd1d-09342482f209.png  
+![image.png](/image/563f9649-1758-92bb-fd1d-09342482f209.png)  
   
 （５）IDEに選択範囲が表示されます。あとはPCと同じです。  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/b9563db1-c086-0b83-3c90-13e5223c8fd3.png  
+![image.png](/image/b9563db1-c086-0b83-3c90-13e5223c8fd3.png)  
   
   
 #### （４）でフリーズする場合  
@@ -1093,7 +1093,7 @@ Xperia SO-02Kの実機だと固まりました。
 ### 実行方法  
 ADBScreen.start()で作成したオブジェクトに対して操作を行うことで、Androidの操作が行えます。  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/aa6e64c5-2737-831f-a5f3-7879b3ddcc38.png  
+![image.png](/image/aa6e64c5-2737-831f-a5f3-7879b3ddcc38.png)  
   
   
 ## サーバー経由の実行  

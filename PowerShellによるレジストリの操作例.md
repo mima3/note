@@ -91,8 +91,8 @@ New-ItemProperty -Path 'HKCU:TestKey\a\*' -Name 'x2' -PropertyType 'QWord' -Valu
   
 作成されたエントリは以下のようになります。  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/4f1e66d9-372c-6eca-249e-89e6d64418c6.png  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/399b2367-4c82-c47f-02bd-ac9e662cad79.png  
+![image.png](/image/4f1e66d9-372c-6eca-249e-89e6d64418c6.png)  
+![image.png](/image/399b2367-4c82-c47f-02bd-ac9e662cad79.png)  
 ワイルドカードを用いて追加をしたx2についてはHKCU:TestKey\a\bとHKCU:TestKey\a\cの両方に作成されていることが確認できます。  
   
   
@@ -276,13 +276,13 @@ Copy-Item -LiteralPath 'HKCU:TestKey\a' -Destination 'HKCU:TestKey\Other' -Recur
 -Recurseオプションを付与した場合、コピー元が保持する子要素のキーもコピーされます。  
   
 **コピー前の状態**  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/249242fb-9a05-ebf5-9656-e5473154680e.png  
+![image.png](/image/249242fb-9a05-ebf5-9656-e5473154680e.png)  
   
 **-Recurseオプションを付与しない場合：子要素のキーはコピーされない**  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/4d0b3ee8-78cc-028d-1839-cbbfdd6dfe91.png  
+![image.png](/image/4d0b3ee8-78cc-028d-1839-cbbfdd6dfe91.png)  
   
 **-Recurseを付与した場合：子要素のキーもコピーされる**  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/6c788b23-e777-3283-3089-16c681d80916.png  
+![image.png](/image/6c788b23-e777-3283-3089-16c681d80916.png)  
   
   
 ## キーの移動  
@@ -324,7 +324,7 @@ Remove-Item -LiteralPath 'HKCU:TestKey\a' -Recurse
   
 -Recurseオプションを付与しない場合かつ、削除対象キーに子要素のキーがある場合、下記のような確認メッセージが表示されます。  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/9984c2da-00d1-c7c5-b808-85e688a0abd5.png  
+![image.png](/image/9984c2da-00d1-c7c5-b808-85e688a0abd5.png)  
   
 -Recurseオプションを付与した場合は確認なしで削除します。  
   
@@ -375,12 +375,12 @@ New-Item 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\TestSoft\4' -Force
 しかし、実際作成される箇所はことなります。  
   
 コンピューター\HKEY_LOCAL_MACHINE\SOFTWARE\TestSoft\  
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/5b9c73a8-cbab-428c-b9f9-777abb5879e5.png  
+![image.png](/image/5b9c73a8-cbab-428c-b9f9-777abb5879e5.png)  
   
   
 コンピューター\HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\TestSoft  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/02c49a44-6558-8e85-a4d2-23f929209e4b.png  
+![image.png](/image/02c49a44-6558-8e85-a4d2-23f929209e4b.png)  
   
 32ビットプロセスで動かした場合、「HKLM\SOFTWARE\Wow6432Node」の配下に登録されていることがわかります。  
 64ビットOSで32ビットプロセスを動作させてレジストリを操作した場合、このようなリダイレクトが発生します。  

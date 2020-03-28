@@ -1,7 +1,7 @@
 # 目的  
 JavaScriptのフレームワークである[Vue.js](https://vuejs.org/)とCSSのフレームワークである[ bulma](https://bulma.io/)を使用してダイアログを表示してみる。  
   
-https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/47856/0f9341bd-a959-a184-cecd-e4792f730a83.png  
+![image.png](/image/0f9341bd-a959-a184-cecd-e4792f730a83.png)  
   
 ## サンプル  
 Vue.jsにbulmadialog-componentコンポーネントを追加します。  
